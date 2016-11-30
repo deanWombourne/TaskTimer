@@ -1,0 +1,17 @@
+language: objective-c
+osx_image: xcode8.1
+rvm: 2.2.1
+sudo: false
+
+before_install:
+  - gem install xcpretty
+
+env:
+  - DESTINATION='platform=iOS Simulator,name=iPhone 6s Plus,OS=10.1' UITEST=1
+  - DESTINATION='platform=iOS Simulator,name=iPad Air,OS=9.3' UITEST=1
+
+script:
+ - set -o pipefail
+ - xcodebuild test -destination "$DESTINATION" -workspace TaskTimer/TaskTimer.xcworkspace -scheme TaskTimer | xcpretty
+
+# - if [ $UITEST ]; then xcodebuild test -destination "$DESTINATION" -workspace ClientTime/ClientTime.xcworkspace -scheme ClientTimeUITests | xcpretty; fi
