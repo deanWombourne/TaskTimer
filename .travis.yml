@@ -2,7 +2,10 @@ language: objective-c
 osx_image: xcode8.1
 rvm: 2.2.1
 sudo: false
-cache: bundler
+cache:
+  - bundler
+  - cocoapods
+podfile: TaskTimer/Podfile
 
 before_install:
   - gem install xcpretty
@@ -12,7 +15,5 @@ env:
   - DESTINATION='platform=iOS Simulator,name=iPad Air,OS=9.3' UITEST=1
 
 script:
- - set -o pipefail
- - xcodebuild test -destination "$DESTINATION" -workspace TaskTimer/TaskTimer.xcworkspace -scheme TaskTimer | xcpretty
+  - fastlane ios test
 
-# - if [ $UITEST ]; then xcodebuild test -destination "$DESTINATION" -workspace ClientTime/ClientTime.xcworkspace -scheme ClientTimeUITests | xcpretty; fi
