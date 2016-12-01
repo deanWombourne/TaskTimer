@@ -13,5 +13,5 @@ env:
   - DESTINATION='platform=iOS Simulator,name=iPad Air,OS=9.3' UITEST=1
 
 script:
-  - fastlane ios test
+  - bundle exec fastlane ios test
 
