@@ -1,6 +1,5 @@
 language: objective-c
 osx_image: xcode8.1
-rvm: 2.2.1
 sudo: false
 cache:
   - bundler
@@ -8,7 +7,6 @@ cache:
 podfile: TaskTimer/Podfile
 
 before_install:
-  - gem install xcpretty
 
 env:
   - DESTINATION='platform=iOS Simulator,name=iPhone 6s Plus,OS=10.1' UITEST=1
