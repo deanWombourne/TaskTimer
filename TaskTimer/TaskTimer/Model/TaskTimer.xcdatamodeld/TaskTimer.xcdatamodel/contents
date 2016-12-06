@@ -6,8 +6,12 @@
     <entity name="ProjectEntity" representedClassName="ProjectEntity" syncable="YES" codeGenerationType="class">
         <attribute name="name" attributeType="String" syncable="YES"/>
     </entity>
+    <entity name="TaskEntity" representedClassName="TaskEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="name" attributeType="String" syncable="YES"/>
+    </entity>
     <elements>
         <element name="ClientEntity" positionX="-63" positionY="-18" width="128" height="60"/>
         <element name="ProjectEntity" positionX="-54" positionY="0" width="128" height="60"/>
+        <element name="TaskEntity" positionX="-54" positionY="0" width="128" height="60"/>
     </elements>
 </model>

@@ -31,6 +31,14 @@ struct Client {
 
         try! CoreStore.defaultStack.addStorageAndWait()
     }
+
+    var projects: [Project] {
+        let entities = CoreStore.fetchAll(From(ProjectEntity.self), []) ?? []
+
+        return entities.map {
+            Project(name: $0.name ?? "")
+        }
+    }
 }
 
 
@@ -43,11 +51,24 @@ struct Project {
                 throw TaskTimerError.failedToFetch
             }
 
-            let projects = entities.map { Project(name: $0.name ?? "") }
-
-            return .success(projects)
+            return .success(entities.map {
+                Project(name: $0.name ?? "")
+            })
         } catch let error {
             return .failure(error)
         }
     }
+
+    var tasks: [Task] {
+        let entities = CoreStore.fetchAll(From(TaskEntity.self), []) ?? []
+
+        return entities.map {
+            Task(name: $0.name ?? "")
+        }
+    }
+}
+
+
+struct Task {
+    let name: String
 }
