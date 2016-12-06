@@ -13,5 +13,6 @@ env:
   - DESTINATION='platform=iOS Simulator,name=iPad Air,OS=9.3' UITEST=1
 
 script:
+  - cd TaskTimer
   - bundle exec fastlane ios test
-
+  - cd -
