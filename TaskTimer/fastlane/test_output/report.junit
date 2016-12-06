@@ -1,7 +1,0 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<testsuites name='TaskTimerTests.xctest' tests='2' failures='0'>
-  <testsuite name='TaskTimerTests.TaskTimerTests' tests='2' failures='0'>
-    <testcase classname='TaskTimerTests.TaskTimerTests' name='testExample' time='0.001'/>
-    <testcase classname='TaskTimerTests.TaskTimerTests' name='testPerformanceExample' time='0.367'/>
-  </testsuite>
-</testsuites>

@@ -10,3 +10,6 @@ DerivedData/
 .loadpath
 .project
 Thumbs.db
+
+fastlane/report.xml
+fastlane/test_output
