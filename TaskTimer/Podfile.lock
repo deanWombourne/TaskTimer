@@ -1,12 +1,25 @@
 PODS:
   - Alamofire (4.2.0)
+  - CoreStore (3.0.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.2)
+  - CoreStore (from `https://github.com/JohnEstropia/CoreStore.git`, branch `swift3_develop`)
+
+EXTERNAL SOURCES:
+  CoreStore:
+    :branch: swift3_develop
+    :git: https://github.com/JohnEstropia/CoreStore.git
+
+CHECKOUT OPTIONS:
+  CoreStore:
+    :commit: e330291e1bde1a9eec2bf4ffc30abe9d221cbe91
+    :git: https://github.com/JohnEstropia/CoreStore.git
 
 SPEC CHECKSUMS:
   Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
+  CoreStore: 4e61fc46e34e20887254afa7b083c989322e5fea
 
-PODFILE CHECKSUM: c2604e408df9d2d686a048549c7f23acdf35cda0
+PODFILE CHECKSUM: 4d85f115382b15788e998e15ef9e93c747c0117f
 
 COCOAPODS: 1.1.1
