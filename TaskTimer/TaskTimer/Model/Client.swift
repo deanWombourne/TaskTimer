@@ -11,13 +11,43 @@ import Foundation
 import CoreStore
 
 
-final class Client {
+enum TaskTimerError: Error {
+    case failedToFetch
+}
 
-    class func initialize() {
+
+enum Result<T> {
+    case success(T)
+    case failure(Error)
+}
+
+
+struct Client {
+
+    static func initialize() {
         CoreStore.defaultStack = DataStack(
             modelName: "TaskTimer"
         )
 
         try! CoreStore.defaultStack.addStorageAndWait()
+    }
+}
+
+
+struct Project {
+    let name: String
+
+    static func all() -> Result<[Project]> {
+        do {
+            guard let entities = CoreStore.fetchAll(From(ProjectEntity.self), []) else {
+                throw TaskTimerError.failedToFetch
+            }
+
+            let projects = entities.map { Project(name: $0.name ?? "") }
+
+            return .success(projects)
+        } catch let error {
+            return .failure(error)
+        }
     }
 }

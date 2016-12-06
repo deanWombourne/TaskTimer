@@ -84,10 +84,18 @@
 		A03CBEB01DF6C520008E204B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A03CBEB61DF6C843008E204B /* Entities */,
 				A03CBEB11DF6C5B0008E204B /* Client.swift */,
 				A03CBEB31DF6C6EB008E204B /* TaskTimer.xcdatamodeld */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		A03CBEB61DF6C843008E204B /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 		A059D9EA1DEF81F5002C0090 = {
