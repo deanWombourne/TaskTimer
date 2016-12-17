@@ -11,5 +11,5 @@ DerivedData/
 .project
 Thumbs.db
 
-fastlane/report.xml
-fastlane/test_output
+TaskTimer/fastlane/report.xml
+TaskTimer/fastlane/test_output
