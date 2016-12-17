@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		97B5305CE341FDFAD0E9039E /* Pods_TaskTimer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40E6E417D4F713234D3891EE /* Pods_TaskTimer.framework */; };
+		A01400001E05DE67001ABADB /* TaskTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A014FFFF1E05DE67001ABADB /* TaskTimer.swift */; };
+		A014FFFC1E05D8E4001ABADB /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = A014FFFB1E05D8E4001ABADB /* Project.swift */; };
+		A014FFFE1E05D8FE001ABADB /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = A014FFFD1E05D8FE001ABADB /* Task.swift */; };
 		A03CBEB21DF6C5B0008E204B /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03CBEB11DF6C5B0008E204B /* Client.swift */; };
 		A03CBEB51DF6C6EB008E204B /* TaskTimer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A03CBEB31DF6C6EB008E204B /* TaskTimer.xcdatamodeld */; };
 		A059D9F71DEF81F6002C0090 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A059D9F61DEF81F6002C0090 /* AppDelegate.swift */; };
@@ -35,6 +38,9 @@
 		379033CA58FEDAC75AFAE559 /* Pods-TaskTimer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskTimer.release.xcconfig"; path = "Pods/Target Support Files/Pods-TaskTimer/Pods-TaskTimer.release.xcconfig"; sourceTree = "<group>"; };
 		40E6E417D4F713234D3891EE /* Pods_TaskTimer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaskTimer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		546D744DFA1D6F34D5E29752 /* Pods_TaskTimerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaskTimerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A014FFFB1E05D8E4001ABADB /* Project.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		A014FFFD1E05D8FE001ABADB /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		A014FFFF1E05DE67001ABADB /* TaskTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskTimer.swift; sourceTree = "<group>"; };
 		A03CBEB11DF6C5B0008E204B /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		A03CBEB41DF6C6EB008E204B /* TaskTimer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TaskTimer.xcdatamodel; sourceTree = "<group>"; };
 		A059D9F31DEF81F6002C0090 /* TaskTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +93,9 @@
 				A03CBEB61DF6C843008E204B /* Entities */,
 				A03CBEB11DF6C5B0008E204B /* Client.swift */,
 				A03CBEB31DF6C6EB008E204B /* TaskTimer.xcdatamodeld */,
+				A014FFFB1E05D8E4001ABADB /* Project.swift */,
+				A014FFFD1E05D8FE001ABADB /* Task.swift */,
+				A014FFFF1E05DE67001ABADB /* TaskTimer.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -361,6 +370,9 @@
 				A03CBEB21DF6C5B0008E204B /* Client.swift in Sources */,
 				A059D9F91DEF81F6002C0090 /* FirstViewController.swift in Sources */,
 				A03CBEB51DF6C6EB008E204B /* TaskTimer.xcdatamodeld in Sources */,
+				A014FFFE1E05D8FE001ABADB /* Task.swift in Sources */,
+				A01400001E05DE67001ABADB /* TaskTimer.swift in Sources */,
+				A014FFFC1E05D8E4001ABADB /* Project.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
