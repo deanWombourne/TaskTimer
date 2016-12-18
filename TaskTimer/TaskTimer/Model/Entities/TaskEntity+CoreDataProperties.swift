@@ -16,7 +16,7 @@ extension TaskEntity {
         return NSFetchRequest<TaskEntity>(entityName: "TaskEntity");
     }
 
-    @NSManaged public var name: String?
+    @NSManaged public var name: String!
     @NSManaged public var project: ProjectEntity?
 
 }

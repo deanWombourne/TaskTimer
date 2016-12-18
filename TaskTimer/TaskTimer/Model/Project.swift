@@ -13,6 +13,10 @@ import CoreStore
 struct Project {
     let name: String
 
+    init(entity: ProjectEntity) {
+        self.name = entity.name
+    }
+
     static func all() -> Result<[Project]> {
         do {
             guard let entities = CoreStore.fetchAll(From(ProjectEntity.self), []) else {
@@ -20,7 +24,7 @@ struct Project {
             }
 
             return .success(entities.map {
-                Project(name: $0.name ?? "")
+                Project(entity: $0)
             })
         } catch let error {
             return .failure(error)
@@ -31,7 +35,7 @@ struct Project {
         let entities = CoreStore.fetchAll(From(TaskEntity.self), []) ?? []
 
         return entities.map {
-            Task(name: $0.name ?? "")
+            Task(entity: $0)
         }
     }
 }

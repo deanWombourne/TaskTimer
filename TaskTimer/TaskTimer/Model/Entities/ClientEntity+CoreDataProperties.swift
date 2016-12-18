@@ -17,7 +17,7 @@ extension ClientEntity {
         return NSFetchRequest<ClientEntity>(entityName: "ClientEntity");
     }
 
-    @NSManaged public var name: String?
+    @NSManaged public var name: String!
     @NSManaged public var projects: NSSet?
 
 }

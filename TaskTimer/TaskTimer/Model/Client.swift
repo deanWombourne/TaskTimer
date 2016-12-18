@@ -28,7 +28,7 @@ struct Client {
         let entities = CoreStore.fetchAll(From(ProjectEntity.self), []) ?? []
 
         return entities.map {
-            Project(name: $0.name ?? "")
+            Project(entity: $0)
         }
     }
 }

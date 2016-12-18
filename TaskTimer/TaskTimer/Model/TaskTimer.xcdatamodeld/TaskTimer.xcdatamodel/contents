@@ -2,16 +2,16 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16C67" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="ClientEntity" representedClassName=".ClientEntity" syncable="YES">
         <attribute name="name" attributeType="String" syncable="YES"/>
-        <relationship name="projects" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ProjectEntity" inverseName="client" inverseEntity="ProjectEntity" syncable="YES"/>
+        <relationship name="projects" toMany="YES" deletionRule="Nullify" destinationEntity="ProjectEntity" inverseName="client" inverseEntity="ProjectEntity" syncable="YES"/>
     </entity>
     <entity name="ProjectEntity" representedClassName="ProjectEntity" syncable="YES">
         <attribute name="name" attributeType="String" syncable="YES"/>
-        <relationship name="client" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ClientEntity" inverseName="projects" inverseEntity="ClientEntity" syncable="YES"/>
-        <relationship name="tasks" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TaskEntity" inverseName="project" inverseEntity="TaskEntity" syncable="YES"/>
+        <relationship name="client" maxCount="1" deletionRule="Nullify" destinationEntity="ClientEntity" inverseName="projects" inverseEntity="ClientEntity" syncable="YES"/>
+        <relationship name="tasks" toMany="YES" deletionRule="Nullify" destinationEntity="TaskEntity" inverseName="project" inverseEntity="TaskEntity" syncable="YES"/>
     </entity>
     <entity name="TaskEntity" representedClassName="TaskEntity" syncable="YES">
         <attribute name="name" attributeType="String" syncable="YES"/>
-        <relationship name="project" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ProjectEntity" inverseName="tasks" inverseEntity="ProjectEntity" syncable="YES"/>
+        <relationship name="project" maxCount="1" deletionRule="Nullify" destinationEntity="ProjectEntity" inverseName="tasks" inverseEntity="ProjectEntity" syncable="YES"/>
     </entity>
     <elements>
         <element name="ClientEntity" positionX="-63" positionY="-18" width="128" height="73"/>
