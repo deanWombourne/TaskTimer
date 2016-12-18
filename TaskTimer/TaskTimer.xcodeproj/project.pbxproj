@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		97B5305CE341FDFAD0E9039E /* Pods_TaskTimer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40E6E417D4F713234D3891EE /* Pods_TaskTimer.framework */; };
 		A01400001E05DE67001ABADB /* TaskTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A014FFFF1E05DE67001ABADB /* TaskTimer.swift */; };
+		A01400111E068224001ABADB /* ClientEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A014000F1E068224001ABADB /* ClientEntity+CoreDataClass.swift */; };
+		A01400121E068224001ABADB /* ClientEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01400101E068224001ABADB /* ClientEntity+CoreDataProperties.swift */; };
+		A01400151E06823D001ABADB /* ProjectEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01400131E06823D001ABADB /* ProjectEntity+CoreDataClass.swift */; };
+		A01400161E06823D001ABADB /* ProjectEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01400141E06823D001ABADB /* ProjectEntity+CoreDataProperties.swift */; };
+		A01400191E068373001ABADB /* TaskEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01400171E068373001ABADB /* TaskEntity+CoreDataClass.swift */; };
+		A014001A1E068373001ABADB /* TaskEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01400181E068373001ABADB /* TaskEntity+CoreDataProperties.swift */; };
 		A014FFFC1E05D8E4001ABADB /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = A014FFFB1E05D8E4001ABADB /* Project.swift */; };
 		A014FFFE1E05D8FE001ABADB /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = A014FFFD1E05D8FE001ABADB /* Task.swift */; };
 		A03CBEB21DF6C5B0008E204B /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03CBEB11DF6C5B0008E204B /* Client.swift */; };
@@ -38,6 +44,12 @@
 		379033CA58FEDAC75AFAE559 /* Pods-TaskTimer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskTimer.release.xcconfig"; path = "Pods/Target Support Files/Pods-TaskTimer/Pods-TaskTimer.release.xcconfig"; sourceTree = "<group>"; };
 		40E6E417D4F713234D3891EE /* Pods_TaskTimer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaskTimer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		546D744DFA1D6F34D5E29752 /* Pods_TaskTimerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TaskTimerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A014000F1E068224001ABADB /* ClientEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ClientEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A01400101E068224001ABADB /* ClientEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ClientEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A01400131E06823D001ABADB /* ProjectEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ProjectEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A01400141E06823D001ABADB /* ProjectEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ProjectEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A01400171E068373001ABADB /* TaskEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TaskEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A01400181E068373001ABADB /* TaskEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TaskEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		A014FFFB1E05D8E4001ABADB /* Project.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
 		A014FFFD1E05D8FE001ABADB /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		A014FFFF1E05DE67001ABADB /* TaskTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskTimer.swift; sourceTree = "<group>"; };
@@ -103,6 +115,12 @@
 		A03CBEB61DF6C843008E204B /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				A01400171E068373001ABADB /* TaskEntity+CoreDataClass.swift */,
+				A01400181E068373001ABADB /* TaskEntity+CoreDataProperties.swift */,
+				A01400131E06823D001ABADB /* ProjectEntity+CoreDataClass.swift */,
+				A01400141E06823D001ABADB /* ProjectEntity+CoreDataProperties.swift */,
+				A014000F1E068224001ABADB /* ClientEntity+CoreDataClass.swift */,
+				A01400101E068224001ABADB /* ClientEntity+CoreDataProperties.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -365,14 +383,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A01400161E06823D001ABADB /* ProjectEntity+CoreDataProperties.swift in Sources */,
 				A059D9FB1DEF81F6002C0090 /* SecondViewController.swift in Sources */,
 				A059D9F71DEF81F6002C0090 /* AppDelegate.swift in Sources */,
 				A03CBEB21DF6C5B0008E204B /* Client.swift in Sources */,
 				A059D9F91DEF81F6002C0090 /* FirstViewController.swift in Sources */,
+				A01400191E068373001ABADB /* TaskEntity+CoreDataClass.swift in Sources */,
 				A03CBEB51DF6C6EB008E204B /* TaskTimer.xcdatamodeld in Sources */,
+				A01400121E068224001ABADB /* ClientEntity+CoreDataProperties.swift in Sources */,
+				A01400111E068224001ABADB /* ClientEntity+CoreDataClass.swift in Sources */,
 				A014FFFE1E05D8FE001ABADB /* Task.swift in Sources */,
 				A01400001E05DE67001ABADB /* TaskTimer.swift in Sources */,
+				A014001A1E068373001ABADB /* TaskEntity+CoreDataProperties.swift in Sources */,
 				A014FFFC1E05D8E4001ABADB /* Project.swift in Sources */,
+				A01400151E06823D001ABADB /* ProjectEntity+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
