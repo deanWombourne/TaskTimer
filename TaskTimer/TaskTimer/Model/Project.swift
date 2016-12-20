@@ -13,10 +13,6 @@ import CoreStore
 struct Project {
     let name: String
 
-    init(entity: ProjectEntity) {
-        self.name = entity.name
-    }
-
     static func all() -> Result<[Project]> {
         do {
             guard let entities = CoreStore.fetchAll(From(ProjectEntity.self), []) else {

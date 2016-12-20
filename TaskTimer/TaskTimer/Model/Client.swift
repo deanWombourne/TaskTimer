@@ -16,19 +16,12 @@ enum TaskTimerError: Error {
 }
 
 
-enum Result<T> {
-    case success(T)
-    case failure(Error)
-}
-
-
 struct Client {
+    let name: String
 
     var projects: [Project] {
         let entities = CoreStore.fetchAll(From(ProjectEntity.self), []) ?? []
 
-        return entities.map {
-            Project(entity: $0)
-        }
+        return entities.map { Project(entity: $0) }
     }
 }
