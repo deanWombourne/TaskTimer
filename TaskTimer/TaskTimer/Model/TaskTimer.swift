@@ -11,6 +11,16 @@ import Foundation
 import CoreStore
 
 
+enum TaskTimerError: Error {
+    case failedToFetch
+    case underlying(Error)
+
+    static func lift(_ error: Error) -> TaskTimerError {
+        return error as? TaskTimerError ?? .underlying(error)
+    }
+}
+
+
 struct TaskTimer {
 
     static func initialize() {

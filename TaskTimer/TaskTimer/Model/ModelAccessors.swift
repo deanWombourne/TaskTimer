@@ -20,17 +20,23 @@ protocol EntityMappable {
     static func all(_ fetchClauses: [FetchClause]) -> [Self]
 
     static func from(entity: EntityType) -> Self
+
+    var entity: EntityType? { get }
 }
 
 
 extension EntityMappable {
+
+    var entity: EntityType? {
+        return CoreStore.fetchOne(From(EntityType.self), [])
+    }
 
     static func all() -> [Self] {
         return self.all([])
     }
 
     static func all(_ fetchClauses: [FetchClause]) -> [Self] {
-        let entities = CoreStore.fetchAll(From(self.EntityType.self), fetchClauses) ?? []
+        let entities = CoreStore.fetchAll(From(EntityType.self), fetchClauses) ?? []
 
         return entities.map { self.from(entity: $0) }
     }

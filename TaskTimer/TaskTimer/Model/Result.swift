@@ -10,7 +10,7 @@ import Foundation
 
 enum Result<T> {
     case success(T)
-    case failure(Error)
+    case failure(TaskTimerError)
 
     func map<U>(_ transform: (T) throws -> U) rethrows -> Result<U> {
         switch self {
@@ -23,7 +23,7 @@ enum Result<T> {
         do {
             return try self.map(transform)
         } catch let error {
-            return .failure(error)
+            return .failure(.lift(error))
         }
     }
 }

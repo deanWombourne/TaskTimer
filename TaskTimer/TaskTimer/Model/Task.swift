@@ -12,8 +12,4 @@ import CoreStore
 
 struct Task {
     let name: String
-
-    init(entity: TaskEntity) {
-        self.name = entity.name
-    }
 }

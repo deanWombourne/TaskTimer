@@ -11,17 +11,14 @@ import Foundation
 import CoreStore
 
 
-enum TaskTimerError: Error {
-    case failedToFetch
-}
-
-
 struct Client {
     let name: String
 
     var projects: [Project] {
-        let entities = CoreStore.fetchAll(From(ProjectEntity.self), []) ?? []
+        guard let projects = self.entity?.projects?.allObjects as? [ProjectEntity] else {
+            return []
+        }
 
-        return entities.map { Project(entity: $0) }
+        return projects.map { Project(entity: $0) }
     }
 }

@@ -24,3 +24,21 @@ extension Client: EntityMappable {
         return Client(name: entity.name)
     }
 }
+
+
+extension Project: EntityMappable {
+    typealias EntityType = ProjectEntity
+
+    static func from(entity: ProjectEntity) -> Project {
+        return Project(name: entity.name)
+    }
+}
+
+
+extension Task: EntityMappable {
+    typealias EntityType = TaskEntity
+
+    static func from(entity: TaskEntity) -> Task {
+        return Task(name: entity.name)
+    }
+}
