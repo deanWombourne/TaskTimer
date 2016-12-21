@@ -11,7 +11,7 @@ import Foundation
 import CoreStore
 
 
-enum TaskTimerError: Error {
+enum TaskTimerError: Error, Liftable {
     case failedToFetch
     case underlying(Error)
 
