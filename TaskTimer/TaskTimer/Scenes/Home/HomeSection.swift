@@ -28,21 +28,27 @@ enum Section {
             cell.textLabel?.text = "You're not doing anything at the moment"
             return cell
 
-        case .active(let tasks):
+        case .active(let tasks) where indexPath.row < tasks.count:
+            let task = tasks[indexPath.row]
             let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+            cell.textLabel?.text = task.name
 
             return cell
-
 
         case .recent(let tasks) where tasks.count == 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: "MessageCell", for: indexPath)
             cell.textLabel?.text = "No recent tasks found"
             return cell
 
-        case .recent(let tasks):
+        case .recent(let tasks) where indexPath.row < tasks.count:
+            let task = tasks[indexPath.row]
             let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+            cell.textLabel?.text = task.name
 
             return cell
+
+        default:
+            return tableView.dequeueReusableCell(withIdentifier: "Error") ?? UITableViewCell(style: .default, reuseIdentifier: "Error")
         }
     }
 

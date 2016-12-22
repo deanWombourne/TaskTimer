@@ -14,7 +14,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
-        TaskTimer.initialize()
+
+        if self.isUnderTest {
+
+            let controller = UIViewController()
+            controller.view.backgroundColor = .green
+
+            self.window = UIWindow()
+            self.window?.rootViewController = controller
+
+            self.window?.makeKeyAndVisible()
+
+            return true
+        }
+
+        TaskTimerModel.initialize()
 
         return true
     }
@@ -45,7 +59,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
 }
 
+
+extension AppDelegate {
+
+    var isUnderTest: Bool {
+        return ProcessInfo.processInfo.environment["XCTestConfigurationFilePath"] != nil
+    }
+}

@@ -11,11 +11,19 @@
     </entity>
     <entity name="TaskEntity" representedClassName="TaskEntity" syncable="YES" codeGenerationType="class">
         <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="updatedAt" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <relationship name="project" maxCount="1" deletionRule="Nullify" destinationEntity="ProjectEntity" inverseName="tasks" inverseEntity="ProjectEntity" syncable="YES"/>
+        <relationship name="timeSlices" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TimeSliceEntity" inverseName="task" inverseEntity="TimeSliceEntity" syncable="YES"/>
+    </entity>
+    <entity name="TimeSliceEntity" representedClassName="TimeSliceEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="end" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="start" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="task" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TaskEntity" inverseName="timeSlices" inverseEntity="TaskEntity" syncable="YES"/>
     </entity>
     <elements>
         <element name="ClientEntity" positionX="-63" positionY="-18" width="128" height="75"/>
         <element name="ProjectEntity" positionX="106" positionY="-19" width="128" height="90"/>
-        <element name="TaskEntity" positionX="261" positionY="-18" width="128" height="75"/>
+        <element name="TaskEntity" positionX="261" positionY="-18" width="128" height="103"/>
+        <element name="TimeSliceEntity" positionX="279" positionY="126" width="128" height="90"/>
     </elements>
 </model>

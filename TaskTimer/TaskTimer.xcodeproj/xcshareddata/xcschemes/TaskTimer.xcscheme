@@ -20,6 +20,20 @@
                ReferencedContainer = "container:TaskTimer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A059DA081DEF81F6002C0090"
+               BuildableName = "TaskTimerTests.xctest"
+               BlueprintName = "TaskTimerTests"
+               ReferencedContainer = "container:TaskTimer.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction

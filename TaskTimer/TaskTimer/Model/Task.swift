@@ -10,6 +10,30 @@ import Foundation
 
 import CoreStore
 
+
 struct Task {
     let name: String
+}
+
+
+struct TimeSlice {
+    let start: Date
+    let end: Date?
+
+    var duration: TimeInterval {
+        return -self.start.timeIntervalSince(self.end ?? Date())
+    }
+}
+
+
+extension Task {
+
+    static func allActive() -> [Task] {
+        return self.all( Where("ANY timeSlices.end = NULL") )
+    }
+
+    static func allRecent() -> [Task] {
+        let cutoff = Date().addingTimeInterval(1.day)
+        return self.all( Where("updatedAt < %@", cutoff), OrderBy(.descending("updatedAt")) )
+    }
 }

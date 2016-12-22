@@ -15,9 +15,7 @@ protocol EntityMappable {
 
     associatedtype EntityType: NSManagedObject
 
-    static func all() -> [Self]
-
-    static func all(_ fetchClauses: [FetchClause]) -> [Self]
+    static func all(_ fetchClauses: FetchClause ...) -> [Self]
 
     static func from(entity: EntityType) -> Self
 
@@ -31,11 +29,7 @@ extension EntityMappable {
         return CoreStore.fetchOne(From(EntityType.self), [])
     }
 
-    static func all() -> [Self] {
-        return self.all([])
-    }
-
-    static func all(_ fetchClauses: [FetchClause]) -> [Self] {
+    static func all(_ fetchClauses: FetchClause ...) -> [Self] {
         let entities = CoreStore.fetchAll(From(EntityType.self), fetchClauses) ?? []
 
         return entities.map { self.from(entity: $0) }

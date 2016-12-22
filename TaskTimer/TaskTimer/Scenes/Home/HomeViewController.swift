@@ -24,15 +24,14 @@ final class HomeViewController: UIViewController {
         super.viewDidLoad()
 
         self.refreshSections()
+
+        self.navigationItem.title = "Home"
     }
 
     private func refreshSections() {
         self.sections = [
-            // Get the current active tasks
-            .active(tasks: []),
-
-            // Get the recent tasks
-            .recent(tasks: [])
+            .active(tasks: Task.allActive()),
+            .recent(tasks: Task.allRecent())
         ]
     }
 }

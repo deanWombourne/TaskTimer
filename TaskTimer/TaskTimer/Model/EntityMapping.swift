@@ -42,3 +42,13 @@ extension Task: EntityMappable {
         return Task(name: entity.name!)
     }
 }
+
+
+extension TimeSlice: EntityMappable {
+    typealias EntityType = TimeSliceEntity
+
+    static func from(entity: TimeSliceEntity) -> TimeSlice {
+        return TimeSlice(start: entity.start! as Date,
+                         end: entity.end as? Date)
+    }
+}
