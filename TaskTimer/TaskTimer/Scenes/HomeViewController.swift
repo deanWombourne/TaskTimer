@@ -10,14 +10,46 @@ import Foundation
 import UIKit
 
 
-private enum Section {
+fileprivate enum Section {
     case active(tasks: [Task])
     case recent(tasks: [Task])
 
     var count: Int {
         switch self {
-        case .active(let tasks): return tasks.count
-        case .recent(let tasks): return tasks.count
+        case .active(let tasks): return max(tasks.count, 1)
+        case .recent(let tasks): return max(tasks.count, 1)
+        }
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        switch self {
+        case .active(let tasks) where tasks.count == 0:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "MessageCell", for: indexPath)
+            cell.textLabel?.text = "You're not doing anything at the moment"
+            return cell
+
+        case .active(let tasks):
+            let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+
+            return cell
+
+
+        case .recent(let tasks) where tasks.count == 0:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "MessageCell", for: indexPath)
+            cell.textLabel?.text = "No recent tasks found"
+            return cell
+
+        case .recent(let tasks):
+            let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+
+            return cell
+        }
+    }
+
+    var title: String {
+        switch self {
+        case .active: return "Active"
+        case .recent: return "Recent"
         }
     }
 }
@@ -25,8 +57,29 @@ private enum Section {
 
 final class HomeViewController: UIViewController {
 
-    fileprivate var sections: [Section] = []
+    @IBOutlet fileprivate var tableView: UITableView?
 
+    fileprivate var sections: [Section] = [] {
+        didSet {
+            self.tableView?.reloadData()
+        }
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        self.refreshSections()
+    }
+
+    private func refreshSections() {
+        self.sections = [
+            // Get the current active tasks
+            .active(tasks: []),
+
+            // Get the recent tasks
+            .recent(tasks: [])
+        ]
+    }
 }
 
 
@@ -41,13 +94,15 @@ extension HomeViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        return self.sections[indexPath.section].tableView(tableView, cellForRowAt: indexPath)
+    }
 
-        return cell
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return self.sections[section].title
     }
 }
 
 
 extension HomeViewController: UITableViewDelegate {
-
+    
 }
