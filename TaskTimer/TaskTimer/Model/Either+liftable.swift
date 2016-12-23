@@ -9,12 +9,12 @@
 import Foundation
 
 
-protocol Liftable {
+protocol Liftable: Error {
     static func lift(_ error: Error) -> Self
 }
 
 
-extension Either where LeftType: Error, LeftType: Liftable {
+extension Either where LeftType: Liftable {
 
     func flatMap<U>(_ transform: (RightType) throws -> U) rethrows -> Either<LeftType, U> {
         do {
