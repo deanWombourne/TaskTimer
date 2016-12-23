@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home View Controller-->
+        <!--Home-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="HomeViewController" customModule="TaskTimer" customModuleProvider="target" sceneMemberID="viewController">
@@ -29,11 +29,11 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bm3-sJ-Lq2" id="NU2-sV-A0M">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fXp-ll-ROE">
-                                                    <rect key="frame" x="15" y="0.0" width="345" height="43"/>
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -46,11 +46,11 @@
                                         <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nPa-AD-FOI" id="fpy-N9-d44">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Some message goes here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nse-co-YaR">
-                                                    <rect key="frame" x="15" y="0.0" width="345" height="43"/>
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -74,7 +74,13 @@
                             <constraint firstAttribute="trailing" secondItem="iFL-wA-8MA" secondAttribute="trailing" id="m8F-R0-a7Z"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Vef-pw-X78"/>
+                    <navigationItem key="navigationItem" title="Home" id="Vef-pw-X78">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="dVV-dy-90g">
+                            <connections>
+                                <segue destination="ztO-no-luJ" kind="presentation" id="Ij8-iR-3iA"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="iFL-wA-8MA" id="Un9-et-EIb"/>
                     </connections>
@@ -82,6 +88,48 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1487" y="-394"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="4hs-0Q-ubC">
+            <objects>
+                <viewController id="Msh-QU-zIU" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3zT-m0-JNb"/>
+                        <viewControllerLayoutGuide type="bottom" id="1au-OG-FfD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="frJ-Vx-76V">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xHJ-Os-Oy4">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="zNq-KO-euz">
+                            <connections>
+                                <segue destination="ucx-gT-S9t" kind="unwind" unwindAction="unwindToHomeWithSegue:" id="Ymu-w5-EgM"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bL8-Yp-AqO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="ucx-gT-S9t" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3098" y="-1122"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="sGn-SL-4Yx">
+            <objects>
+                <navigationController id="ztO-no-luJ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Htl-xb-hvD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Msh-QU-zIU" kind="relationship" relationship="rootViewController" id="Inu-eg-Yu1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RFt-u9-KTk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2279" y="-1122"/>
         </scene>
         <!--Home-->
         <scene sceneID="xVp-UI-dMg">

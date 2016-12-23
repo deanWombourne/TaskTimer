@@ -189,6 +189,7 @@
 		A0AE56551E0BF892005220AE /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				A0EAC0031E0D3A9E0010B460 /* AddTask */,
 				A0AE565A1E0C278A005220AE /* Home */,
 				A0AE56571E0BF892005220AE /* SettingsViewController.swift */,
 			);
@@ -225,6 +226,13 @@
 				A0EABFF61E0D35830010B460 /* ProjectEntity+CoreDataProperties.swift */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		A0EAC0031E0D3A9E0010B460 /* AddTask */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AddTask;
 			sourceTree = "<group>";
 		};
 		EBBE04CBDF2EF361A4A05A06 /* Pods */ = {
@@ -291,7 +299,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = deanWombourne;
 				TargetAttributes = {
 					A059D9F21DEF81F5002C0090 = {
@@ -606,6 +614,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 18B276A87D18357465859C05 /* Pods-TaskTimer.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = T3F53DDRSR;
 				INFOPLIST_FILE = TaskTimer/Info.plist;
@@ -620,6 +629,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 379033CA58FEDAC75AFAE559 /* Pods-TaskTimer.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = T3F53DDRSR;
 				INFOPLIST_FILE = TaskTimer/Info.plist;
