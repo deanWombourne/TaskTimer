@@ -9,15 +9,50 @@
 import Foundation
 
 
-extension Int {
+protocol TimeConvertable {
+    var seconds: TimeInterval { get }
 
-    var second: TimeInterval { return TimeInterval(self) }
+    var minutes: TimeInterval { get }
 
-    var minute: TimeInterval { return self.second * 60 }
+    var hours: TimeInterval { get }
 
-    var hour: TimeInterval { return self.minute * 60 }
+    var days: TimeInterval { get }
 
-    var day: TimeInterval { return self.hour * 24 }
+    var weeks: TimeInterval { get }
+}
 
-    var week: TimeInterval { return self.day * 7 }
+
+extension TimeConvertable {
+    var second: TimeInterval { return self.seconds }
+    var minute: TimeInterval { return self.minutes }
+    var hour: TimeInterval { return self.hours }
+    var day: TimeInterval { return self.days }
+    var week: TimeInterval { return self.weeks }
+}
+
+
+extension Int: TimeConvertable {
+
+    var seconds: TimeInterval { return TimeInterval(self) }
+
+    var minutes: TimeInterval { return self.second * 60 }
+
+    var hours: TimeInterval { return self.minute * 60 }
+
+    var days: TimeInterval { return self.hour * 24 }
+
+    var weeks: TimeInterval { return self.day * 7 }
+}
+
+
+extension Double: TimeConvertable {
+    var seconds: TimeInterval { return self }
+
+    var minutes: TimeInterval { return self.second * 60 }
+
+    var hours: TimeInterval { return self.minute * 60 }
+
+    var days: TimeInterval { return self.hour * 24 }
+
+    var weeks: TimeInterval { return self.day * 7 }
 }
