@@ -14,7 +14,7 @@ final class HomeViewController: UIViewController {
 
     @IBOutlet fileprivate var tableView: UITableView?
 
-    fileprivate var sections: [Section] = [] {
+    fileprivate var sections: [HomeSection] = [] {
         didSet {
             self.tableView?.reloadData()
         }
@@ -24,8 +24,6 @@ final class HomeViewController: UIViewController {
         super.viewDidLoad()
 
         self.refreshSections()
-
-        self.navigationItem.title = "Home"
     }
 
     private func refreshSections() {

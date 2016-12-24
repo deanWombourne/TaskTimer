@@ -1,10 +1,12 @@
 PODS:
   - Alamofire (4.2.0)
   - CoreStore (3.0.0)
+  - Eureka (2.0.0-beta.1)
 
 DEPENDENCIES:
   - Alamofire (~> 4.2)
   - CoreStore (from `https://github.com/JohnEstropia/CoreStore.git`, branch `swift3_develop`)
+  - Eureka (= 2.0.0-beta.1)
 
 EXTERNAL SOURCES:
   CoreStore:
@@ -19,7 +21,8 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
   CoreStore: 4e61fc46e34e20887254afa7b083c989322e5fea
+  Eureka: d014adf16406745e1a78d5790ea37ed130a0a8e5
 
-PODFILE CHECKSUM: f50c8ee7c4870a5785b5a9660f0b1437e3209bfc
+PODFILE CHECKSUM: 5d1d7272da821fca231056c559ace998205c4ccc
 
 COCOAPODS: 1.1.1

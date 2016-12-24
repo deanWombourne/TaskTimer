@@ -89,10 +89,10 @@
             </objects>
             <point key="canvasLocation" x="1487" y="-394"/>
         </scene>
-        <!--View Controller-->
+        <!--New Task-->
         <scene sceneID="4hs-0Q-ubC">
             <objects>
-                <viewController id="Msh-QU-zIU" sceneMemberID="viewController">
+                <viewController id="Msh-QU-zIU" customClass="AddTaskViewController" customModule="TaskTimer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3zT-m0-JNb"/>
                         <viewControllerLayoutGuide type="bottom" id="1au-OG-FfD"/>
@@ -102,7 +102,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="xHJ-Os-Oy4">
+                    <navigationItem key="navigationItem" title="New Task" id="xHJ-Os-Oy4">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="zNq-KO-euz">
                             <connections>
                                 <segue destination="ucx-gT-S9t" kind="unwind" unwindAction="unwindToHomeWithSegue:" id="Ymu-w5-EgM"/>
@@ -113,7 +113,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bL8-Yp-AqO" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="ucx-gT-S9t" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3098" y="-1122"/>
+            <point key="canvasLocation" x="3096.8000000000002" y="-1122.1889055472266"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="sGn-SL-4Yx">

@@ -36,6 +36,7 @@
 		A0EABFFE1E0D35830010B460 /* ProjectEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EABFF61E0D35830010B460 /* ProjectEntity+CoreDataProperties.swift */; };
 		A0EAC0001E0D37700010B460 /* Either.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EABFFF1E0D37700010B460 /* Either.swift */; };
 		A0EAC0021E0D37920010B460 /* Either+liftable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EAC0011E0D37920010B460 /* Either+liftable.swift */; };
+		A0EAC0051E0D3EA60010B460 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EAC0041E0D3EA60010B460 /* AddTaskViewController.swift */; };
 		FBD4AC97B19FDA037A4569AE /* Pods_TaskTimerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 546D744DFA1D6F34D5E29752 /* Pods_TaskTimerTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +89,7 @@
 		A0EABFF61E0D35830010B460 /* ProjectEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ProjectEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		A0EABFFF1E0D37700010B460 /* Either.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Either.swift; sourceTree = "<group>"; };
 		A0EAC0011E0D37920010B460 /* Either+liftable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Either+liftable.swift"; sourceTree = "<group>"; };
+		A0EAC0041E0D3EA60010B460 /* AddTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
 		B62FB18A920274577A69396D /* Pods-TaskTimer-TaskTimerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskTimer-TaskTimerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TaskTimer-TaskTimerTests/Pods-TaskTimer-TaskTimerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C6ED9F54675E6E5313F6FAE6 /* Pods-TaskTimerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskTimerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TaskTimerTests/Pods-TaskTimerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F5107EE72D6805007B0DBAE0 /* Pods-TaskTimerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskTimerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TaskTimerTests/Pods-TaskTimerTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 		A0EAC0031E0D3A9E0010B460 /* AddTask */ = {
 			isa = PBXGroup;
 			children = (
+				A0EAC0041E0D3EA60010B460 /* AddTaskViewController.swift */,
 			);
 			path = AddTask;
 			sourceTree = "<group>";
@@ -453,6 +456,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0AE56601E0C6CBF005220AE /* Int+time.swift in Sources */,
+				A0EAC0051E0D3EA60010B460 /* AddTaskViewController.swift in Sources */,
 				A0EAC0021E0D37920010B460 /* Either+liftable.swift in Sources */,
 				A0CE69341E09D714008C4B26 /* EntityMapping.swift in Sources */,
 				A059D9F71DEF81F6002C0090 /* AppDelegate.swift in Sources */,
