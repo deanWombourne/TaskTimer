@@ -17,18 +17,34 @@ final class AddTaskViewController: FormViewController {
         super.viewDidLoad()
 
         form = Section("Section1")
-            <<< TextRow(){ row in
-                row.title = "Text Row"
-                row.placeholder = "Enter text here"
+            <<< PickerInlineRow<String>() {
+                $0.title = "ActionSheetRow"
+                $0.options = ["One","Two","Three"]
+                $0.value = "Two"    // initially selected
             }
-            <<< PhoneRow(){
+            <<< TextRow {
+                $0.title = "Client"
+                $0.placeholder = "Choose a client"
+            }
+            <<< PhoneRow {
                 $0.title = "Phone Row"
                 $0.placeholder = "And numbers here"
             }
-            +++ Section("Section2")
-            <<< DateRow(){
-                $0.title = "Date Row"
+            +++ Section("Timings")
+            <<< CountDownRow {
+                $0.title = "Time taken"
                 $0.value = Date(timeIntervalSinceReferenceDate: 0)
+        }
+
+        form +++ SelectableSection<ListCheckRow<String>>("Where do you live", selectionType: .singleSelection(enableDeselection: true))
+
+        let continents = ["Africa", "Antarctica", "Asia", "Australia", "Europe", "North America", "South America"]
+        for option in continents {
+            form.last! <<< ListCheckRow<String>(option){ listRow in
+                listRow.title = option
+                listRow.selectableValue = option
+                listRow.value = nil
+            }
         }
     }
 }
