@@ -13,6 +13,8 @@ protocol NameCreatable {
 
     var name: String { get }
 
+    static func create(withName name: String) throws -> Self
+
 }
 
 
@@ -24,6 +26,13 @@ enum AddTaskEntry<T: NameCreatable> {
         switch self {
         case .create(let name): return name
         case .existing(let value): return value.name
+        }
+    }
+
+    func execute() throws -> T {
+        switch self {
+        case .existing(let value): return value
+        case .create(let name): return try T.create(withName: name)
         }
     }
 }
@@ -48,5 +57,18 @@ extension AddTaskEntry: CustomStringConvertible {
 
 
 
-extension Client: NameCreatable { }
-extension Project: NameCreatable { }
+extension Client: NameCreatable {
+
+    static func create(withName name: String) throws -> Client {
+        return Client(name: name)
+    }
+
+}
+
+
+extension Project: NameCreatable {
+
+    static func create(withName name: String) throws -> Project {
+        return Project(name: name)
+    }
+}

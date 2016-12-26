@@ -51,21 +51,31 @@ final class AddTaskViewController: FormViewController {
                 $0.onChange { self.project = $0.value.map { .create(name: $0) } }
             }
             +++ Section("Task")
+            <<< TextRow("taskDescription") {
+                $0.placeholder = "Task description"
+            }
             <<< CountDownRow {
                 $0.title = "Time taken so far"
                 $0.value = Date(timeIntervalSinceReferenceDate: 0)
-            }
-            <<< TextRow("taskDescription") {
-                $0.placeholder = "Task description"
             }
             <<< SwitchRow {
                 $0.title = "Aready finished?"
                 $0.value = false
             }
             +++ Section()
-            <<< ButtonRow() {
+            <<< DelegatingButtonRow() {
                 $0.title = "Create"
                 $0.disabled = .function(["client", "newClient", "project", "newProject", "taskDescription"], { !self.validate(form: $0) })
+                $0.onSelection { _ in
+                    do {
+                        let client = try self.client!.execute()
+                        let project = try self.project!.execute()
+                        print(client)
+                        print(project)
+                    } catch let e {
+                        print("Failed to create task: \(e)")
+                    }
+                }
         }
     }
 
