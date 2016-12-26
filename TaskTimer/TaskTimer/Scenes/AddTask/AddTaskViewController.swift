@@ -20,6 +20,8 @@ fileprivate struct ClientRow: Equatable, CustomStringConvertible {
     }
 
     var description: String { return self.name }
+
+    static let placeholder: ClientRow = ClientRow(id: UUID().uuidString, name: "Choose a client")
 }
 
 
@@ -33,11 +35,7 @@ final class AddTaskViewController: FormViewController {
         form = Section("Section1")
             <<< PushRow<ClientRow> {
                 $0.options = clients
-                $0.value = ClientRow(id: "1", name: "Choose a client")
-            }
-            <<< TextRow {
-                $0.title = "Client"
-                $0.placeholder = "Choose a client"
+                $0.value = .placeholder
             }
             <<< PhoneRow {
                 $0.title = "Phone Row"
