@@ -11,16 +11,29 @@ import UIKit
 import Eureka
 
 
+fileprivate struct ClientRow: Equatable, CustomStringConvertible {
+    let id: String
+    let name: String
+
+    static func == (lhs: ClientRow, rhs: ClientRow) -> Bool {
+        return lhs.name == rhs.name && lhs.id == rhs.id
+    }
+
+    var description: String { return self.name }
+}
+
+
 final class AddTaskViewController: FormViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let clients = Client.all().map { ClientRow(id: "1", name: $0.name) }
+
         form = Section("Section1")
-            <<< PickerInlineRow<String>() {
-                $0.title = "ActionSheetRow"
-                $0.options = ["One","Two","Three"]
-                $0.value = "Two"    // initially selected
+            <<< PushRow<ClientRow> {
+                $0.options = clients
+                $0.value = ClientRow(id: "1", name: "Choose a client")
             }
             <<< TextRow {
                 $0.title = "Client"
@@ -34,17 +47,6 @@ final class AddTaskViewController: FormViewController {
             <<< CountDownRow {
                 $0.title = "Time taken"
                 $0.value = Date(timeIntervalSinceReferenceDate: 0)
-        }
-
-        form +++ SelectableSection<ListCheckRow<String>>("Where do you live", selectionType: .singleSelection(enableDeselection: true))
-
-        let continents = ["Africa", "Antarctica", "Asia", "Australia", "Europe", "North America", "South America"]
-        for option in continents {
-            form.last! <<< ListCheckRow<String>(option){ listRow in
-                listRow.title = option
-                listRow.selectableValue = option
-                listRow.value = nil
-            }
         }
     }
 }
