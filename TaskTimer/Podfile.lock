@@ -18,7 +18,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   CoreStore:
-    :commit: e330291e1bde1a9eec2bf4ffc30abe9d221cbe91
+    :commit: 518bb134f9e38fbb6b85427b281240d11601dfb5
     :git: https://github.com/JohnEstropia/CoreStore.git
   Eureka:
     :commit: 9f8af8af3d71a2b4428e1cde7105af1a5b4656b4

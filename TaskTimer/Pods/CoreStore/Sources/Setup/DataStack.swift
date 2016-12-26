@@ -32,7 +32,7 @@ import CoreData
 /**
  The `DataStack` encapsulates the data model for the Core Data stack. Each `DataStack` can have multiple data stores, usually specified as a "Configuration" in the model editor. Behind the scenes, the DataStack manages its own `NSPersistentStoreCoordinator`, a root `NSManagedObjectContext` for disk saves, and a shared `NSManagedObjectContext` designed as a read-only model interface for `NSManagedObjects`.
  */
-public final class DataStack {
+public final class DataStack: Equatable {
     
     /**
      Initializes a `DataStack` from the model with the specified `modelName` in the specified `bundle`.
@@ -265,10 +265,11 @@ public final class DataStack {
                         metadata: metadata,
                         soureModelHint: self.model[metadata]
                     )
+                    let finalStoreOptions = storage.dictionary(forOptions: storage.localStorageOptions)
                     _ = try self.createPersistentStoreFromStorage(
                         storage,
                         finalURL: fileURL,
-                        finalStoreOptions: storeOptions
+                        finalStoreOptions: finalStoreOptions
                     )
                     return storage
                 }
@@ -340,11 +341,6 @@ public final class DataStack {
                 let storeOptions = storage.dictionary(forOptions: cloudStorageOptions)
                 do {
                     
-                    try FileManager.default.createDirectory(
-                        at: cacheFileURL.deletingLastPathComponent(),
-                        withIntermediateDirectories: true,
-                        attributes: nil
-                    )
                     _ = try self.createPersistentStoreFromStorage(
                         storage,
                         finalURL: cacheFileURL,
@@ -354,6 +350,7 @@ public final class DataStack {
                 }
                 catch let error as NSError where storage.cloudStorageOptions.contains(.recreateLocalStoreOnModelMismatch) && error.isCoreDataMigrationError {
                     
+                    let finalStoreOptions = storage.dictionary(forOptions: storage.cloudStorageOptions)
                     let metadata = try NSPersistentStoreCoordinator.metadataForPersistentStore(
                         ofType: type(of: storage).storeType,
                         at: cacheFileURL,
@@ -363,7 +360,7 @@ public final class DataStack {
                     _ = try self.createPersistentStoreFromStorage(
                         storage,
                         finalURL: cacheFileURL,
-                        finalStoreOptions: storeOptions
+                        finalStoreOptions: finalStoreOptions
                     )
                     return storage
                 }
@@ -378,6 +375,14 @@ public final class DataStack {
                 throw storeError
             }
         }
+    }
+    
+    
+    // MARK: Equatable
+    
+    public static func == (lhs: DataStack, rhs: DataStack) -> Bool {
+        
+        return lhs === rhs
     }
     
     
@@ -527,13 +532,3 @@ public final class DataStack {
         return self.objectID(forURIRepresentation: url)
     }
 }
-
-
-// MARK: - DataStack: Equatable
-
-public func == (lhs: DataStack, rhs: DataStack) -> Bool {
-    
-    return lhs === rhs
-}
-
-extension DataStack: Equatable {}
