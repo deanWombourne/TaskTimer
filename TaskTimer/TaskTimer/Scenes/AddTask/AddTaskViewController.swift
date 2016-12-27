@@ -48,7 +48,9 @@ final class AddTaskViewController: FormViewController {
             <<< TextRow("newProject") {
                 $0.placeholder = "New project name"
                 $0.hidden = .predicate(NSPredicate(format: "$newProjectSwitch == true"))
-                $0.onChange { self.project = $0.value.map { .create(name: $0) } }
+                $0.onChange {
+                    self.project = $0.value.map { .create(name: $0) }
+                }
             }
             +++ Section("Task")
             <<< TextRow("taskDescription") {
@@ -68,8 +70,10 @@ final class AddTaskViewController: FormViewController {
                 $0.disabled = .function(["client", "newClient", "project", "newProject", "taskDescription"], { !self.validate(form: $0) })
                 $0.onSelection { _ in
                     do {
-                        let client = try self.client!.execute()
-                        let project = try self.project!.execute()
+                        let client = try self.client!.execute(creator: Client.create())
+
+                        let project = try self.project!.execute(creator: client.createProject())
+
                         print(client)
                         print(project)
                     } catch let e {

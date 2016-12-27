@@ -12,13 +12,12 @@ import Foundation
 protocol NameCreatable {
 
     var name: String { get }
-
-    static func create(withName name: String) throws -> Self
-
 }
 
 
 enum AddTaskEntry<T: NameCreatable> {
+    typealias CreateFunction = (_ name: String) throws -> T
+
     case existing(T)
     case create(name: String)
 
@@ -29,10 +28,10 @@ enum AddTaskEntry<T: NameCreatable> {
         }
     }
 
-    func execute() throws -> T {
+    func execute(creator: CreateFunction) rethrows -> T {
         switch self {
         case .existing(let value): return value
-        case .create(let name): return try T.create(withName: name)
+        case .create(let name): return try creator(name)
         }
     }
 }
@@ -59,16 +58,18 @@ extension AddTaskEntry: CustomStringConvertible {
 
 extension Client: NameCreatable {
 
-    static func create(withName name: String) throws -> Client {
-        return Client(name: name)
+    static func create() -> AddTaskEntry<Client>.CreateFunction {
+        return { name in
+            Client(name: name)
+        }
     }
 
-}
-
-
-extension Project: NameCreatable {
-
-    static func create(withName name: String) throws -> Project {
-        return Project(name: name)
+    func createProject() -> AddTaskEntry<Project>.CreateFunction {
+        return { name in
+            let project = Project(name: name)
+            return project
+        }
     }
 }
+
+extension Project: NameCreatable { }
