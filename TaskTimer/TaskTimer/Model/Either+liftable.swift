@@ -20,7 +20,7 @@ extension Either where LeftType: Liftable {
         do {
             return try self.map(transform)
         } catch let error {
-            return .left(.lift(error))
+            return .failure(.lift(error))
         }
     }
 }

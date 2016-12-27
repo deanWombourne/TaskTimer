@@ -21,4 +21,31 @@ struct Client {
 
         return projects.map { Project(entity: $0) }
     }
+
+    static func createClient(withName name: String) -> Command<Client> {
+        return Command { completion in
+
+            CoreStore.beginAsynchronous { transaction in
+                let client = transaction.create(Into(ClientEntity.self))
+
+                client.name = name
+
+                transaction.commit { result in
+                    switch result {
+
+                    case .failure(let error):
+                        completion(.failure(.lift(error)))
+
+                    case .success:
+                        guard let entity = CoreStore.fetchExisting(client) else {
+                            completion(.failure(.unknown(message: "Creation failed")))
+                            return
+                        }
+
+                        completion(.success(.from(entity: entity)))
+                    }
+                }
+            }
+        }
+    }
 }

@@ -10,13 +10,13 @@ import Foundation
 
 
 enum Either<LeftType, RightType> {
-    case left(LeftType)
-    case right(RightType)
+    case failure(LeftType)
+    case success(RightType)
 
     var isLeft: Bool {
         switch self {
-        case .left: return true
-        case .right: return false
+        case .failure: return true
+        case .success: return false
         }
     }
 
@@ -26,29 +26,29 @@ enum Either<LeftType, RightType> {
 
     func swap() -> Either<RightType, LeftType> {
         switch self {
-        case .left(let value): return .right(value)
-        case .right(let value): return .left(value)
+        case .failure(let value): return .success(value)
+        case .success(let value): return .failure(value)
         }
     }
 
     func fold<U>(fl: (LeftType) throws -> U, fr: (RightType) throws -> U) rethrows -> U {
         switch self {
-        case .left(let value): return try fl(value)
-        case .right(let value): return try fr(value)
+        case .failure(let value): return try fl(value)
+        case .success(let value): return try fr(value)
         }
     }
 
     func mapRight<U>(_ transform: (RightType) throws -> U) rethrows -> Either<LeftType, U> {
         switch self {
-        case .left(let value): return .left(value)
-        case .right(let value): return .right(try transform(value))
+        case .failure(let value): return .failure(value)
+        case .success(let value): return .success(try transform(value))
         }
     }
 
     func mapLeft<U>(_ transform: (LeftType) throws -> U) rethrows -> Either<U, RightType> {
         switch self {
-        case .left(let value): return .left(try transform(value))
-        case .right(let value): return .right(value)
+        case .failure(let value): return .failure(try transform(value))
+        case .success(let value): return .success(value)
         }
     }
 

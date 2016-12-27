@@ -93,9 +93,9 @@ final class AddTaskViewController: FormViewController {
 
     private func createTask() {
         do {
-            let client = try self.client!.execute(creator: Client.create())
+            let client = self.client!.command(creator: Client.create())
 
-            let project = try self.project!.execute(creator: client.createProject())
+            let project = try self.project!.command(creator: client.createProject())
 
             print(client)
             print(project)

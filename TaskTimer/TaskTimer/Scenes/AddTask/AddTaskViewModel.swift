@@ -16,7 +16,7 @@ protocol Nameable {
 
 
 enum AddTaskEntry<T: Nameable> {
-    typealias CreateFunction = (_ name: String) throws -> T
+    typealias CreateFunction = (_ name: String) -> Command<T>
 
     case existing(T)
     case create(name: String)
@@ -28,10 +28,14 @@ enum AddTaskEntry<T: Nameable> {
         }
     }
 
-    func execute(creator: CreateFunction) rethrows -> T {
+    func command(creator: CreateFunction) -> Command<T> {
         switch self {
-        case .existing(let value): return value
-        case .create(let name): return try creator(name)
+
+        case .existing(let value):
+            return .succeed(with: value)
+
+        case .create(let name):
+            return creator(name)
         }
     }
 }
@@ -54,22 +58,21 @@ extension AddTaskEntry: CustomStringConvertible {
 }
 
 
-
-
 extension Client: Nameable {
 
     static func create() -> AddTaskEntry<Client>.CreateFunction {
         return { name in
-            Client(name: name)
+            return Client.createClient(withName: name)
         }
     }
 
     func createProject() -> AddTaskEntry<Project>.CreateFunction {
         return { name in
-            let project = Project(name: name)
-            return project
+            return try self.createProject(withName: name)
         }
     }
 }
 
-extension Project: Nameable { }
+
+extension Project: Nameable {
+}

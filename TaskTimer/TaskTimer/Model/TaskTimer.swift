@@ -12,6 +12,7 @@ import CoreStore
 
 
 enum TaskTimerError: Error, Liftable {
+    case unknown(message: String)
     case failedToFetch
     case underlying(Error)
 
