@@ -9,13 +9,13 @@
 import Foundation
 
 
-protocol NameCreatable {
+protocol Nameable {
 
     var name: String { get }
 }
 
 
-enum AddTaskEntry<T: NameCreatable> {
+enum AddTaskEntry<T: Nameable> {
     typealias CreateFunction = (_ name: String) throws -> T
 
     case existing(T)
@@ -56,7 +56,7 @@ extension AddTaskEntry: CustomStringConvertible {
 
 
 
-extension Client: NameCreatable {
+extension Client: Nameable {
 
     static func create() -> AddTaskEntry<Client>.CreateFunction {
         return { name in
@@ -72,4 +72,4 @@ extension Client: NameCreatable {
     }
 }
 
-extension Project: NameCreatable { }
+extension Project: Nameable { }
