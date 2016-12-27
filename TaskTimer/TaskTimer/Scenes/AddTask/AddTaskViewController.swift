@@ -68,18 +68,7 @@ final class AddTaskViewController: FormViewController {
             <<< DelegatingButtonRow() {
                 $0.title = "Create"
                 $0.disabled = .function(["client", "newClient", "project", "newProject", "taskDescription"], { !self.validate(form: $0) })
-                $0.onSelection { _ in
-                    do {
-                        let client = try self.client!.execute(creator: Client.create())
-
-                        let project = try self.project!.execute(creator: client.createProject())
-
-                        print(client)
-                        print(project)
-                    } catch let e {
-                        print("Failed to create task: \(e)")
-                    }
-                }
+                $0.onSelection { _ in self.createTask() }
         }
     }
 
@@ -100,5 +89,18 @@ final class AddTaskViewController: FormViewController {
         }
 
         return true
+    }
+
+    private func createTask() {
+        do {
+            let client = try self.client!.execute(creator: Client.create())
+
+            let project = try self.project!.execute(creator: client.createProject())
+
+            print(client)
+            print(project)
+        } catch let e {
+            print("Failed to create task: \(e)")
+        }
     }
 }
