@@ -21,7 +21,7 @@ extension Client: EntityMappable {
     typealias EntityType = ClientEntity
 
     static func from(entity: ClientEntity) -> Client {
-        return Client(name: entity.name!)
+        return Client(id: entity.objectID, name: entity.name!)
     }
 }
 

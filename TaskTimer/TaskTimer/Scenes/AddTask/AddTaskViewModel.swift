@@ -65,10 +65,13 @@ extension Client: Nameable {
             return Client.createClient(withName: name)
         }
     }
+}
 
-    func createProject() -> AddTaskEntry<Project>.CreateFunction {
+extension Project {
+
+    static func createProject(client: Client) -> AddTaskEntry<Project>.CreateFunction {
         return { name in
-            return try self.createProject(withName: name)
+            return client.createProject(withName: name)
         }
     }
 }

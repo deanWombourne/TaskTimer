@@ -14,7 +14,9 @@ typealias Result<T> = Either<TaskTimerError, T>
 
 struct Command<T> {
 
-    let perform: (_ completion: @escaping (Result<T>) -> ()) -> ()
+    typealias CommandFunction<T> = (_ completion: @escaping (Result<T>) -> ()) -> ()
+
+    let perform: CommandFunction<T>
 }
 
 
@@ -63,6 +65,21 @@ extension Command {
 
                 case .success:
                     command.perform(completion)
+                }
+            }
+        }
+    }
+
+    func then<U>(_ function: @escaping (T) -> Command<U>) -> Command<U> {
+        return Command<U> { completion in
+            self.perform { result in
+                switch result {
+
+                case .failure(let error):
+                    completion(.failure(error))
+
+                case .success(let value):
+                    function(value).perform(completion)
                 }
             }
         }

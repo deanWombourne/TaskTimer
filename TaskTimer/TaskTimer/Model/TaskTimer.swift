@@ -13,8 +13,10 @@ import CoreStore
 
 enum TaskTimerError: Error, Liftable {
     case unknown(message: String)
-    case failedToFetch
     case underlying(Error)
+
+    case failedToFetch
+    case failedToFindEntity(withIdentifier: NSManagedObjectID)
 
     static func lift(_ error: Error) -> TaskTimerError {
         return error as? TaskTimerError ?? .underlying(error)

@@ -12,6 +12,9 @@ import CoreStore
 
 
 struct Client {
+    typealias IDType = NSManagedObjectID
+
+    let id: IDType
     let name: String
 
     var projects: [Project] {
@@ -38,6 +41,39 @@ struct Client {
 
                     case .success:
                         guard let entity = CoreStore.fetchExisting(client) else {
+                            completion(.failure(.unknown(message: "Creation failed")))
+                            return
+                        }
+
+                        completion(.success(.from(entity: entity)))
+                    }
+                }
+            }
+        }
+    }
+
+    func createProject(withName name: String) -> Command<Project> {
+        return Command { completion in
+
+            CoreStore.beginAsynchronous { transaction in
+                guard let client = transaction.fetchExisting(self.id) as? ClientEntity else {
+                    completion(.failure(.failedToFindEntity(withIdentifier: self.id)))
+                    return
+                }
+
+                let project = transaction.create(Into(ProjectEntity.self))
+
+                project.client = client
+                project.name = name
+
+                transaction.commit { result in
+                    switch result {
+
+                    case .failure(let error):
+                        completion(.failure(.lift(error)))
+
+                    case .success:
+                        guard let entity = CoreStore.fetchExisting(project) else {
                             completion(.failure(.unknown(message: "Creation failed")))
                             return
                         }
