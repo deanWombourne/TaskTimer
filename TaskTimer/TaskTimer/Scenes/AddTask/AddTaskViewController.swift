@@ -26,7 +26,13 @@ final class AddTaskViewController: FormViewController {
                 $0.options = clients
                 $0.title = "Client"
                 $0.hidden = Condition(booleanLiteral: clients.count == 0)
-                $0.onChange { self.client = $0.value }
+                $0.onChange {
+                    self.client = $0.value
+                    if let projectRow = self.form.rowBy(tag: "project") as? PushRow<AddTaskEntry<Project>>,
+                        case .some(.existing(let client)) = self.client {
+                            projectRow.options = client.projects.map { AddTaskEntry.existing($0) }
+                    }
+                }
             }
             <<< TextRow("newClient") {
                 $0.placeholder = "New client name"
@@ -41,13 +47,13 @@ final class AddTaskViewController: FormViewController {
             <<< PushRow<AddTaskEntry<Project>>("project") {
                 $0.options = []
                 $0.title = "Choose existing project"
-                $0.disabled = .function(["client"]) { _ in return self.client != nil }
-                $0.hidden = .predicate(NSPredicate(format: "$newProjectSwitch == false"))
+                $0.disabled = .function(["client"]) { _ in return self.client == nil }
+                $0.hidden = .predicate(NSPredicate(format: "$newProjectSwitch == true"))
                 $0.onChange { self.project = $0.value }
             }
             <<< TextRow("newProject") {
                 $0.placeholder = "New project name"
-                $0.hidden = .predicate(NSPredicate(format: "$newProjectSwitch == true"))
+                $0.hidden = .predicate(NSPredicate(format: "$newProjectSwitch == false"))
                 $0.onChange {
                     self.project = $0.value.map { .create(name: $0) }
                 }
@@ -98,7 +104,13 @@ final class AddTaskViewController: FormViewController {
             return self.project!.command(creator: Project.createProject(client: client))
         }
 
-        print(client)
-        print(project)
+        project.perform { result in
+            switch result {
+            case .failure(let error):
+                print(error)
+            case .success(let project):
+                print(project)
+            }
+        }
     }
 }

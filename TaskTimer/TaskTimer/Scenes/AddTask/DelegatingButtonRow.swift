@@ -20,6 +20,10 @@ final class DelegatingButtonRow: _ButtonRowOf<String>, RowType {
     }
 
     open override func customDidSelect() {
+        guard !self.isDisabled else {
+            return
+        }
+
         self.onSelectionCallback?(self)
     }
 }
