@@ -170,11 +170,11 @@ final class AddTaskViewController: FormViewController {
             switch result {
             case .failure(let error):
                 print(error)
+
             case .success(let task):
                 print(task)
-                print(task.entity())
-                print(task.entity()?.project)
-                print(task.entity()?.project?.client)
+
+                self.dismiss(animated: true, completion: nil)
             }
         }
     }

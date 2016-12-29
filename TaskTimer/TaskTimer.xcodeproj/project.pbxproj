@@ -288,6 +288,7 @@
 				A059D9F11DEF81F5002C0090 /* Resources */,
 				6A9165D32D1A8A2E2F208B8C /* [CP] Embed Pods Frameworks */,
 				E84B54739BDDA0BECC3E7BBA /* [CP] Copy Pods Resources */,
+				A0EAC0141E158C150010B460 /* Fabric */,
 			);
 			buildRules = (
 			);
@@ -442,6 +443,20 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TaskTimer/Pods-TaskTimer-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		A0EAC0141E158C150010B460 /* Fabric */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Fabric;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" a0b6f269f1e47b8800508c66b03d8a50edee23b9 1f12912c45e056dbe7c4dc5e36e07740e9dd2316a9099fb5347252b796f97010";
 		};
 		B786AC394FEED0C884C2E5D2 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;

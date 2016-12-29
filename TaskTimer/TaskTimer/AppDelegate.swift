@@ -8,6 +8,9 @@
 
 import UIKit
 
+import Fabric
+import Crashlytics
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -27,6 +30,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
             return true
         }
+
+        Fabric.with([Crashlytics.self, Answers.self])
 
         TaskTimerModel.initialize()
 
