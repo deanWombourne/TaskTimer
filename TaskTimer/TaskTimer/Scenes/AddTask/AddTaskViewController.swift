@@ -13,8 +13,32 @@ import Eureka
 
 final class AddTaskViewController: FormViewController {
 
-    private var client: AddTaskEntry<Client>?
-    private var project: AddTaskEntry<Project>?
+    private var client: AddTaskEntry<Client>? {
+        return self.extractAddTaskEntry(switchTag: "newClientSwitch", existingTag: "client", newTag: "newClient")
+    }
+
+    private var project: AddTaskEntry<Project>? {
+        return self.extractAddTaskEntry(switchTag: "newProjectSwitch", existingTag: "project", newTag: "newProject")
+    }
+
+    private func extractAddTaskEntry<T>(switchTag: String, existingTag: String, newTag: String) -> AddTaskEntry<T>? {
+        guard
+            let newRow = self.form.rowBy(tag: switchTag) as? SwitchRow,
+            let newValue = newRow.value else {
+                return nil
+        }
+
+        switch newValue {
+
+        case false:
+            let row = self.form.rowBy(tag: existingTag) as? PushRow<AddTaskEntry<T>>
+            return row?.value
+
+        case true:
+            let row = self.form.rowBy(tag: newTag) as? TextRow
+            return row?.value.map { .create(name: $0) }
+        }
+    }
 
     private var taskDescription: String? {
         let cell = form.rowBy(tag: "taskDescription") as? TextRow
@@ -33,27 +57,30 @@ final class AddTaskViewController: FormViewController {
         super.viewDidLoad()
 
         let clients = Client.all().map { AddTaskEntry.existing($0) }
-        self.client = clients.first
 
         form = Section("Client")
             <<< SwitchRow("newClientSwitch") {
                 $0.title = "Add new client?"
                 $0.value = clients.count == 0
+                $0.onChange { _ in
+                    self.updateProjectRow()
+                }
             }
             <<< PushRow<AddTaskEntry<Client>>("client") {
                 $0.options = clients
                 $0.title = "Client"
                 $0.value = self.client
                 $0.hidden = .predicate(NSPredicate(format: "$newClientSwitch == true"))
-                $0.onChange {
-                    self.client = $0.value
+                $0.onChange { _ in
                     self.updateProjectRow()
                 }
             }
             <<< TextRow("newClient") {
                 $0.placeholder = "New client name"
                 $0.hidden = .predicate(NSPredicate(format: "$newClientSwitch == false"))
-                $0.onChange { self.client = $0.value.map { .create(name: $0) } }
+                $0.onChange { _ in
+                    self.updateProjectRow()
+                }
             }
             +++ Section("Project")
             <<< SwitchRow("newProjectSwitch") {
@@ -66,14 +93,10 @@ final class AddTaskViewController: FormViewController {
                 $0.title = "Choose existing project"
                 $0.disabled = .function(["client"]) { _ in return self.client == nil }
                 $0.hidden = .predicate(NSPredicate(format: "$newProjectSwitch == true"))
-                $0.onChange { self.project = $0.value }
             }
             <<< TextRow("newProject") {
                 $0.placeholder = "New project name"
                 $0.hidden = .predicate(NSPredicate(format: "$newProjectSwitch == false"))
-                $0.onChange {
-                    self.project = $0.value.map { .create(name: $0) }
-                }
             }
             +++ Section("Task")
             <<< TextRow("taskDescription") {
@@ -98,6 +121,15 @@ final class AddTaskViewController: FormViewController {
     private func updateProjectRow() {
         if let projectRow = self.form.rowBy(tag: "project") as? PushRow<AddTaskEntry<Project>> {
             projectRow.options = self.availableProjects
+
+            switch projectRow.value {
+
+            case .some(let value) where projectRow.options.contains(value):
+                break
+
+            default:
+                projectRow.value = projectRow.options.first
+            }
         }
     }
 
@@ -140,6 +172,9 @@ final class AddTaskViewController: FormViewController {
                 print(error)
             case .success(let task):
                 print(task)
+                print(task.entity())
+                print(task.entity()?.project)
+                print(task.entity()?.project?.client)
             }
         }
     }
