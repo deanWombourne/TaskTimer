@@ -24,7 +24,7 @@
 		A0AE56601E0C6CBF005220AE /* Int+time.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AE565F1E0C6CBF005220AE /* Int+time.swift */; };
 		A0AE56631E0C6F46005220AE /* TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AE56621E0C6F46005220AE /* TaskTests.swift */; };
 		A0CE69341E09D714008C4B26 /* EntityMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CE69331E09D714008C4B26 /* EntityMapping.swift */; };
-		A0CE69361E09E706008C4B26 /* ModelAccessors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CE69351E09E706008C4B26 /* ModelAccessors.swift */; };
+		A0CE69361E09E706008C4B26 /* EntityMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CE69351E09E706008C4B26 /* EntityMappable.swift */; };
 		A0CE69381E09E995008C4B26 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CE69371E09E995008C4B26 /* Result.swift */; };
 		A0EABFF71E0D35830010B460 /* TaskEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EABFEF1E0D35830010B460 /* TaskEntity+CoreDataClass.swift */; };
 		A0EABFF81E0D35830010B460 /* TaskEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EABFF01E0D35830010B460 /* TaskEntity+CoreDataProperties.swift */; };
@@ -81,7 +81,7 @@
 		A0AE565F1E0C6CBF005220AE /* Int+time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+time.swift"; sourceTree = "<group>"; };
 		A0AE56621E0C6F46005220AE /* TaskTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskTests.swift; sourceTree = "<group>"; };
 		A0CE69331E09D714008C4B26 /* EntityMapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityMapping.swift; sourceTree = "<group>"; };
-		A0CE69351E09E706008C4B26 /* ModelAccessors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelAccessors.swift; sourceTree = "<group>"; };
+		A0CE69351E09E706008C4B26 /* EntityMappable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityMappable.swift; sourceTree = "<group>"; };
 		A0CE69371E09E995008C4B26 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		A0EABFEF1E0D35830010B460 /* TaskEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TaskEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		A0EABFF01E0D35830010B460 /* TaskEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TaskEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -145,7 +145,7 @@
 				A014FFFF1E05DE67001ABADB /* TaskTimer.swift */,
 				A03CBEB31DF6C6EB008E204B /* TaskTimer.xcdatamodeld */,
 				A0CE69331E09D714008C4B26 /* EntityMapping.swift */,
-				A0CE69351E09E706008C4B26 /* ModelAccessors.swift */,
+				A0CE69351E09E706008C4B26 /* EntityMappable.swift */,
 				A0CE69371E09E995008C4B26 /* Result.swift */,
 				A0AE565F1E0C6CBF005220AE /* Int+time.swift */,
 				A0EABFFF1E0D37700010B460 /* Either.swift */,
@@ -491,7 +491,7 @@
 				A0EAC0081E11C9B00010B460 /* AddTaskViewModel.swift in Sources */,
 				A0AE56591E0BF892005220AE /* SettingsViewController.swift in Sources */,
 				A03CBEB21DF6C5B0008E204B /* Client.swift in Sources */,
-				A0CE69361E09E706008C4B26 /* ModelAccessors.swift in Sources */,
+				A0CE69361E09E706008C4B26 /* EntityMappable.swift in Sources */,
 				A0EABFF71E0D35830010B460 /* TaskEntity+CoreDataClass.swift in Sources */,
 				A03CBEB51DF6C6EB008E204B /* TaskTimer.xcdatamodeld in Sources */,
 				A014FFFE1E05D8FE001ABADB /* Task.swift in Sources */,

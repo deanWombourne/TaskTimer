@@ -12,5 +12,5 @@
 
 ## Libraries
 
-+ CoreStore instead of MagicalRecord - liking it so far, but still gettign used to it
++ CoreStore instead of MagicalRecord - liking it so far, but still getting used to it
 + Eureka - seems to make some bits much much simpler, at the cost of learning it.
