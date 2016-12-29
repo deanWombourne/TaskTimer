@@ -19,6 +19,7 @@ protocol EntityMappable {
 
     static func from(entity: EntityType) -> Self
 
+    var entityID: NSManagedObjectID { get }
     var entity: EntityType? { get }
 }
 
@@ -26,7 +27,7 @@ protocol EntityMappable {
 extension EntityMappable {
 
     var entity: EntityType? {
-        return CoreStore.fetchOne(From(EntityType.self), [])
+        return CoreStore.fetchExisting(self.entityID)
     }
 
     static func all(_ fetchClauses: FetchClause ...) -> [Self] {

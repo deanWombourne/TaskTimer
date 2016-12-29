@@ -12,9 +12,7 @@ import CoreStore
 
 
 struct Client {
-    typealias IDType = NSManagedObjectID
-
-    let id: IDType
+    let entityID: NSManagedObjectID
     let name: String
 
     var projects: [Project] {
@@ -42,8 +40,8 @@ struct Client {
         return Command { completion in
 
             CoreStore.beginAsynchronous { transaction in
-                guard let client = transaction.fetchExisting(self.id) as? Client.EntityType else {
-                    completion(.failure(.failedToFindEntity(withIdentifier: self.id)))
+                guard let client = transaction.fetchExisting(self.entityID) as? Client.EntityType else {
+                    completion(.failure(.failedToFindEntity(withIdentifier: self.entityID)))
                     return
                 }
 

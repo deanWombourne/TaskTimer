@@ -11,9 +11,7 @@ import Foundation
 import CoreStore
 
 struct Project {
-    typealias IDType = NSManagedObjectID
-
-    let id: IDType
+    let entityID: NSManagedObjectID
     let name: String
 
     var tasks: [Task] {
@@ -28,8 +26,8 @@ struct Project {
         return Command { completion in
             CoreStore.beginAsynchronous { transaction in
 
-                guard let project = transaction.fetchExisting(self.id) as? Project.EntityType else {
-                    completion(.failure(.failedToFindEntity(withIdentifier: self.id)))
+                guard let project = transaction.fetchExisting(self.entityID) as? Project.EntityType else {
+                    completion(.failure(.failedToFindEntity(withIdentifier: self.entityID)))
                     return
                 }
 
