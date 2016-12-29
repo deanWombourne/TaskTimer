@@ -107,8 +107,7 @@ final class AddTaskViewController: FormViewController {
         }
 
         guard
-            let cell = form.rowBy(tag: "taskDescription") as? TextRow,
-            let description = cell.value,
+            let description = self.taskDescription,
             !description.isEmpty else {
                 return false
         }
