@@ -26,13 +26,44 @@ enum TaskTimerError: Error, Liftable {
 
 struct TaskTimerModel {
 
-    static let storage: SQLiteStore = SQLiteStore(fileName: "TaskTimer", configuration: nil, mappingModelBundles: [Bundle.main], localStorageOptions: .recreateStoreOnModelMismatch)
+    private static let constantIDKey = "TaskTimerModelStoreIdentifier"
+
+    private static func constantID() -> String {
+        return UserDefaults.standard.string(forKey: TaskTimerModel.constantIDKey) ?? {
+            let value = UUID().uuidString
+            UserDefaults.standard.set(value, forKey: TaskTimerModel.constantIDKey)
+            UserDefaults.standard.synchronize()
+            print("Created new store identifier: \(value)")
+            return value
+        }()
+    }
+
+    private static func resetConstantID() {
+        UserDefaults.standard.removeObject(forKey: TaskTimerModel.constantIDKey)
+        UserDefaults.standard.synchronize()
+    }
+
+    static private(set) var storage: SQLiteStore!
 
     static func initialize() {
+        self.storage = SQLiteStore(fileName: "TaskTimer" + TaskTimerModel.constantID(),
+                                   configuration: nil,
+                                   mappingModelBundles: [Bundle.main],
+                                   localStorageOptions: .recreateStoreOnModelMismatch)
+
         CoreStore.defaultStack = DataStack(
             modelName: "TaskTimer"
         )
 
-        try! CoreStore.defaultStack.addStorageAndWait(storage)
+        try! CoreStore.defaultStack.addStorageAndWait(self.storage)
+    }
+
+    static func reset() {
+        let file = self.storage.fileURL
+
+        self.resetConstantID()
+        self.initialize()
+
+        try! FileManager.default.removeItem(at: file)
     }
 }
