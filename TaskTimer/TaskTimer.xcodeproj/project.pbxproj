@@ -18,7 +18,6 @@
 		A059DA001DEF81F6002C0090 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A059D9FF1DEF81F6002C0090 /* Assets.xcassets */; };
 		A059DA031DEF81F6002C0090 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A059DA011DEF81F6002C0090 /* LaunchScreen.storyboard */; };
 		A059DA0E1DEF81F6002C0090 /* TaskTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A059DA0D1DEF81F6002C0090 /* TaskTimerTests.swift */; };
-		A0AE56591E0BF892005220AE /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AE56571E0BF892005220AE /* SettingsViewController.swift */; };
 		A0AE565C1E0C278A005220AE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AE565B1E0C278A005220AE /* HomeViewController.swift */; };
 		A0AE565E1E0C2794005220AE /* HomeSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AE565D1E0C2794005220AE /* HomeSection.swift */; };
 		A0AE56601E0C6CBF005220AE /* Int+time.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AE565F1E0C6CBF005220AE /* Int+time.swift */; };
@@ -41,6 +40,8 @@
 		A0EAC00C1E11D3AE0010B460 /* DelegatingButtonRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EAC00B1E11D3AE0010B460 /* DelegatingButtonRow.swift */; };
 		A0EAC00E1E1485670010B460 /* BaseDataTransaction+commit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EAC00D1E1485670010B460 /* BaseDataTransaction+commit.swift */; };
 		A0EAC0131E14F88E0010B460 /* Fastfile in Resources */ = {isa = PBXBuildFile; fileRef = A0EAC0121E14F88E0010B460 /* Fastfile */; };
+		A0EAC0171E15C64F0010B460 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EAC0161E15C64F0010B460 /* SettingsViewController.swift */; };
+		A0EAC01A1E15CAF70010B460 /* Int+bytes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EAC0191E15CAF70010B460 /* Int+bytes.swift */; };
 		FBD4AC97B19FDA037A4569AE /* Pods_TaskTimerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 546D744DFA1D6F34D5E29752 /* Pods_TaskTimerTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -75,7 +76,6 @@
 		A059DA091DEF81F6002C0090 /* TaskTimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TaskTimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A059DA0D1DEF81F6002C0090 /* TaskTimerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTimerTests.swift; sourceTree = "<group>"; };
 		A059DA0F1DEF81F6002C0090 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A0AE56571E0BF892005220AE /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		A0AE565B1E0C278A005220AE /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A0AE565D1E0C2794005220AE /* HomeSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeSection.swift; sourceTree = "<group>"; };
 		A0AE565F1E0C6CBF005220AE /* Int+time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+time.swift"; sourceTree = "<group>"; };
@@ -100,6 +100,8 @@
 		A0EAC0101E14F87D0010B460 /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Gemfile; path = ../Gemfile; sourceTree = "<group>"; };
 		A0EAC0111E14F87D0010B460 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		A0EAC0121E14F88E0010B460 /* Fastfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Fastfile; path = fastlane/Fastfile; sourceTree = "<group>"; };
+		A0EAC0161E15C64F0010B460 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		A0EAC0191E15CAF70010B460 /* Int+bytes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+bytes.swift"; sourceTree = "<group>"; };
 		B62FB18A920274577A69396D /* Pods-TaskTimer-TaskTimerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskTimer-TaskTimerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TaskTimer-TaskTimerTests/Pods-TaskTimer-TaskTimerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C6ED9F54675E6E5313F6FAE6 /* Pods-TaskTimerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskTimerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TaskTimerTests/Pods-TaskTimerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F5107EE72D6805007B0DBAE0 /* Pods-TaskTimerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskTimerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TaskTimerTests/Pods-TaskTimerTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 		A059D9F51DEF81F6002C0090 /* TaskTimer */ = {
 			isa = PBXGroup;
 			children = (
+				A0EAC0181E15CAE90010B460 /* Utils */,
 				A0AE56551E0BF892005220AE /* Scenes */,
 				A03CBEB01DF6C520008E204B /* Model */,
 				A059D9F61DEF81F6002C0090 /* AppDelegate.swift */,
@@ -205,7 +208,7 @@
 			children = (
 				A0EAC0031E0D3A9E0010B460 /* AddTask */,
 				A0AE565A1E0C278A005220AE /* Home */,
-				A0AE56571E0BF892005220AE /* SettingsViewController.swift */,
+				A0EAC0151E15C64F0010B460 /* Settings */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -260,6 +263,22 @@
 				A0EAC0111E14F87D0010B460 /* README.md */,
 			);
 			name = "Project metadata";
+			sourceTree = "<group>";
+		};
+		A0EAC0151E15C64F0010B460 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				A0EAC0161E15C64F0010B460 /* SettingsViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		A0EAC0181E15CAE90010B460 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A0EAC0191E15CAF70010B460 /* Int+bytes.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		EBBE04CBDF2EF361A4A05A06 /* Pods */ = {
@@ -504,7 +523,6 @@
 				A0EABFFC1E0D35830010B460 /* ClientEntity+CoreDataProperties.swift in Sources */,
 				A0AE565E1E0C2794005220AE /* HomeSection.swift in Sources */,
 				A0EAC0081E11C9B00010B460 /* AddTaskViewModel.swift in Sources */,
-				A0AE56591E0BF892005220AE /* SettingsViewController.swift in Sources */,
 				A03CBEB21DF6C5B0008E204B /* Client.swift in Sources */,
 				A0CE69361E09E706008C4B26 /* EntityMappable.swift in Sources */,
 				A0EABFF71E0D35830010B460 /* TaskEntity+CoreDataClass.swift in Sources */,
@@ -518,6 +536,8 @@
 				A0EABFFB1E0D35830010B460 /* ClientEntity+CoreDataClass.swift in Sources */,
 				A0EAC00E1E1485670010B460 /* BaseDataTransaction+commit.swift in Sources */,
 				A0EABFFD1E0D35830010B460 /* ProjectEntity+CoreDataClass.swift in Sources */,
+				A0EAC0171E15C64F0010B460 /* SettingsViewController.swift in Sources */,
+				A0EAC01A1E15CAF70010B460 /* Int+bytes.swift in Sources */,
 				A0EAC0001E0D37700010B460 /* Either.swift in Sources */,
 				A014FFFC1E05D8E4001ABADB /* Project.swift in Sources */,
 				A0EABFF91E0D35830010B460 /* TimeSliceEntity+CoreDataClass.swift in Sources */,

@@ -26,12 +26,13 @@ enum TaskTimerError: Error, Liftable {
 
 struct TaskTimerModel {
 
+    static let storage: SQLiteStore = SQLiteStore(fileName: "TaskTimer", configuration: nil, mappingModelBundles: [Bundle.main], localStorageOptions: .recreateStoreOnModelMismatch)
+
     static func initialize() {
         CoreStore.defaultStack = DataStack(
             modelName: "TaskTimer"
         )
 
-        let storage = SQLiteStore(fileName: "TaskTimer", configuration: nil, mappingModelBundles: [Bundle.main], localStorageOptions: .recreateStoreOnModelMismatch)
         try! CoreStore.defaultStack.addStorageAndWait(storage)
     }
 }
