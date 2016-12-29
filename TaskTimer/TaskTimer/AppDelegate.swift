@@ -33,6 +33,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         Fabric.with([Crashlytics.self, Answers.self])
 
+        Answers.logCustomEvent(withName: "Startup", customAttributes: [:])
+
         TaskTimerModel.initialize()
 
         return true
