@@ -69,7 +69,7 @@ final class AddTaskViewController: FormViewController {
             <<< PushRow<AddTaskEntry<Client>>("client") {
                 $0.options = clients
                 $0.title = "Client"
-                $0.value = self.client
+                $0.value = clients.first
                 $0.hidden = .predicate(NSPredicate(format: "$newClientSwitch == true"))
                 $0.onChange { _ in
                     self.updateProjectRow()
@@ -116,6 +116,8 @@ final class AddTaskViewController: FormViewController {
                 $0.disabled = .function(["client", "newClient", "project", "newProject", "taskDescription"], { !self.validate(form: $0) })
                 $0.onSelection { _ in self.createTask() }
         }
+
+        self.updateProjectRow()
     }
 
     private func updateProjectRow() {
