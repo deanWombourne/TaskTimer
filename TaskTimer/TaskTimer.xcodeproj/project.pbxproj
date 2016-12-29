@@ -40,6 +40,7 @@
 		A0EAC0081E11C9B00010B460 /* AddTaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EAC0071E11C9B00010B460 /* AddTaskViewModel.swift */; };
 		A0EAC00C1E11D3AE0010B460 /* DelegatingButtonRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EAC00B1E11D3AE0010B460 /* DelegatingButtonRow.swift */; };
 		A0EAC00E1E1485670010B460 /* BaseDataTransaction+commit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EAC00D1E1485670010B460 /* BaseDataTransaction+commit.swift */; };
+		A0EAC0131E14F88E0010B460 /* Fastfile in Resources */ = {isa = PBXBuildFile; fileRef = A0EAC0121E14F88E0010B460 /* Fastfile */; };
 		FBD4AC97B19FDA037A4569AE /* Pods_TaskTimerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 546D744DFA1D6F34D5E29752 /* Pods_TaskTimerTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -96,6 +97,9 @@
 		A0EAC0071E11C9B00010B460 /* AddTaskViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTaskViewModel.swift; sourceTree = "<group>"; };
 		A0EAC00B1E11D3AE0010B460 /* DelegatingButtonRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelegatingButtonRow.swift; sourceTree = "<group>"; };
 		A0EAC00D1E1485670010B460 /* BaseDataTransaction+commit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BaseDataTransaction+commit.swift"; sourceTree = "<group>"; };
+		A0EAC0101E14F87D0010B460 /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Gemfile; path = ../Gemfile; sourceTree = "<group>"; };
+		A0EAC0111E14F87D0010B460 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		A0EAC0121E14F88E0010B460 /* Fastfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Fastfile; path = fastlane/Fastfile; sourceTree = "<group>"; };
 		B62FB18A920274577A69396D /* Pods-TaskTimer-TaskTimerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskTimer-TaskTimerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TaskTimer-TaskTimerTests/Pods-TaskTimer-TaskTimerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C6ED9F54675E6E5313F6FAE6 /* Pods-TaskTimerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskTimerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TaskTimerTests/Pods-TaskTimerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F5107EE72D6805007B0DBAE0 /* Pods-TaskTimerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TaskTimerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TaskTimerTests/Pods-TaskTimerTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -154,6 +158,7 @@
 		A059D9EA1DEF81F5002C0090 = {
 			isa = PBXGroup;
 			children = (
+				A0EAC00F1E14F8660010B460 /* Project metadata */,
 				A059D9F51DEF81F6002C0090 /* TaskTimer */,
 				A059DA0C1DEF81F6002C0090 /* TaskTimerTests */,
 				A059D9F41DEF81F6002C0090 /* Products */,
@@ -245,6 +250,16 @@
 				A0EAC00B1E11D3AE0010B460 /* DelegatingButtonRow.swift */,
 			);
 			path = AddTask;
+			sourceTree = "<group>";
+		};
+		A0EAC00F1E14F8660010B460 /* Project metadata */ = {
+			isa = PBXGroup;
+			children = (
+				A0EAC0121E14F88E0010B460 /* Fastfile */,
+				A0EAC0101E14F87D0010B460 /* Gemfile */,
+				A0EAC0111E14F87D0010B460 /* README.md */,
+			);
+			name = "Project metadata";
 			sourceTree = "<group>";
 		};
 		EBBE04CBDF2EF361A4A05A06 /* Pods */ = {
@@ -353,6 +368,7 @@
 			files = (
 				A059DA031DEF81F6002C0090 /* LaunchScreen.storyboard in Resources */,
 				A059DA001DEF81F6002C0090 /* Assets.xcassets in Resources */,
+				A0EAC0131E14F88E0010B460 /* Fastfile in Resources */,
 				A059D9FE1DEF81F6002C0090 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
