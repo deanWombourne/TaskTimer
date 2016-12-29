@@ -21,22 +21,29 @@ final class AddTaskViewController: FormViewController {
         return cell?.value
     }
 
+    private var availableProjects: [AddTaskEntry<Project>] {
+        guard case .some(.existing(let client)) = self.client else {
+            return []
+        }
+
+        return client.projects.map { AddTaskEntry.existing($0) }
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         let clients = Client.all().map { AddTaskEntry.existing($0) }
+        self.client = clients.first
 
         form = Section("Client")
             <<< PushRow<AddTaskEntry<Client>>("client") {
                 $0.options = clients
                 $0.title = "Client"
+                $0.value = self.client
                 $0.hidden = Condition(booleanLiteral: clients.count == 0)
                 $0.onChange {
                     self.client = $0.value
-                    if let projectRow = self.form.rowBy(tag: "project") as? PushRow<AddTaskEntry<Project>>,
-                        case .some(.existing(let client)) = self.client {
-                            projectRow.options = client.projects.map { AddTaskEntry.existing($0) }
-                    }
+                    self.updateProjectRow()
                 }
             }
             <<< TextRow("newClient") {
@@ -50,7 +57,8 @@ final class AddTaskViewController: FormViewController {
                 $0.value = false
             }
             <<< PushRow<AddTaskEntry<Project>>("project") {
-                $0.options = []
+                $0.options = self.availableProjects
+                $0.value = $0.options.first
                 $0.title = "Choose existing project"
                 $0.disabled = .function(["client"]) { _ in return self.client == nil }
                 $0.hidden = .predicate(NSPredicate(format: "$newProjectSwitch == true"))
@@ -80,6 +88,12 @@ final class AddTaskViewController: FormViewController {
                 $0.title = "Create"
                 $0.disabled = .function(["client", "newClient", "project", "newProject", "taskDescription"], { !self.validate(form: $0) })
                 $0.onSelection { _ in self.createTask() }
+        }
+    }
+
+    private func updateProjectRow() {
+        if let projectRow = self.form.rowBy(tag: "project") as? PushRow<AddTaskEntry<Project>> {
+            projectRow.options = self.availableProjects
         }
     }
 
