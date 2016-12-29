@@ -16,7 +16,7 @@ enum TaskTimerError: Error, Liftable {
     case underlying(Error)
 
     case failedToFetch
-    case failedToFindEntity(withIdentifier: NSManagedObjectID)
+    case failedToFindEntity(withID: String)
 
     static func lift(_ error: Error) -> TaskTimerError {
         return error as? TaskTimerError ?? .underlying(error)

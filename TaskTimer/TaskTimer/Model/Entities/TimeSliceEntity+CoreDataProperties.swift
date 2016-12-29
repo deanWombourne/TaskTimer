@@ -17,6 +17,7 @@ extension TimeSliceEntity {
         return NSFetchRequest<TimeSliceEntity>(entityName: "TimeSliceEntity");
     }
 
+    @NSManaged public var id: String?
     @NSManaged public var end: NSDate?
     @NSManaged public var start: NSDate?
     @NSManaged public var task: TaskEntity?

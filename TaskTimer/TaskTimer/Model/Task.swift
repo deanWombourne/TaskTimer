@@ -12,13 +12,13 @@ import CoreStore
 
 
 struct Task {
-    let entityID: NSManagedObjectID
+    let id: String
     let name: String
 }
 
 
 struct TimeSlice {
-    let entityID: NSManagedObjectID
+    let id: String
     let start: Date
     let end: Date?
 

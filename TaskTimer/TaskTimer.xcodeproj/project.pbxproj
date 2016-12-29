@@ -23,7 +23,7 @@
 		A0AE565E1E0C2794005220AE /* HomeSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AE565D1E0C2794005220AE /* HomeSection.swift */; };
 		A0AE56601E0C6CBF005220AE /* Int+time.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AE565F1E0C6CBF005220AE /* Int+time.swift */; };
 		A0AE56631E0C6F46005220AE /* TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0AE56621E0C6F46005220AE /* TaskTests.swift */; };
-		A0CE69341E09D714008C4B26 /* EntityMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CE69331E09D714008C4B26 /* EntityMapping.swift */; };
+		A0CE69341E09D714008C4B26 /* EntityMappings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CE69331E09D714008C4B26 /* EntityMappings.swift */; };
 		A0CE69361E09E706008C4B26 /* EntityMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CE69351E09E706008C4B26 /* EntityMappable.swift */; };
 		A0CE69381E09E995008C4B26 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CE69371E09E995008C4B26 /* Result.swift */; };
 		A0EABFF71E0D35830010B460 /* TaskEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EABFEF1E0D35830010B460 /* TaskEntity+CoreDataClass.swift */; };
@@ -80,7 +80,7 @@
 		A0AE565D1E0C2794005220AE /* HomeSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeSection.swift; sourceTree = "<group>"; };
 		A0AE565F1E0C6CBF005220AE /* Int+time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+time.swift"; sourceTree = "<group>"; };
 		A0AE56621E0C6F46005220AE /* TaskTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskTests.swift; sourceTree = "<group>"; };
-		A0CE69331E09D714008C4B26 /* EntityMapping.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityMapping.swift; sourceTree = "<group>"; };
+		A0CE69331E09D714008C4B26 /* EntityMappings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityMappings.swift; sourceTree = "<group>"; };
 		A0CE69351E09E706008C4B26 /* EntityMappable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityMappable.swift; sourceTree = "<group>"; };
 		A0CE69371E09E995008C4B26 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		A0EABFEF1E0D35830010B460 /* TaskEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TaskEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -144,7 +144,7 @@
 				A014FFFD1E05D8FE001ABADB /* Task.swift */,
 				A014FFFF1E05DE67001ABADB /* TaskTimer.swift */,
 				A03CBEB31DF6C6EB008E204B /* TaskTimer.xcdatamodeld */,
-				A0CE69331E09D714008C4B26 /* EntityMapping.swift */,
+				A0CE69331E09D714008C4B26 /* EntityMappings.swift */,
 				A0CE69351E09E706008C4B26 /* EntityMappable.swift */,
 				A0CE69371E09E995008C4B26 /* Result.swift */,
 				A0AE565F1E0C6CBF005220AE /* Int+time.swift */,
@@ -483,7 +483,7 @@
 				A0AE56601E0C6CBF005220AE /* Int+time.swift in Sources */,
 				A0EAC0051E0D3EA60010B460 /* AddTaskViewController.swift in Sources */,
 				A0EAC0021E0D37920010B460 /* Either+liftable.swift in Sources */,
-				A0CE69341E09D714008C4B26 /* EntityMapping.swift in Sources */,
+				A0CE69341E09D714008C4B26 /* EntityMappings.swift in Sources */,
 				A059D9F71DEF81F6002C0090 /* AppDelegate.swift in Sources */,
 				A0EABFFE1E0D35830010B460 /* ProjectEntity+CoreDataProperties.swift in Sources */,
 				A0EABFFC1E0D35830010B460 /* ClientEntity+CoreDataProperties.swift in Sources */,

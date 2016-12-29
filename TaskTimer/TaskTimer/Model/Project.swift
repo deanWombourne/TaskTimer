@@ -10,12 +10,13 @@ import Foundation
 
 import CoreStore
 
+
 struct Project {
-    let entityID: NSManagedObjectID
+    let id: String
     let name: String
 
     var tasks: [Task] {
-        guard let tasks = self.entity?.tasks?.allObjects as? [TaskEntity] else {
+        guard let tasks = self.entity()?.tasks?.allObjects as? [TaskEntity] else {
             return []
         }
 
@@ -26,13 +27,14 @@ struct Project {
         return Command { completion in
             CoreStore.beginAsynchronous { transaction in
 
-                guard let project = transaction.fetchExisting(self.entityID) as? Project.EntityType else {
-                    completion(.failure(.failedToFindEntity(withIdentifier: self.entityID)))
+                guard let project = self.entity(from: transaction) else {
+                    completion(.failure(.failedToFindEntity(withID: self.id)))
                     return
                 }
 
                 let task = transaction.create(Into(Task.EntityType.self))
 
+                task.id = UUID().uuidString
                 task.name = name
                 task.updatedAt = NSDate()
                 task.project = project

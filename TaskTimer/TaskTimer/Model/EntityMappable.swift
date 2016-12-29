@@ -19,15 +19,21 @@ protocol EntityMappable {
 
     static func from(entity: EntityType) -> Self
 
-    var entityID: NSManagedObjectID { get }
-    var entity: EntityType? { get }
+    var id: String { get }
+
+    func entity(from stack: DataStack) -> EntityType?
+    func entity(from transaction: BaseDataTransaction) -> EntityType?
 }
 
 
 extension EntityMappable {
 
-    var entity: EntityType? {
-        return CoreStore.fetchExisting(self.entityID)
+    func entity(from stack: DataStack = CoreStore.defaultStack) -> EntityType? {
+        return stack.fetchOne(From(EntityType.self), [ Where("id = %@", self.id) ])
+    }
+
+    func entity(from transaction: BaseDataTransaction) -> EntityType? {
+        return transaction.fetchOne(From(EntityType.self), [ Where("id = %@", self.id) ])
     }
 
     static func all(_ fetchClauses: FetchClause ...) -> [Self] {

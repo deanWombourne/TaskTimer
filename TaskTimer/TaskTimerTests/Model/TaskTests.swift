@@ -18,7 +18,7 @@ class TaskTests: XCTestCase {
         let start = Date().addingTimeInterval(-60)
         let end = start.addingTimeInterval(30)
 
-        let slice = TimeSlice(entityID: NSManagedObjectID(), start: start, end: end)
+        let slice = TimeSlice(id: "TEST", start: start, end: end)
 
         XCTAssertEqual(slice.duration, 30)
     }
