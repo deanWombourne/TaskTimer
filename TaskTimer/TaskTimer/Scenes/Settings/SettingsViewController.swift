@@ -44,7 +44,9 @@ final class SettingsViewController: FormViewController {
             <<< DelegatingButtonRow {
                 $0.title = "Clear"
                 $0.onSelection { row in
-
+                    self.alert(title: "Clear?", message: "This will lose all your data. Are you sure?") {
+                        print("Whoop")
+                    }
                 }
             }
             +++ Section()
