@@ -9,14 +9,6 @@
 import Foundation
 
 
-extension Project {
-
-    init(entity: ProjectEntity) {
-        self.name = entity.name!
-    }
-}
-
-
 extension Client: EntityMappable {
     typealias EntityType = ClientEntity
 
@@ -30,7 +22,7 @@ extension Project: EntityMappable {
     typealias EntityType = ProjectEntity
 
     static func from(entity: ProjectEntity) -> Project {
-        return Project(name: entity.name!)
+        return Project(id: entity.objectID, name: entity.name!)
     }
 }
 

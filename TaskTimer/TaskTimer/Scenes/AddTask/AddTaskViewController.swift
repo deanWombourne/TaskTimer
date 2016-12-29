@@ -16,6 +16,11 @@ final class AddTaskViewController: FormViewController {
     private var client: AddTaskEntry<Client>?
     private var project: AddTaskEntry<Project>?
 
+    private var taskDescription: String? {
+        let cell = form.rowBy(tag: "taskDescription") as? TextRow
+        return cell?.value
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -98,18 +103,26 @@ final class AddTaskViewController: FormViewController {
     }
 
     private func createTask() {
+        guard let description = self.taskDescription else {
+            return
+        }
+
         let client = self.client!.command(creator: Client.create())
 
         let project = client.then { client in
             return self.project!.command(creator: Project.createProject(client: client))
         }
 
-        project.perform { result in
+        let task = project.then { project in
+            return project.createTask(withName: description)
+        }
+
+        task.perform { result in
             switch result {
             case .failure(let error):
                 print(error)
-            case .success(let project):
-                print(project)
+            case .success(let task):
+                print(task)
             }
         }
     }

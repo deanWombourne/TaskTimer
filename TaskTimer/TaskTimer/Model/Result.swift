@@ -14,9 +14,10 @@ typealias Result<T> = Either<TaskTimerError, T>
 
 struct Command<T> {
 
-    typealias CommandFunction<T> = (_ completion: @escaping (Result<T>) -> ()) -> ()
+    typealias CompletionFunction = (Result<T>) -> ()
+    typealias CommandFunction = (_ completion: @escaping CompletionFunction) -> ()
 
-    let perform: CommandFunction<T>
+    let perform: CommandFunction
 }
 
 
