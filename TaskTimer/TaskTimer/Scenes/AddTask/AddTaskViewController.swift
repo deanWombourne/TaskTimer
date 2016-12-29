@@ -36,11 +36,15 @@ final class AddTaskViewController: FormViewController {
         self.client = clients.first
 
         form = Section("Client")
+            <<< SwitchRow("newClientSwitch") {
+                $0.title = "Add new client?"
+                $0.value = clients.count == 0
+            }
             <<< PushRow<AddTaskEntry<Client>>("client") {
                 $0.options = clients
                 $0.title = "Client"
                 $0.value = self.client
-                $0.hidden = Condition(booleanLiteral: clients.count == 0)
+                $0.hidden = .predicate(NSPredicate(format: "$newClientSwitch == true"))
                 $0.onChange {
                     self.client = $0.value
                     self.updateProjectRow()
@@ -48,7 +52,7 @@ final class AddTaskViewController: FormViewController {
             }
             <<< TextRow("newClient") {
                 $0.placeholder = "New client name"
-                $0.hidden = Condition(booleanLiteral: clients.count != 0)
+                $0.hidden = .predicate(NSPredicate(format: "$newClientSwitch == false"))
                 $0.onChange { self.client = $0.value.map { .create(name: $0) } }
             }
             +++ Section("Project")
