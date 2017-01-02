@@ -10,7 +10,6 @@ import Foundation
 import UIKit
 import Eureka
 
-
 final class AddTaskViewController: FormViewController {
 
     private var client: AddTaskEntry<Client>? {

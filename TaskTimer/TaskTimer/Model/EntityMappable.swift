@@ -10,7 +10,6 @@ import Foundation
 
 import CoreStore
 
-
 protocol EntityMappable {
 
     associatedtype EntityType: NSManagedObject
@@ -24,7 +23,6 @@ protocol EntityMappable {
     func entity(from stack: DataStack) -> EntityType?
     func entity(from transaction: BaseDataTransaction) -> EntityType?
 }
-
 
 extension EntityMappable {
 

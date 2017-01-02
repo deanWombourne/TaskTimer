@@ -9,7 +9,6 @@
 import Foundation
 import UIKit
 
-
 final class HomeViewController: UIViewController {
 
     @IBOutlet fileprivate var tableView: UITableView?
@@ -34,7 +33,6 @@ final class HomeViewController: UIViewController {
     }
 }
 
-
 extension HomeViewController: UITableViewDataSource {
 
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -54,9 +52,8 @@ extension HomeViewController: UITableViewDataSource {
     }
 }
 
-
 extension HomeViewController: UITableViewDelegate {
-    
+
 }
 
 extension HomeViewController {

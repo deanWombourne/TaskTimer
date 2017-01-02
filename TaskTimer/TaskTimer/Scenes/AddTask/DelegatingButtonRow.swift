@@ -10,12 +10,11 @@ import Foundation
 
 import Eureka
 
-
 final class DelegatingButtonRow: _ButtonRowOf<String>, RowType {
 
-    fileprivate var onSelectionCallback: ((DelegatingButtonRow) -> ())?
+    fileprivate var onSelectionCallback: ((DelegatingButtonRow) -> Void)?
 
-    func onSelection(callback: ((DelegatingButtonRow) -> ())?) {
+    func onSelection(callback: ((DelegatingButtonRow) -> Void)?) {
         self.onSelectionCallback = callback
     }
 

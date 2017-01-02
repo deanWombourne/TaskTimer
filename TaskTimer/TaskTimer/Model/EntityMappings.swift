@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 extension Client: EntityMappable {
     typealias EntityType = ClientEntity
 
@@ -16,7 +15,6 @@ extension Client: EntityMappable {
         return Client(id: entity.id!, name: entity.name!)
     }
 }
-
 
 extension Project: EntityMappable {
     typealias EntityType = ProjectEntity
@@ -26,7 +24,6 @@ extension Project: EntityMappable {
     }
 }
 
-
 extension Task: EntityMappable {
     typealias EntityType = TaskEntity
 
@@ -34,7 +31,6 @@ extension Task: EntityMappable {
         return Task(id: entity.id!, name: entity.name!)
     }
 }
-
 
 extension TimeSlice: EntityMappable {
     typealias EntityType = TimeSliceEntity

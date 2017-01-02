@@ -10,7 +10,6 @@ import Foundation
 
 import CoreStore
 
-
 extension AsynchronousDataTransaction {
 
     func commit<T: EntityMappable>(returning entity: T.EntityType, completion: @escaping Command<T>.CompletionFunction) {

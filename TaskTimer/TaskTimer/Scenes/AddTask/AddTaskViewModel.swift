@@ -8,12 +8,10 @@
 
 import Foundation
 
-
 protocol Nameable {
 
     var name: String { get }
 }
-
 
 enum AddTaskEntry<T: Nameable> {
     typealias CreateFunction = (_ name: String) -> Command<T>
@@ -40,7 +38,6 @@ enum AddTaskEntry<T: Nameable> {
     }
 }
 
-
 extension AddTaskEntry: Equatable {
     static func == (lhs: AddTaskEntry, rhs: AddTaskEntry) -> Bool {
         switch (lhs, rhs) {
@@ -51,12 +48,10 @@ extension AddTaskEntry: Equatable {
     }
 }
 
-
 extension AddTaskEntry: CustomStringConvertible {
 
     var description: String { return self.name }
 }
-
 
 extension Client: Nameable {
 
@@ -75,7 +70,6 @@ extension Project {
         }
     }
 }
-
 
 extension Project: Nameable {
 }

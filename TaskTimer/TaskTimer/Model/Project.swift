@@ -10,7 +10,6 @@ import Foundation
 
 import CoreStore
 
-
 struct Project {
     let id: String
     let name: String

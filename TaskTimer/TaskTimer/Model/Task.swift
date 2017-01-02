@@ -10,12 +10,10 @@ import Foundation
 
 import CoreStore
 
-
 struct Task {
     let id: String
     let name: String
 }
-
 
 struct TimeSlice {
     let id: String
@@ -26,7 +24,6 @@ struct TimeSlice {
         return -self.start.timeIntervalSince(self.end ?? Date())
     }
 }
-
 
 extension Task {
 

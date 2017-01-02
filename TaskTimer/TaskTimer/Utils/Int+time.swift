@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 protocol TimeConvertable {
     var seconds: TimeInterval { get }
 
@@ -21,7 +20,6 @@ protocol TimeConvertable {
     var weeks: TimeInterval { get }
 }
 
-
 extension TimeConvertable {
     var second: TimeInterval { return self.seconds }
     var minute: TimeInterval { return self.minutes }
@@ -29,7 +27,6 @@ extension TimeConvertable {
     var day: TimeInterval { return self.days }
     var week: TimeInterval { return self.weeks }
 }
-
 
 extension Int: TimeConvertable {
 
@@ -43,7 +40,6 @@ extension Int: TimeConvertable {
 
     var weeks: TimeInterval { return self.day * 7 }
 }
-
 
 extension Double: TimeConvertable {
     var seconds: TimeInterval { return self }

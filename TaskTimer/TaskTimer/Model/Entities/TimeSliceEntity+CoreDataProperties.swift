@@ -10,11 +10,10 @@
 import Foundation
 import CoreData
 
-
 extension TimeSliceEntity {
 
     @nonobjc public class func fetchRequest() -> NSFetchRequest<TimeSliceEntity> {
-        return NSFetchRequest<TimeSliceEntity>(entityName: "TimeSliceEntity");
+        return NSFetchRequest<TimeSliceEntity>(entityName: "TimeSliceEntity")
     }
 
     @NSManaged public var id: String?

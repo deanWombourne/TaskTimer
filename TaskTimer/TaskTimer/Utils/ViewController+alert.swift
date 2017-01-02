@@ -9,10 +9,9 @@
 import Foundation
 import UIKit
 
-
 extension UIViewController {
 
-    func alert(title: String, message: String, completion: @escaping () -> () ) {
+    func alert(title: String, message: String, completion: @escaping () -> Void ) {
 
         let controller = UIAlertController(title: title, message: message, preferredStyle: .alert)
 

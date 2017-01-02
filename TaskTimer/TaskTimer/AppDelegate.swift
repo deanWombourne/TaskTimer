@@ -68,7 +68,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 }
 
-
 extension AppDelegate {
 
     var isUnderTest: Bool {

@@ -8,18 +8,15 @@
 
 import Foundation
 
-
 typealias Result<T> = Either<TaskTimerError, T>
-
 
 struct Command<T> {
 
-    typealias CompletionFunction = (Result<T>) -> ()
-    typealias CommandFunction = (_ completion: @escaping CompletionFunction) -> ()
+    typealias CompletionFunction = (Result<T>) -> Void
+    typealias CommandFunction = (_ completion: @escaping CompletionFunction) -> Void
 
     let perform: CommandFunction
 }
-
 
 extension Command {
 
@@ -40,8 +37,6 @@ extension Command {
     }
 }
 
-
-
 extension Command {
 
     func map<U>(_ transform: @escaping (T) -> U) -> Command<U> {
@@ -52,7 +47,6 @@ extension Command {
         }
     }
 }
-
 
 extension Command {
 

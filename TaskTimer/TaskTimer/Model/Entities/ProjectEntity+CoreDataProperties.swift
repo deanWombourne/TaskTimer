@@ -10,11 +10,10 @@
 import Foundation
 import CoreData
 
-
 extension ProjectEntity {
 
     @nonobjc public class func fetchRequest() -> NSFetchRequest<ProjectEntity> {
-        return NSFetchRequest<ProjectEntity>(entityName: "ProjectEntity");
+        return NSFetchRequest<ProjectEntity>(entityName: "ProjectEntity")
     }
 
     @NSManaged public var id: String?

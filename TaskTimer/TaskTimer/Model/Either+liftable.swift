@@ -8,11 +8,9 @@
 
 import Foundation
 
-
 protocol Liftable: Error {
     static func lift(_ error: Error) -> Self
 }
-
 
 extension Either where LeftType: Liftable {
 

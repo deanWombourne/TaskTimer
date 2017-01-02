@@ -9,7 +9,6 @@
 import Foundation
 import UIKit
 
-
 enum HomeSection {
     case active(tasks: [Task])
     case recent(tasks: [Task])

@@ -10,7 +10,6 @@ import Foundation
 
 import CoreStore
 
-
 enum TaskTimerError: Error, Liftable {
     case unknown(message: String)
     case underlying(Error)
@@ -22,7 +21,6 @@ enum TaskTimerError: Error, Liftable {
         return error as? TaskTimerError ?? .underlying(error)
     }
 }
-
 
 struct TaskTimerModel {
 

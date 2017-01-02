@@ -8,10 +8,8 @@
 
 import Foundation
 
-
 private let kilobytes = Int64(1024)
 private let megabytes = Int64(1024 * 1024)
-
 
 extension Int64 {
 
@@ -29,7 +27,6 @@ extension Int64 {
         }
     }
 }
-
 
 extension Int {
 
