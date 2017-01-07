@@ -52,6 +52,16 @@
                ReferencedContainer = "container:TaskTimer.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A0EAC02B1E20DE840010B460"
+               BuildableName = "TaskTimerModelTests.xctest"
+               BlueprintName = "TaskTimerModelTests"
+               ReferencedContainer = "container:TaskTimer.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

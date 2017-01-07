@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum Either<LeftType, RightType> {
+public enum Either<LeftType, RightType> {
     case failure(LeftType)
     case success(RightType)
 

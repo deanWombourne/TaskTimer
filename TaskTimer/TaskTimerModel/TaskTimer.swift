@@ -10,26 +10,32 @@ import Foundation
 
 import CoreStore
 
-enum TaskTimerError: Error, Liftable {
+private class BundleIdentifierClass: NSObject { }
+
+public enum TaskTimerError: Error, Liftable {
     case unknown(message: String)
     case underlying(Error)
 
     case failedToFetch
     case failedToFindEntity(withID: String)
 
-    static func lift(_ error: Error) -> TaskTimerError {
+    public static func lift(_ error: Error) -> TaskTimerError {
         return error as? TaskTimerError ?? .underlying(error)
     }
 }
 
-struct TaskTimerModel {
+public func initialize() { TaskTimer.initialize() }
+public func reset() { TaskTimer.reset() }
+public var storageURL: URL { return TaskTimer.storage.fileURL }
+
+struct TaskTimer {
 
     private static let constantIDKey = "TaskTimerModelStoreIdentifier"
 
     private static func constantID() -> String {
-        return UserDefaults.standard.string(forKey: TaskTimerModel.constantIDKey) ?? {
+        return UserDefaults.standard.string(forKey: TaskTimer.constantIDKey) ?? {
             let value = UUID().uuidString
-            UserDefaults.standard.set(value, forKey: TaskTimerModel.constantIDKey)
+            UserDefaults.standard.set(value, forKey: TaskTimer.constantIDKey)
             UserDefaults.standard.synchronize()
             print("Created new store identifier: \(value)")
             return value
@@ -37,20 +43,23 @@ struct TaskTimerModel {
     }
 
     private static func resetConstantID() {
-        UserDefaults.standard.removeObject(forKey: TaskTimerModel.constantIDKey)
+        UserDefaults.standard.removeObject(forKey: TaskTimer.constantIDKey)
         UserDefaults.standard.synchronize()
     }
 
-    static private(set) var storage: SQLiteStore!
+    private(set) static var storage: SQLiteStore!
 
     static func initialize() {
-        self.storage = SQLiteStore(fileName: "TaskTimer" + TaskTimerModel.constantID(),
+        let modelBundle = Bundle(for: BundleIdentifierClass.self)
+
+        self.storage = SQLiteStore(fileName: "TaskTimer" + TaskTimer.constantID(),
                                    configuration: nil,
-                                   mappingModelBundles: [Bundle.main],
+                                   mappingModelBundles: [ modelBundle ],
                                    localStorageOptions: .recreateStoreOnModelMismatch)
 
         CoreStore.defaultStack = DataStack(
-            modelName: "TaskTimer"
+            modelName: "TaskTimer",
+            bundle: modelBundle
         )
 
         try! CoreStore.defaultStack.addStorageAndWait(self.storage)

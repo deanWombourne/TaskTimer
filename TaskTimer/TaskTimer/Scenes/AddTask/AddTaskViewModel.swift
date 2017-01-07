@@ -8,6 +8,8 @@
 
 import Foundation
 
+import TaskTimerModel
+
 protocol Nameable {
 
     var name: String { get }

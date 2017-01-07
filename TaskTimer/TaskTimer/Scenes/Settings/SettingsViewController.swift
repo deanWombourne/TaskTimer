@@ -10,7 +10,8 @@ import Foundation
 import UIKit
 
 import Eureka
-import CoreStore
+
+import TaskTimerModel
 
 final class SettingsViewController: FormViewController {
 
@@ -31,7 +32,7 @@ final class SettingsViewController: FormViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let fileURL = TaskTimerModel.storage.fileURL
+        let fileURL = TaskTimerModel.storageURL
         let fileSize = self.sizeOfFile(atURL: fileURL)
 
         self.form = Section("Storage")

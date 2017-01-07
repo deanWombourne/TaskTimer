@@ -8,19 +8,19 @@
 
 import Foundation
 
-typealias Result<T> = Either<TaskTimerError, T>
+public typealias Result<T> = Either<TaskTimerError, T>
 
-struct Command<T> {
+public struct Command<T> {
 
-    typealias CompletionFunction = (Result<T>) -> Void
-    typealias CommandFunction = (_ completion: @escaping CompletionFunction) -> Void
+    public typealias CompletionFunction = (Result<T>) -> Void
+    public typealias CommandFunction = (_ completion: @escaping CompletionFunction) -> Void
 
-    let perform: CommandFunction
+    public let perform: CommandFunction
 }
 
 extension Command {
 
-    static func succeed(with value: T) -> Command<T> {
+    public static func succeed(with value: T) -> Command<T> {
         return Command { completion in
             DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(10)) {
                 completion(.success(value))
@@ -28,7 +28,7 @@ extension Command {
         }
     }
 
-    static func fail(with error: Error) -> Command<T> {
+    public static func fail(with error: Error) -> Command<T> {
         return Command { completion in
             DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(10)) {
                 completion(.failure(.lift(error)))
@@ -39,7 +39,7 @@ extension Command {
 
 extension Command {
 
-    func map<U>(_ transform: @escaping (T) -> U) -> Command<U> {
+    public func map<U>(_ transform: @escaping (T) -> U) -> Command<U> {
         return Command<U> { completion in
             self.perform { result in
                 completion(result.map(transform))
@@ -50,7 +50,7 @@ extension Command {
 
 extension Command {
 
-    func then<U>(_ command: Command<U>) -> Command<U> {
+    public func then<U>(_ command: Command<U>) -> Command<U> {
         return Command<U> { completion in
             self.perform { result in
                 switch result {
@@ -65,7 +65,7 @@ extension Command {
         }
     }
 
-    func then<U>(_ function: @escaping (T) -> Command<U>) -> Command<U> {
+    public func then<U>(_ function: @escaping (T) -> Command<U>) -> Command<U> {
         return Command<U> { completion in
             self.perform { result in
                 switch result {

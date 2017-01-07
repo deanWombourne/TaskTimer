@@ -8,13 +8,13 @@
 
 import Foundation
 
-protocol Liftable: Error {
+public protocol Liftable: Error {
     static func lift(_ error: Error) -> Self
 }
 
 extension Either where LeftType: Liftable {
 
-    func flatMap<U>(_ transform: (RightType) throws -> U) rethrows -> Either<LeftType, U> {
+    public func flatMap<U>(_ transform: (RightType) throws -> U) rethrows -> Either<LeftType, U> {
         do {
             return try self.map(transform)
         } catch let error {

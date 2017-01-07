@@ -11,6 +11,8 @@ import UIKit
 import Fabric
 import Crashlytics
 
+import TaskTimerModel
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
