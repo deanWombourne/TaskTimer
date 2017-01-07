@@ -10,22 +10,22 @@ import Foundation
 
 import CoreStore
 
-struct Task {
-    let id: String
-    let name: String
+public struct Task {
+    public let id: String
+    public let name: String
 }
 
-struct TimeSlice {
-    let id: String
-    let start: Date
-    let end: Date?
+public struct TimeSlice {
+    public let id: String
+    public let start: Date
+    public let end: Date?
 
-    var duration: TimeInterval {
+    public var duration: TimeInterval {
         return -self.start.timeIntervalSince(self.end ?? Date())
     }
 }
 
-extension Task {
+public extension Task {
 
     static func allActive() -> [Task] {
         return self.all( Where("ANY timeSlices.end = NULL") )

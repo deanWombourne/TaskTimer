@@ -1,0 +1,6 @@
+framework module Pods_TaskTimerModelTests {
+  umbrella header "Pods-TaskTimerModelTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

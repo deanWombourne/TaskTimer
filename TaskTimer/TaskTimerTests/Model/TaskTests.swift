@@ -9,7 +9,7 @@
 import XCTest
 import CoreData
 
-@testable import TaskTimer
+@testable import TaskTimerModel
 
 
 class TaskTests: XCTestCase {

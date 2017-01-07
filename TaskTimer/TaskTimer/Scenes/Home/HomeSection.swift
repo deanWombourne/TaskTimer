@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 
+import TaskTimerModel
+
 enum HomeSection {
     case active(tasks: [Task])
     case recent(tasks: [Task])

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		00AA8A09C37C4A5921033B56631D9E69 /* DataStack+Observing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80569FA60D042CE0FD89DBA5DE7C29A5 /* DataStack+Observing.swift */; };
+		01D3E5FA6A81A91A9B360BF2EAE1E5A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F0F5B7CF4E03833FE4E957DA9304993 /* Foundation.framework */; };
 		02F07D843F3B3151880D1E67205C11A0 /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9320E7AAD8BB67688DCC284CAF66CDDA /* Core.swift */; };
 		04A9A536DFAF3C5EC723F92EED127215 /* SegmentedRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04131C881086340CE64B3E2DC5B79252 /* SegmentedRow.swift */; };
 		0668E9328BDB85637F9B4F6CA2F75DC0 /* CoreStore+Migration.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF287B865F732832864031858C8730EC /* CoreStore+Migration.swift */; };
@@ -48,7 +49,7 @@
 		25742A864D10E457D15147A5F21E2444 /* CoreStoreLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADD9464C4227AB23279E2B703993DF4 /* CoreStoreLogger.swift */; };
 		257F53E1F8FD639DB7AEDE9CE569D997 /* ImportableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9765D4555FD357C8C2266F50A782D387 /* ImportableObject.swift */; };
 		25A70264F9301E7603D9883777DE8050 /* SelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916C645BC761C51CCA83AA261D276BAA /* SelectorViewController.swift */; };
-		25B8224CEB8B39097BEE013D44CF0F85 /* Pods-TaskTimerTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B00B8905D76D41E8515FEF5D002B93B4 /* Pods-TaskTimerTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25B8224CEB8B39097BEE013D44CF0F85 /* Pods-TaskTimerTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F359C973EB68479FD8F8D32A837C8F6 /* Pods-TaskTimerTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		260A6263A4B8504601674415FB762CBE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BF0141499CCB03F5F45A735B5B443F8 /* UIKit.framework */; };
 		265A3BCF8B426717E8EE1CAD4341F99A /* DateFieldRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB94229D4D90088598363FCD46917EF /* DateFieldRow.swift */; };
 		28500C67AF0CB1EB34B53FFA93C3D27F /* ListCheckRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA56DF0E5625C5960186F9AB4EA791B /* ListCheckRow.swift */; };
@@ -64,7 +65,7 @@
 		306BD477167820D6CDECDCE1D7445ECD /* SliderRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4FA5280B24ACAE4C8496058C0C858B /* SliderRow.swift */; };
 		3553685DF5B3E9F47C219656691EC855 /* CSOrderBy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F951DA767293FE474138B40E90AF37 /* CSOrderBy.swift */; };
 		3626B94094672CB1C9DEA32B9F9502E1 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0204C3EA4FD54897E4FADFA503E2E6A8 /* TaskDelegate.swift */; };
-		394F82BD1AFAEDC7455C4F59FC78E4D9 /* Pods-TaskTimer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F1A339EE5D99D2F84AB47695FF006630 /* Pods-TaskTimer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		394F82BD1AFAEDC7455C4F59FC78E4D9 /* Pods-TaskTimer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 24B7610BACB57162E2900AB14603ED22 /* Pods-TaskTimer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3A35620A8BC06FC7FADD00A4FBFD7248 /* CSDataStack+Observing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115934B5378A5A09D90947635A048DB1 /* CSDataStack+Observing.swift */; };
 		3A74744D859937E2D92C13F69D431D8C /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37A4648D19EC0D50DE4E26DBA46C491 /* Functions.swift */; };
 		3B8502B20D495A806D4D7D5479788CB3 /* NSManagedObjectContext+Querying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D1BE8AC22929D56F9537887D7D3EA25 /* NSManagedObjectContext+Querying.swift */; };
@@ -88,6 +89,7 @@
 		5A380E0127635057397F45AFBD13B255 /* Eureka-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4D1A88434FD1587673D09B6C61467D /* Eureka-dummy.m */; };
 		5AC51D14F696E930649C5C5EB419C743 /* NSManagedObject+Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62CD313C592AAFC74852D1A8B5B93D5E /* NSManagedObject+Transaction.swift */; };
 		5D647533060C688C633E15C86553B868 /* DatePickerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E122E40ED702081136B8EA50AE5CDF /* DatePickerRow.swift */; };
+		5DE2F6900F07487AFC6BBE7708787A03 /* Pods-TaskTimerModelTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876526071BBAF9D57E5829B2915A36F /* Pods-TaskTimerModelTests-dummy.m */; };
 		5E411AC00CBEC3429A5E085E21A6A726 /* CoreStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 6869F085CF7AA2B1DE10562263F45088 /* CoreStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		61200D01A1855D7920CEF835C8BE00B0 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E6B72A8FE9E24ADD17D241BC244564 /* DispatchQueue+Alamofire.swift */; };
 		62F65AD8DC4F0F9610F4B8B4738EC094 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444B3E88137A08D013640ED14D650FF5 /* ServerTrustPolicy.swift */; };
@@ -118,7 +120,7 @@
 		813C94B9426FBB944771C06175F7DED6 /* CoreStore+Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFAADC6B72FD7811603952FC3D4C1EB2 /* CoreStore+Transaction.swift */; };
 		818A9F9577AC425A512F8D6C83458637 /* CSStorageInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DDC50AC13B68DDB0EBB0DF3EA74132 /* CSStorageInterface.swift */; };
 		827BD4C80F28C2F7E9521461DA5CBDAE /* RuleURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2C1F66598C73F305E13E02726E3F9A /* RuleURL.swift */; };
-		83D3645381BD8C1F35F8607536A01070 /* Pods-TaskTimerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 37AD1489A1A91FA2FA5AD117A9BE3EED /* Pods-TaskTimerTests-dummy.m */; };
+		83D3645381BD8C1F35F8607536A01070 /* Pods-TaskTimerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BE239865B210E33EF7C4B60D19DEA6C8 /* Pods-TaskTimerTests-dummy.m */; };
 		84EDBC31CB598043FFB55F1B47AE5840 /* CSBaseDataTransaction+Querying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68242AF42B384791BB49F1BD03429558 /* CSBaseDataTransaction+Querying.swift */; };
 		854CB6238C2BDA8CCA9E21A6F0A38ED3 /* MigrationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457561CA9A19E0BB3C4313F3C08DCDC9 /* MigrationResult.swift */; };
 		874CB6EF3D15B16EC7DB5A299D634690 /* CSSetupResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C39D3F5D702DA597F591FD6FB976F2F /* CSSetupResult.swift */; };
@@ -129,7 +131,9 @@
 		8EF300B8CEFF6EB70DB17C5573EB6249 /* CSSectionBy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB91BEEA3A98C712961255E5653D71C /* CSSectionBy.swift */; };
 		91B1816B2849893F4B9CD20D97481841 /* CoreStoreFetchRequest+CoreStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD7E0F25D3B3D1840E51C0E9CB1B6C4 /* CoreStoreFetchRequest+CoreStore.swift */; };
 		95559A3F03A26C42DF81DC5D643215D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F0F5B7CF4E03833FE4E957DA9304993 /* Foundation.framework */; };
+		9657B56F7A35259CD71AC4B3AA3E0408 /* Pods-TaskTimerModel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 163202456600ADE3CBBD1C2D1611A7D9 /* Pods-TaskTimerModel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		987A9AA62B48BC871C21106E68F9257E /* RuleEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B777D9EA76EAF3530D8B025130AFB73 /* RuleEmail.swift */; };
+		98DDD72810DFC0A9FD7645FF7CB47C7A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F0F5B7CF4E03833FE4E957DA9304993 /* Foundation.framework */; };
 		9926EF73DC7EFCBD50D322671328B24F /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E4ADBC121A829AD4E3F60CF6541BEF /* Cell.swift */; };
 		99B976E6D5E02E8E943994268C350DD3 /* SectionBy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14DD35DFB839A4DDE9D88985008AB7E /* SectionBy.swift */; };
 		99BC63A28EB55DCDC2CA8EAC1886E077 /* StepperRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118DC0D20142FD8373D7540E70FEA5A1 /* StepperRow.swift */; };
@@ -154,6 +158,7 @@
 		A9EEEA7477981DEEBC72432DE9990A4B /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 20F336F1560D75A3DC2940112C18F824 /* Alamofire-dummy.m */; };
 		AA0CDD726F8156D06FDFE3C6FAB27C52 /* ButtonRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0458DD38846F81E915FD46F235E3C0B7 /* ButtonRow.swift */; };
 		AA7012D4A2E0818B5D6C2BAA5DFA3CD2 /* RuleEqualsToRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6805CECBCC47DD1DA23AB2C95AFB7187 /* RuleEqualsToRow.swift */; };
+		AC4A5E4BB16D3C2D8C85A568E51C87F4 /* Pods-TaskTimerModelTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 01C246F5E3A5A2A8E276E9A2DBF21ED8 /* Pods-TaskTimerModelTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AC67D0B879D0D08689D517F192AA96FB /* CSWhere.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E28B8AE30BF6D90E3307F526314EFFE /* CSWhere.swift */; };
 		ACCE3F2863CD701C10E423E66980722D /* UnsafeDataTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850EA696B68C46809CCA9C5ED70AE684 /* UnsafeDataTransaction.swift */; };
 		ACFE29AFED6A97BFFF897DE00E83FC46 /* DataStack+Querying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B2ED381E7C0CEF6EEBD7EC36B1EBC3 /* DataStack+Querying.swift */; };
@@ -178,10 +183,11 @@
 		C3AB2967E1DB63B6E9623E3BE90EEE8C /* NSPersistentStore+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4635374802C628DE54B2D53F1C9699 /* NSPersistentStore+Setup.swift */; };
 		C59AD00C49D8D3E38CBB21FA905890E2 /* FetchableSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3B859C53844FFA3A4F7D82B7E00FD2 /* FetchableSource.swift */; };
 		C657B4C0DFB6C3BE1119C1BB8CAD4C78 /* RuleLength.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C868F4C86A5896ABA9AC60AA3B7F62F /* RuleLength.swift */; };
-		C68A12054299637009D9AE73AC7D1A25 /* Pods-TaskTimer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AEACB7286E336AC02CC89829D0F747D /* Pods-TaskTimer-dummy.m */; };
+		C68A12054299637009D9AE73AC7D1A25 /* Pods-TaskTimer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 87ECA0A8037EE683C73D2ACA19F76954 /* Pods-TaskTimer-dummy.m */; };
 		C78BA45D4DA633F53E7E2AF1BC477A36 /* CSMigrationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D4572433002CDDB849D30700F22080 /* CSMigrationType.swift */; };
 		C7AB077A929352F05B205E7FDBF9F930 /* Where.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B38DFF2C3C0ADB38A4B74DE1B0C3D3 /* Where.swift */; };
 		C7B34BD9777E656FA074F74933F61732 /* CSClauseTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27283B3294F94A4797D7D9A0FF3BCA8E /* CSClauseTypes.swift */; };
+		CAFCD325E89C8228DDEB75888DC22FCE /* Pods-TaskTimerModel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 97B6E9FF2EE977492263C6F4BA298D61 /* Pods-TaskTimerModel-dummy.m */; };
 		CB6D60925223897FFA2662667DF83E8A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 138DFB00E317DFE8BFE450D1145996A4 /* Response.swift */; };
 		CCAB89C5B0F52B0F69DBED084DDFCFBB /* OptionsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4053C9334AC9C7C8A7223570F4429374 /* OptionsRow.swift */; };
 		CE0A96C6C6F83D933239F2D8062928C5 /* CoreStore-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D4042CCA19019756B5ADEE7BE916837 /* CoreStore-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -220,6 +226,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		050A17240136F1EF270D9614F12D7F32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD01BAC8F5256CBDC99D6D4A275D47DA;
+			remoteInfo = CoreStore;
+		};
 		30ADF1B548DB72A4F28AA118BB986F78 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -228,6 +241,13 @@
 			remoteInfo = Alamofire;
 		};
 		8BF9DAEB2E70805D63A483B68993BC2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD01BAC8F5256CBDC99D6D4A275D47DA;
+			remoteInfo = CoreStore;
+		};
+		BAC25E5E5D1008FECDB5365490398EB2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -245,19 +265,19 @@
 
 /* Begin PBXFileReference section */
 		00F07DB397FDAA0A5B5F165DAA39DC8A /* CSListMonitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSListMonitor.swift; path = Sources/ObjectiveC/CSListMonitor.swift; sourceTree = "<group>"; };
+		01C246F5E3A5A2A8E276E9A2DBF21ED8 /* Pods-TaskTimerModelTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TaskTimerModelTests-umbrella.h"; sourceTree = "<group>"; };
 		0204C3EA4FD54897E4FADFA503E2E6A8 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
-		02577063920272733AC127C31C3C46CE /* Pods-TaskTimerTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TaskTimerTests-resources.sh"; sourceTree = "<group>"; };
 		04131C881086340CE64B3E2DC5B79252 /* SegmentedRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SegmentedRow.swift; path = Source/Rows/SegmentedRow.swift; sourceTree = "<group>"; };
 		044894F93CA81AAA710AED2C324A68F7 /* CoreStore+Querying.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CoreStore+Querying.swift"; path = "Sources/Fetching and Querying/CoreStore+Querying.swift"; sourceTree = "<group>"; };
 		0458DD38846F81E915FD46F235E3C0B7 /* ButtonRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ButtonRow.swift; path = Source/Rows/ButtonRow.swift; sourceTree = "<group>"; };
 		0651AD21E71CB985360C702A4E538205 /* CoreStoreBridge.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CoreStoreBridge.m; path = Sources/ObjectiveC/CoreStoreBridge.m; sourceTree = "<group>"; };
 		065BEF6BEFFA2478F0B1DD588A544859 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
-		065D68B582D394AB5F1C23392C512C3E /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		06A6FF269B5C50C9124D321604EFA0F3 /* FetchedResultsControllerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FetchedResultsControllerDelegate.swift; path = Sources/Internal/FetchedResultsControllerDelegate.swift; sourceTree = "<group>"; };
 		09D58BE424358ED0C30002B44C71FF90 /* SQLiteStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SQLiteStore.swift; path = Sources/Setup/StorageInterfaces/SQLiteStore.swift; sourceTree = "<group>"; };
 		0A5929FB3CDD81FE573B7C690EBF09A9 /* Eureka-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Eureka-prefix.pch"; sourceTree = "<group>"; };
 		0ACA78045B1E2CCC3676EDDC13955AA6 /* Tweak.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Tweak.swift; path = "Sources/Fetching and Querying/Concrete Clauses/Tweak.swift"; sourceTree = "<group>"; };
 		0B4514F9DE89C38202625086073D0D3E /* StorageInterface.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StorageInterface.swift; path = Sources/Setup/StorageInterfaces/StorageInterface.swift; sourceTree = "<group>"; };
+		0C348626D171213DD3D5EAD1A0534F19 /* Pods-TaskTimerTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TaskTimerTests-resources.sh"; sourceTree = "<group>"; };
 		0C895CA6F3BC3716B0F20BBD8A85B66D /* RuleClosure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RuleClosure.swift; path = Source/Validations/RuleClosure.swift; sourceTree = "<group>"; };
 		0F0C5B69EA56307608CFC151A87185B3 /* ListMonitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ListMonitor.swift; path = Sources/Observing/ListMonitor.swift; sourceTree = "<group>"; };
 		0F0F5B7CF4E03833FE4E957DA9304993 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -266,23 +286,30 @@
 		118DC0D20142FD8373D7540E70FEA5A1 /* StepperRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StepperRow.swift; path = Source/Rows/StepperRow.swift; sourceTree = "<group>"; };
 		138DFB00E317DFE8BFE450D1145996A4 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
 		1390288CD524F4F02DAD0596D3DAF007 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		163202456600ADE3CBBD1C2D1611A7D9 /* Pods-TaskTimerModel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TaskTimerModel-umbrella.h"; sourceTree = "<group>"; };
+		18244AFE503BCF770AEDD0C9E44BC534 /* Pods-TaskTimerModelTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TaskTimerModelTests-frameworks.sh"; sourceTree = "<group>"; };
 		183EE11ACE607DA5B82339CB9FF444A1 /* CSAsynchronousDataTransaction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSAsynchronousDataTransaction.swift; path = Sources/ObjectiveC/CSAsynchronousDataTransaction.swift; sourceTree = "<group>"; };
 		18DDCC21E1192B24FDDB5D0266A6BC4A /* DispatchQueue+CoreStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+CoreStore.swift"; path = "Sources/Internal/DispatchQueue+CoreStore.swift"; sourceTree = "<group>"; };
 		18E37C71CA37DD06F6406DD8793A6241 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Core/Validation.swift; sourceTree = "<group>"; };
 		1A4E0B8374ECF88663A4C8F0F88A74C3 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
 		1B49FF16A2B5D586DE3660774562DB72 /* SelectableRowType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SelectableRowType.swift; path = Source/Core/SelectableRowType.swift; sourceTree = "<group>"; };
-		1C960508D7562EB7560A29106FC8EF07 /* Pods-TaskTimerTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TaskTimerTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1BAE385AF280DA29D2835291C8E23BF4 /* Pods-TaskTimerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TaskTimerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1C9CA4C505E0B9E96D0882F8E6991634 /* PickerInlineRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PickerInlineRow.swift; path = Source/Rows/PickerInlineRow.swift; sourceTree = "<group>"; };
 		1CA05AD0EBCFDD559342E1E4B94D4685 /* CSGroupBy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSGroupBy.swift; path = Sources/ObjectiveC/CSGroupBy.swift; sourceTree = "<group>"; };
 		1DEDEF7581E2DFC2938E6EB54C32F009 /* Section.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Section.swift; path = Source/Core/Section.swift; sourceTree = "<group>"; };
 		1E993241E5BDE16F1883CC91B69DB896 /* RuleRequired.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RuleRequired.swift; path = Source/Validations/RuleRequired.swift; sourceTree = "<group>"; };
+		1F359C973EB68479FD8F8D32A837C8F6 /* Pods-TaskTimerTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TaskTimerTests-umbrella.h"; sourceTree = "<group>"; };
 		209B3F133E49428041DEACA9E2FC9C87 /* CSError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSError.swift; path = Sources/ObjectiveC/CSError.swift; sourceTree = "<group>"; };
+		20A70738BEB9A6B34A387A4303BE89FC /* Pods-TaskTimer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TaskTimer.release.xcconfig"; sourceTree = "<group>"; };
 		20F336F1560D75A3DC2940112C18F824 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
 		2216221970D6B255BC66DB9FED1C07FC /* PopoverSelectorRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PopoverSelectorRow.swift; path = Source/Rows/PopoverSelectorRow.swift; sourceTree = "<group>"; };
+		241B7965369CA85C7319F4568EA27E26 /* Pods-TaskTimerModel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TaskTimerModel.modulemap"; sourceTree = "<group>"; };
+		24B7610BACB57162E2900AB14603ED22 /* Pods-TaskTimer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TaskTimer-umbrella.h"; sourceTree = "<group>"; };
 		24E469E3D436623F2FDB712F8E5FE049 /* CSCoreStore+Transaction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CSCoreStore+Transaction.swift"; path = "Sources/ObjectiveC/CSCoreStore+Transaction.swift"; sourceTree = "<group>"; };
 		2601509B93B775C094EA1E10138D4457 /* SelectableSection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SelectableSection.swift; path = Source/Core/SelectableSection.swift; sourceTree = "<group>"; };
 		26DA8FF7717EF6FCD71557A8FB99D525 /* DateInlineFieldRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateInlineFieldRow.swift; path = Source/Rows/Common/DateInlineFieldRow.swift; sourceTree = "<group>"; };
 		27283B3294F94A4797D7D9A0FF3BCA8E /* CSClauseTypes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSClauseTypes.swift; path = Sources/ObjectiveC/CSClauseTypes.swift; sourceTree = "<group>"; };
+		28E6A3A6D65B862D162DF8C4130D0CC6 /* Pods-TaskTimerModelTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TaskTimerModelTests.modulemap"; sourceTree = "<group>"; };
 		28EACB17BEDEA1FC01375924035DBD28 /* NSManagedObjectContext+Transaction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSManagedObjectContext+Transaction.swift"; path = "Sources/Internal/NSManagedObjectContext+Transaction.swift"; sourceTree = "<group>"; };
 		2A0C83B7753E94C5CFD0C2F83B655782 /* CSSQliteStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSSQliteStore.swift; path = Sources/ObjectiveC/CSSQliteStore.swift; sourceTree = "<group>"; };
 		2A37BD785EA96A90424D87716E5A5E0F /* RowType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RowType.swift; path = Source/Core/RowType.swift; sourceTree = "<group>"; };
@@ -300,16 +327,14 @@
 		30204DD6711B08439F58C0023272EDF8 /* FieldRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FieldRow.swift; path = Source/Rows/Common/FieldRow.swift; sourceTree = "<group>"; };
 		31241CCA7FF6B703BD35F19AD5840035 /* Form.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Form.swift; path = Source/Core/Form.swift; sourceTree = "<group>"; };
 		316D33FD9286DB695E4B59FB652AD5D5 /* CSMigrationResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSMigrationResult.swift; path = Sources/ObjectiveC/CSMigrationResult.swift; sourceTree = "<group>"; };
+		339CD1E0C39AA2BEF3AF0BF2F6627835 /* Pods-TaskTimerTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TaskTimerTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		33C40BA53F7C4EDEA3ED7EE782219688 /* CoreStore+Observing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CoreStore+Observing.swift"; path = "Sources/Observing/CoreStore+Observing.swift"; sourceTree = "<group>"; };
 		35688867159818BA5D4BD6C0676C9A0A /* CSListObserver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSListObserver.swift; path = Sources/ObjectiveC/CSListObserver.swift; sourceTree = "<group>"; };
-		35C60D6479B20AA4961D8B80EC7CEF18 /* Pods_TaskTimer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TaskTimer.framework; path = "Pods-TaskTimer.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35DF7AD180EBBDAE6FE89C3C1D49CF62 /* CoreStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreStore.swift; path = Sources/CoreStore.swift; sourceTree = "<group>"; };
 		3799811D57BA9FF32CA4524FF8A3862E /* RuleRange.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RuleRange.swift; path = Source/Validations/RuleRange.swift; sourceTree = "<group>"; };
-		37AD1489A1A91FA2FA5AD117A9BE3EED /* Pods-TaskTimerTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TaskTimerTests-dummy.m"; sourceTree = "<group>"; };
 		37BE65108E42E2675DC4DF8E189FD804 /* ObjectObserver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObjectObserver.swift; path = Sources/Observing/ObjectObserver.swift; sourceTree = "<group>"; };
 		38A93D4382AFB4589C077FE51B9DDD90 /* HeaderFooterView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HeaderFooterView.swift; path = Source/Core/HeaderFooterView.swift; sourceTree = "<group>"; };
 		38BEF8F381787B2D73418D95CF424723 /* PresenterRowType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PresenterRowType.swift; path = Source/Core/PresenterRowType.swift; sourceTree = "<group>"; };
-		39BF4DAE08F0B104C70A4DAA238DFC84 /* Pods-TaskTimer-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TaskTimer-acknowledgements.plist"; sourceTree = "<group>"; };
 		39F4983D96EFD7078C443F4F7AE04FF4 /* CoreStore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CoreStore.xcconfig; sourceTree = "<group>"; };
 		3C61B93CC178933C72C31629C9AC2BD5 /* From.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = From.swift; path = "Sources/Fetching and Querying/Concrete Clauses/From.swift"; sourceTree = "<group>"; };
 		3C62C33AAC438FF165EDCA0B7B2BD815 /* Progress+ObjectiveC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Progress+ObjectiveC.swift"; path = "Sources/ObjectiveC/Progress+ObjectiveC.swift"; sourceTree = "<group>"; };
@@ -320,38 +345,46 @@
 		3EF9B5EB8C8FB1BEC79666A6BEA330A7 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
 		4053C9334AC9C7C8A7223570F4429374 /* OptionsRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OptionsRow.swift; path = Source/Rows/Common/OptionsRow.swift; sourceTree = "<group>"; };
 		41DB5ECD7BBAE7A79EE0AE9EBA7C42B3 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
-		4272D9EA3DA5AAFA04B5E793B164FD57 /* Pods-TaskTimer-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TaskTimer-acknowledgements.markdown"; sourceTree = "<group>"; };
 		4304E7D285D55B876E0F76DC239207B3 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = iOS/Fabric.framework; sourceTree = "<group>"; };
 		44091700AE4025FB2B29256C0543066B /* CoreStore-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CoreStore-prefix.pch"; sourceTree = "<group>"; };
 		444B3E88137A08D013640ED14D650FF5 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
 		4552DA6B0B060FE8D0B7A047AB03CC6D /* CSCoreStore+Setup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CSCoreStore+Setup.swift"; path = "Sources/ObjectiveC/CSCoreStore+Setup.swift"; sourceTree = "<group>"; };
 		457561CA9A19E0BB3C4313F3C08DCDC9 /* MigrationResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MigrationResult.swift; path = Sources/Migrating/MigrationResult.swift; sourceTree = "<group>"; };
 		46559ADC6DB67335F93CE3C6CC27476F /* CSObjectObserver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSObjectObserver.swift; path = Sources/ObjectiveC/CSObjectObserver.swift; sourceTree = "<group>"; };
+		4876526071BBAF9D57E5829B2915A36F /* Pods-TaskTimerModelTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TaskTimerModelTests-dummy.m"; sourceTree = "<group>"; };
 		4919A14E30CEFBD046D0D7DD6296B91A /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
 		4B2C1F66598C73F305E13E02726E3F9A /* RuleURL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RuleURL.swift; path = Source/Validations/RuleURL.swift; sourceTree = "<group>"; };
+		4BE1F7F4536CA56DB50E441DA79ABF03 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E26AA0AC359BBB1DA907A6FFB751B46 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E5EAEDE6D13ED81F3779780A67ECF98 /* Pods-TaskTimer-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TaskTimer-acknowledgements.plist"; sourceTree = "<group>"; };
 		4FE18B97AF62D2986265833662C32410 /* DateInlineRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateInlineRow.swift; path = Source/Rows/DateInlineRow.swift; sourceTree = "<group>"; };
 		5060BCCAC3B7940164DCB99FB7DE5FDC /* NSManagedObjectContext+ObjectiveC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSManagedObjectContext+ObjectiveC.swift"; path = "Sources/ObjectiveC/NSManagedObjectContext+ObjectiveC.swift"; sourceTree = "<group>"; };
-		50A51C37288D139E3EF22CA8343EBFF8 /* Pods-TaskTimerTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TaskTimerTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		530AED1238EFAAF09DE1BBA62D009F88 /* Pods-TaskTimerTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TaskTimerTests.modulemap"; sourceTree = "<group>"; };
 		53C8F207BECA86D79E797F13B25441E5 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
 		53DC6EB556D024681AC7E550287DCC88 /* CLSLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSLogging.h; path = iOS/Crashlytics.framework/Headers/CLSLogging.h; sourceTree = "<group>"; };
 		54067962FEE7CBF8213160CDB2FA1097 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		540F5EE9F51686CAC1E5DC56BD7E5258 /* NSPersistentStoreCoordinator+Setup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSPersistentStoreCoordinator+Setup.swift"; path = "Sources/Internal/NSPersistentStoreCoordinator+Setup.swift"; sourceTree = "<group>"; };
+		54181EFCB2898BEFF2604B2FF2C61564 /* Pods-TaskTimer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TaskTimer.modulemap"; sourceTree = "<group>"; };
 		5479AFEC0B28AF70EE3489C25172BB6A /* CSCoreStore+Migrating.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CSCoreStore+Migrating.swift"; path = "Sources/ObjectiveC/CSCoreStore+Migrating.swift"; sourceTree = "<group>"; };
+		555FA763C0B3953F1F96999B491843BC /* Pods_TaskTimer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TaskTimer.framework; path = "Pods-TaskTimer.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55C7BD9E0A529619DB62F5BD6AC0B4D0 /* LabelRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LabelRow.swift; path = Source/Rows/LabelRow.swift; sourceTree = "<group>"; };
 		561777FD1767EB91726FC6BC9C213AB1 /* CLSReport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSReport.h; path = iOS/Crashlytics.framework/Headers/CLSReport.h; sourceTree = "<group>"; };
 		56B2ED381E7C0CEF6EEBD7EC36B1EBC3 /* DataStack+Querying.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DataStack+Querying.swift"; path = "Sources/Fetching and Querying/DataStack+Querying.swift"; sourceTree = "<group>"; };
 		58F646FAA25BF5D134118DD9BA025217 /* CSSaveResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSSaveResult.swift; path = Sources/ObjectiveC/CSSaveResult.swift; sourceTree = "<group>"; };
 		59730DED46C79E776D84A750D1E61C8F /* Eureka-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Eureka-umbrella.h"; sourceTree = "<group>"; };
+		597A56EF891B1591DCFD5ECDC8E7E5A2 /* Pods-TaskTimer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TaskTimer.debug.xcconfig"; sourceTree = "<group>"; };
+		59BDD4F882B35976139FA0C953D42C1C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A3B859C53844FFA3A4F7D82B7E00FD2 /* FetchableSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FetchableSource.swift; path = "Sources/Fetching and Querying/FetchableSource.swift"; sourceTree = "<group>"; };
+		5B06E31A4B8A6CC03B7BBF1C10473E04 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5CBFDF1644BF6206128B947588B5710F /* MultipleSelectorViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipleSelectorViewController.swift; path = Source/Rows/Controllers/MultipleSelectorViewController.swift; sourceTree = "<group>"; };
 		5E0F806D138F1275EB613535D78EEB7D /* DataStack.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataStack.swift; path = Sources/Setup/DataStack.swift; sourceTree = "<group>"; };
 		6022F6008F654876F49FFE84833CBAF7 /* Eureka.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = Eureka.bundle; path = Source/Resources/Eureka.bundle; sourceTree = "<group>"; };
 		61AC366DE60A7BBDA42F23A3C0351CAB /* CSInto.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSInto.swift; path = Sources/ObjectiveC/CSInto.swift; sourceTree = "<group>"; };
 		61CA82B3C7C7799E9E2C94CBF13F1598 /* Eureka.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Eureka.xcconfig; sourceTree = "<group>"; };
 		62CD313C592AAFC74852D1A8B5B93D5E /* NSManagedObject+Transaction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSManagedObject+Transaction.swift"; path = "Sources/Transactions/NSManagedObject+Transaction.swift"; sourceTree = "<group>"; };
+		661976D8397FA49EAB551266E0714B59 /* Pods-TaskTimerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TaskTimerTests.release.xcconfig"; sourceTree = "<group>"; };
 		6805CECBCC47DD1DA23AB2C95AFB7187 /* RuleEqualsToRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RuleEqualsToRow.swift; path = Source/Validations/RuleEqualsToRow.swift; sourceTree = "<group>"; };
 		68242AF42B384791BB49F1BD03429558 /* CSBaseDataTransaction+Querying.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CSBaseDataTransaction+Querying.swift"; path = "Sources/ObjectiveC/CSBaseDataTransaction+Querying.swift"; sourceTree = "<group>"; };
-		6824DAD1DFB34D3355A598F92BCE718A /* Pods-TaskTimer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TaskTimer.release.xcconfig"; sourceTree = "<group>"; };
 		6869F085CF7AA2B1DE10562263F45088 /* CoreStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CoreStore.h; path = Sources/CoreStore.h; sourceTree = "<group>"; };
 		68F805D45340B164F88453D4E8D181A7 /* CSDataStack+Transaction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CSDataStack+Transaction.swift"; path = "Sources/ObjectiveC/CSDataStack+Transaction.swift"; sourceTree = "<group>"; };
 		696D5FB0D4A3860467DCEE081F5E4A0B /* CoreStoreBridge.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreStoreBridge.swift; path = Sources/ObjectiveC/CoreStoreBridge.swift; sourceTree = "<group>"; };
@@ -360,6 +393,7 @@
 		6ADD9464C4227AB23279E2B703993DF4 /* CoreStoreLogger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreStoreLogger.swift; path = Sources/Logging/CoreStoreLogger.swift; sourceTree = "<group>"; };
 		6B6071E491E6E2ED6AA403C2924D03A0 /* MigrationType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MigrationType.swift; path = Sources/Migrating/MigrationType.swift; sourceTree = "<group>"; };
 		6B7609EF6D034FA35E444086A075773A /* CSObjectMonitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSObjectMonitor.swift; path = Sources/ObjectiveC/CSObjectMonitor.swift; sourceTree = "<group>"; };
+		6BAB362487E7EDE01E11D7864F46A87F /* Pods-TaskTimerTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TaskTimerTests-frameworks.sh"; sourceTree = "<group>"; };
 		6C0C4B7DEA060D57BC4446110C79DBE5 /* DataStack+Transaction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DataStack+Transaction.swift"; path = "Sources/Transactions/DataStack+Transaction.swift"; sourceTree = "<group>"; };
 		6C46ED04F5CBAD1A0811EE313F1BB9E6 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
 		6C868F4C86A5896ABA9AC60AA3B7F62F /* RuleLength.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RuleLength.swift; path = Source/Validations/RuleLength.swift; sourceTree = "<group>"; };
@@ -367,43 +401,45 @@
 		6DB91BEEA3A98C712961255E5653D71C /* CSSectionBy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSSectionBy.swift; path = Sources/ObjectiveC/CSSectionBy.swift; sourceTree = "<group>"; };
 		6E1A2BE8F47C6869F330ECE48F28DC0F /* CLSStackFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CLSStackFrame.h; path = iOS/Crashlytics.framework/Headers/CLSStackFrame.h; sourceTree = "<group>"; };
 		6ECF24F65AC963E0C0F6B624EC5A3EF0 /* WeakObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WeakObject.swift; path = Sources/Internal/WeakObject.swift; sourceTree = "<group>"; };
-		6F46FD18F0A642BC6C9A170C02FE82F5 /* Pods-TaskTimer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TaskTimer.debug.xcconfig"; sourceTree = "<group>"; };
+		6FA3EE3044611B6627B20518706C8F24 /* CoreStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CoreStore.framework; path = CoreStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		70507BEC1EFD35410BA4CB03F4487990 /* CSDataStack+Querying.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CSDataStack+Querying.swift"; path = "Sources/ObjectiveC/CSDataStack+Querying.swift"; sourceTree = "<group>"; };
+		714E522F87941A4EBAB8DED7C89D01E3 /* Pods-TaskTimerModel-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TaskTimerModel-acknowledgements.markdown"; sourceTree = "<group>"; };
 		71E122E40ED702081136B8EA50AE5CDF /* DatePickerRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DatePickerRow.swift; path = Source/Rows/DatePickerRow.swift; sourceTree = "<group>"; };
+		72612B83984CC66E7A3C086ED10A9114 /* Pods-TaskTimerModelTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TaskTimerModelTests-resources.sh"; sourceTree = "<group>"; };
 		72BFA89F635898CB67371715EB39CC2F /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
 		72CFE5CDCDD11B8C73D33E875BC4207E /* CSCoreStore+Observing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CSCoreStore+Observing.swift"; path = "Sources/ObjectiveC/CSCoreStore+Observing.swift"; sourceTree = "<group>"; };
 		73449C86378160E6E6E46B455B8B6ABE /* NSFetchedResultsController+ObjectiveC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSFetchedResultsController+ObjectiveC.swift"; path = "Sources/ObjectiveC/NSFetchedResultsController+ObjectiveC.swift"; sourceTree = "<group>"; };
 		739367A2DABA8F48D4CFA7B7DDE9C9DA /* RuleRegExp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RuleRegExp.swift; path = Source/Validations/RuleRegExp.swift; sourceTree = "<group>"; };
 		7562E469CEF190503521C7AD68570297 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		76AB85DF6D84FAC9F7B65A211B5871F9 /* Pods-TaskTimerModelTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TaskTimerModelTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		774A94E2AA4C66B673B0DED2587D987B /* CoreStoreBridge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CoreStoreBridge.h; path = Sources/ObjectiveC/CoreStoreBridge.h; sourceTree = "<group>"; };
 		77C599C7F0A98DF6B450CD90CA197EC4 /* PickerInputRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PickerInputRow.swift; path = Source/Rows/PickerInputRow.swift; sourceTree = "<group>"; };
 		793A86E0BF8FD09388917E67351F9840 /* CoreStoreFetchedResultsController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreStoreFetchedResultsController.swift; path = Sources/Internal/CoreStoreFetchedResultsController.swift; sourceTree = "<group>"; };
+		7C83780DB70F70E7961C4C88C9E9B4FF /* Eureka.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Eureka.framework; path = Eureka.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D1BE8AC22929D56F9537887D7D3EA25 /* NSManagedObjectContext+Querying.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSManagedObjectContext+Querying.swift"; path = "Sources/Internal/NSManagedObjectContext+Querying.swift"; sourceTree = "<group>"; };
 		7F9C1597944659387FF6FA02A1B8D1E5 /* Crashlytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Crashlytics.h; path = iOS/Crashlytics.framework/Headers/Crashlytics.h; sourceTree = "<group>"; };
 		80569FA60D042CE0FD89DBA5DE7C29A5 /* DataStack+Observing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DataStack+Observing.swift"; path = "Sources/Observing/DataStack+Observing.swift"; sourceTree = "<group>"; };
-		80BB32BBFB334193058CBFB5D3646CB2 /* Eureka.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Eureka.framework; path = Eureka.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81E8996309A354DD546FC751250E4589 /* ActionSheetRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ActionSheetRow.swift; path = Source/Rows/ActionSheetRow.swift; sourceTree = "<group>"; };
 		82B328C0E1ED33A3AD87B6EFC7BCBF52 /* TextAreaRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextAreaRow.swift; path = Source/Rows/TextAreaRow.swift; sourceTree = "<group>"; };
 		838C02626DC9D29350E893295A7AEB82 /* CoreStore+Logging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CoreStore+Logging.swift"; path = "Sources/Logging/CoreStore+Logging.swift"; sourceTree = "<group>"; };
 		84B8D62F1F9BC518FDE934C2B42CFADE /* UnsafeDataTransaction+Observing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UnsafeDataTransaction+Observing.swift"; path = "Sources/Observing/UnsafeDataTransaction+Observing.swift"; sourceTree = "<group>"; };
 		84C7AED6F7B27D9216435A48AAC1CBD3 /* Helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Helpers.swift; path = Source/Core/Helpers.swift; sourceTree = "<group>"; };
 		850EA696B68C46809CCA9C5ED70AE684 /* UnsafeDataTransaction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UnsafeDataTransaction.swift; path = Sources/Transactions/UnsafeDataTransaction.swift; sourceTree = "<group>"; };
-		8596DA384BF8CC0803653BCD6BEFDDC4 /* Pods-TaskTimerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TaskTimerTests.release.xcconfig"; sourceTree = "<group>"; };
 		861F321224D62251A4E30A7581E636D6 /* GroupBy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GroupBy.swift; path = "Sources/Fetching and Querying/Concrete Clauses/GroupBy.swift"; sourceTree = "<group>"; };
 		8626A2C7C560C0B69AF1656D90BBEA1B /* CSBaseDataTransaction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSBaseDataTransaction.swift; path = Sources/ObjectiveC/CSBaseDataTransaction.swift; sourceTree = "<group>"; };
 		873715F94028ADB9BB0C01230A3C72FC /* AlertRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlertRow.swift; path = Source/Rows/AlertRow.swift; sourceTree = "<group>"; };
+		87ECA0A8037EE683C73D2ACA19F76954 /* Pods-TaskTimer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TaskTimer-dummy.m"; sourceTree = "<group>"; };
 		886103725B4C1825FAA25AFBBDF09AD8 /* QueryableSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QueryableSource.swift; path = "Sources/Fetching and Querying/QueryableSource.swift"; sourceTree = "<group>"; };
+		88E267BA58DE005A1FF5929F85B73FB6 /* Pods-TaskTimer-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TaskTimer-resources.sh"; sourceTree = "<group>"; };
+		897D7AFE16DA4F6E11CA9643D7EFCB47 /* Pods-TaskTimerModelTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TaskTimerModelTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		89983D2892EC05F4CFBF4C0E4E319673 /* Answers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Answers.h; path = iOS/Crashlytics.framework/Headers/Answers.h; sourceTree = "<group>"; };
 		8A149B2195FF2E39FEC2E3B3A0F6635E /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
-		8AEACB7286E336AC02CC89829D0F747D /* Pods-TaskTimer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TaskTimer-dummy.m"; sourceTree = "<group>"; };
 		8B330214320D75C54C84F455A0A15170 /* CSUnsafeDataTransaction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSUnsafeDataTransaction.swift; path = Sources/ObjectiveC/CSUnsafeDataTransaction.swift; sourceTree = "<group>"; };
 		8BF0141499CCB03F5F45A735B5B443F8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		8C0AD6253A27FFAAABAFAC3B514C2EB2 /* CSDataStack+Migrating.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CSDataStack+Migrating.swift"; path = "Sources/ObjectiveC/CSDataStack+Migrating.swift"; sourceTree = "<group>"; };
 		8C3C05F241EA68F9EAA36D7D041735C5 /* Fabric.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Fabric.h; path = iOS/Fabric.framework/Headers/Fabric.h; sourceTree = "<group>"; };
 		8D4635374802C628DE54B2D53F1C9699 /* NSPersistentStore+Setup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSPersistentStore+Setup.swift"; path = "Sources/Internal/NSPersistentStore+Setup.swift"; sourceTree = "<group>"; };
 		8D5112F4312A601C979BFB362219B553 /* CoreStore.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = CoreStore.modulemap; sourceTree = "<group>"; };
-		8D5A0CAFDBCEB39508732CF556D6075C /* CoreStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CoreStore.framework; path = CoreStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8E1C12393C1640EAFFE1D23147EA8EE6 /* Pods-TaskTimer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TaskTimer.modulemap"; sourceTree = "<group>"; };
 		8E3FEB196147F9B3CCA5D6B17EFD54BD /* ICloudStoreObserver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ICloudStoreObserver.swift; path = Sources/Setup/StorageInterfaces/ICloudStoreObserver.swift; sourceTree = "<group>"; };
 		8FF6F9ED4E047546DB8DA527CC88056C /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Alamofire.modulemap; sourceTree = "<group>"; };
 		916C645BC761C51CCA83AA261D276BAA /* SelectorViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SelectorViewController.swift; path = Source/Rows/Controllers/SelectorViewController.swift; sourceTree = "<group>"; };
@@ -414,6 +450,7 @@
 		948962692E1F4B9A6EDAB5DC8B5AE85E /* CheckRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CheckRow.swift; path = Source/Rows/CheckRow.swift; sourceTree = "<group>"; };
 		9679C317AA4A7FEB6A5EDAE6500EE4AC /* CSSelect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSSelect.swift; path = Sources/ObjectiveC/CSSelect.swift; sourceTree = "<group>"; };
 		9765D4555FD357C8C2266F50A782D387 /* ImportableObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImportableObject.swift; path = Sources/Importing/ImportableObject.swift; sourceTree = "<group>"; };
+		97B6E9FF2EE977492263C6F4BA298D61 /* Pods-TaskTimerModel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TaskTimerModel-dummy.m"; sourceTree = "<group>"; };
 		99AECB35755D365974595F17304225FB /* ListObserver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ListObserver.swift; path = Sources/Observing/ListObserver.swift; sourceTree = "<group>"; };
 		9AA4BA6CDF61310A63976718A78E6358 /* ButtonRowWithPresent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ButtonRowWithPresent.swift; path = Source/Rows/ButtonRowWithPresent.swift; sourceTree = "<group>"; };
 		9C7C6D9725C1CBAD4C88E0D7CEF66A00 /* SaveResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SaveResult.swift; path = Sources/Transactions/SaveResult.swift; sourceTree = "<group>"; };
@@ -421,24 +458,23 @@
 		9EB74ED534A325558B5933480DCA57CB /* CSFrom.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSFrom.swift; path = Sources/ObjectiveC/CSFrom.swift; sourceTree = "<group>"; };
 		A03348AA0975CE8DCE7C784DEBF2C999 /* ICloudStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ICloudStore.swift; path = Sources/Setup/StorageInterfaces/ICloudStore.swift; sourceTree = "<group>"; };
 		A0E25B93568FF46709DB4ED1C9A8CBA7 /* Protocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protocols.swift; path = Source/Rows/Common/Protocols.swift; sourceTree = "<group>"; };
+		A140FC0055738BCEF0A33245CEB286E9 /* Pods-TaskTimer-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TaskTimer-frameworks.sh"; sourceTree = "<group>"; };
+		A198E3F690044BC7FB5814B762F1B96F /* Pods-TaskTimerTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TaskTimerTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A1A495304CAAB3825DD7F2CAC4E95108 /* Row.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Row.swift; path = Source/Core/Row.swift; sourceTree = "<group>"; };
 		A21DB3305B3B6575DDA8A5CAC00A288E /* ANSCompatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ANSCompatibility.h; path = iOS/Crashlytics.framework/Headers/ANSCompatibility.h; sourceTree = "<group>"; };
 		A2450D1714E093D6227BE74AD4490169 /* CoreStoreError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreStoreError.swift; path = Sources/CoreStoreError.swift; sourceTree = "<group>"; };
 		A272333633C3780024E7DBB45D6588FD /* BaseDataTransaction+Importing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "BaseDataTransaction+Importing.swift"; path = "Sources/Importing/BaseDataTransaction+Importing.swift"; sourceTree = "<group>"; };
-		A29CDEE8CD488325A5567063B5AAD2B6 /* Pods-TaskTimer-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TaskTimer-resources.sh"; sourceTree = "<group>"; };
 		A5DDC50AC13B68DDB0EBB0DF3EA74132 /* CSStorageInterface.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSStorageInterface.swift; path = Sources/ObjectiveC/CSStorageInterface.swift; sourceTree = "<group>"; };
 		A7375729A5A0FC2F74D5358B5E664CD1 /* InlineRowType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InlineRowType.swift; path = Source/Core/InlineRowType.swift; sourceTree = "<group>"; };
 		A89BADC26899763B638AA3A4A01A1484 /* NSManagedObject+ObjectiveC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSManagedObject+ObjectiveC.swift"; path = "Sources/ObjectiveC/NSManagedObject+ObjectiveC.swift"; sourceTree = "<group>"; };
 		AA7440C0E962FDFC73FFD26CA9E98F95 /* NSManagedObjectContext+CoreStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSManagedObjectContext+CoreStore.swift"; path = "Sources/Internal/NSManagedObjectContext+CoreStore.swift"; sourceTree = "<group>"; };
+		AB845FC0055317799BDB17CEC301228F /* Pods-TaskTimerModel-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TaskTimerModel-acknowledgements.plist"; sourceTree = "<group>"; };
 		AB98293F7BDB51E33B2376213CC70B6D /* FieldsRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FieldsRow.swift; path = Source/Rows/FieldsRow.swift; sourceTree = "<group>"; };
 		AC3039D76C10CE5649C90F2A2E85CE23 /* CSInMemoryStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSInMemoryStore.swift; path = Sources/ObjectiveC/CSInMemoryStore.swift; sourceTree = "<group>"; };
-		AD3F47EB1D87828290ED88CBEEAD276F /* Pods-TaskTimerTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TaskTimerTests.modulemap"; sourceTree = "<group>"; };
 		AE1A359FCE03C505802C21A285121CCA /* SelectorAlertController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SelectorAlertController.swift; path = Source/Rows/Controllers/SelectorAlertController.swift; sourceTree = "<group>"; };
-		AE4365F3194A25A39498C11EE3B253F0 /* Pods-TaskTimerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TaskTimerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AE701DC644664223F55E93E1D326FC49 /* Pods-TaskTimerModelTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TaskTimerModelTests.release.xcconfig"; sourceTree = "<group>"; };
 		AE8ABAE8254BFD87181E0BC7215641E1 /* CSCoreStore+Querying.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CSCoreStore+Querying.swift"; path = "Sources/ObjectiveC/CSCoreStore+Querying.swift"; sourceTree = "<group>"; };
 		AEC82EB7912D45067A03A05EE44DED9F /* BaseDataTransaction+Querying.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "BaseDataTransaction+Querying.swift"; path = "Sources/Fetching and Querying/BaseDataTransaction+Querying.swift"; sourceTree = "<group>"; };
-		AFEF2D3D95C627F368FEDBDC1217C7DF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B00B8905D76D41E8515FEF5D002B93B4 /* Pods-TaskTimerTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TaskTimerTests-umbrella.h"; sourceTree = "<group>"; };
 		B22FE2D2272DD56843EED88CF9AEDC8E /* CSCoreStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSCoreStore.swift; path = Sources/ObjectiveC/CSCoreStore.swift; sourceTree = "<group>"; };
 		B499741828D249E6287FDA437728EA8F /* RowControllerType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RowControllerType.swift; path = Source/Core/RowControllerType.swift; sourceTree = "<group>"; };
 		B557F7A60D3A77F80AD29AC3BAFE19C7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -449,21 +485,23 @@
 		BA33D7FEA7E69D576CE6461A79556586 /* MigrationManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MigrationManager.swift; path = Sources/Internal/MigrationManager.swift; sourceTree = "<group>"; };
 		BA613B5FBB5B4990A5E610943381A5BA /* NavigationAccessoryView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NavigationAccessoryView.swift; path = Source/Core/NavigationAccessoryView.swift; sourceTree = "<group>"; };
 		BB25B0F78BFD9C1E4499F67D8446B202 /* Eureka.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Eureka.modulemap; sourceTree = "<group>"; };
-		BF3A5F66DFEE3004B0EAB1816C870177 /* Pods-TaskTimer-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TaskTimer-frameworks.sh"; sourceTree = "<group>"; };
+		BE239865B210E33EF7C4B60D19DEA6C8 /* Pods-TaskTimerTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TaskTimerTests-dummy.m"; sourceTree = "<group>"; };
 		C0E4834D0AF6F8872CF9329D1B892947 /* CSSynchronousDataTransaction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSSynchronousDataTransaction.swift; path = Sources/ObjectiveC/CSSynchronousDataTransaction.swift; sourceTree = "<group>"; };
+		C11CD14941A94FA72C92F5A553D1EF0E /* Pods_TaskTimerModelTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TaskTimerModelTests.framework; path = "Pods-TaskTimerModelTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C138BE288722C80C4ECDC0E22F3156FB /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
 		C53C0F33C37F47873D48FF732BABD256 /* LegacySQLiteStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LegacySQLiteStore.swift; path = Sources/Setup/StorageInterfaces/LegacySQLiteStore.swift; sourceTree = "<group>"; };
-		C725286713681074D30E060032ABF034 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C93AB354A408BB5B7BBFE75B82525992 /* NSFetchedResultsController+Convenience.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSFetchedResultsController+Convenience.swift"; path = "Sources/Convenience/NSFetchedResultsController+Convenience.swift"; sourceTree = "<group>"; };
+		C94D4F3C0A95FC9C2C8866EE49B2845C /* Pods-TaskTimerModel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TaskTimerModel.release.xcconfig"; sourceTree = "<group>"; };
 		CA2A051A093810BBCAD1D73DE50123A7 /* Into.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Into.swift; path = Sources/Transactions/Into.swift; sourceTree = "<group>"; };
+		CA8B9D5A3F215485275FE3C69A9A7D19 /* Pods_TaskTimerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TaskTimerTests.framework; path = "Pods-TaskTimerTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC47DEB13B4D21447EA5A769C81B3601 /* InMemoryStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InMemoryStore.swift; path = Sources/Setup/StorageInterfaces/InMemoryStore.swift; sourceTree = "<group>"; };
 		CC4FA5280B24ACAE4C8496058C0C858B /* SliderRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SliderRow.swift; path = Source/Rows/SliderRow.swift; sourceTree = "<group>"; };
 		CE047DAD142DA6A82D1E39672E05A927 /* OrderBy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OrderBy.swift; path = "Sources/Fetching and Querying/Concrete Clauses/OrderBy.swift"; sourceTree = "<group>"; };
 		CEB60BDD671727E9C59CD93B78DC67F8 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
 		CFAADC6B72FD7811603952FC3D4C1EB2 /* CoreStore+Transaction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CoreStore+Transaction.swift"; path = "Sources/Transactions/CoreStore+Transaction.swift"; sourceTree = "<group>"; };
+		D051F2B5B9AACCAAB6B0C3817DA5C97E /* Pods_TaskTimerModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TaskTimerModel.framework; path = "Pods-TaskTimerModel.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D414C58557E7A04F590B1597A1B0B351 /* ClauseTypes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClauseTypes.swift; path = "Sources/Fetching and Querying/Protocol Clauses/ClauseTypes.swift"; sourceTree = "<group>"; };
 		D6107F2F88EDBCD75C1B7FA9971991A0 /* CSTweak.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSTweak.swift; path = Sources/ObjectiveC/CSTweak.swift; sourceTree = "<group>"; };
-		D693BD22CAE770F2C09D465553676156 /* Pods_TaskTimerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TaskTimerTests.framework; path = "Pods-TaskTimerTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D78896FD9461ED28B1C56576DD363AEC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7E6B72A8FE9E24ADD17D241BC244564 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		DA778B045E78FE74895CDA515969EAB3 /* DecimalFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DecimalFormatter.swift; path = Source/Rows/Common/DecimalFormatter.swift; sourceTree = "<group>"; };
@@ -471,28 +509,31 @@
 		DB91647F8F263C00DA92D0A5BD229C0F /* CoreStore-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CoreStore-dummy.m"; sourceTree = "<group>"; };
 		DC88D5D0CE735BD13B72D9C23EC175CE /* GenericMultipleSelectorRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GenericMultipleSelectorRow.swift; path = Source/Rows/Common/GenericMultipleSelectorRow.swift; sourceTree = "<group>"; };
 		DC9CC7B804E1B341A00C894EEF13C7B6 /* PushRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PushRow.swift; path = Source/Rows/PushRow.swift; sourceTree = "<group>"; };
+		DD94B074F9CBE1A917CC9516D2D06641 /* Pods-TaskTimerModel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TaskTimerModel.debug.xcconfig"; sourceTree = "<group>"; };
 		DE69182B129AC69BE76E5FB2BC311E72 /* SetupResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SetupResult.swift; path = Sources/Migrating/SetupResult.swift; sourceTree = "<group>"; };
-		E00F01654877EBBEC99AF3168770CFD6 /* Pods-TaskTimerTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TaskTimerTests-frameworks.sh"; sourceTree = "<group>"; };
 		E18B5BF0788107171E73E9266117D5BC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
 		E2F951DA767293FE474138B40E90AF37 /* CSOrderBy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSOrderBy.swift; path = Sources/ObjectiveC/CSOrderBy.swift; sourceTree = "<group>"; };
 		E353B8D09D46977D3FD444B67A95B72D /* NSManagedObjectModel+Setup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSManagedObjectModel+Setup.swift"; path = "Sources/Internal/NSManagedObjectModel+Setup.swift"; sourceTree = "<group>"; };
 		E4358B3908F46EB40A74069BD43724C3 /* AsynchronousDataTransaction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsynchronousDataTransaction.swift; path = Sources/Transactions/AsynchronousDataTransaction.swift; sourceTree = "<group>"; };
 		E6B38DFF2C3C0ADB38A4B74DE1B0C3D3 /* Where.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Where.swift; path = "Sources/Fetching and Querying/Concrete Clauses/Where.swift"; sourceTree = "<group>"; };
 		E760FC1C1B666D40AE5536035E8FB76D /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Source/Core/Operators.swift; sourceTree = "<group>"; };
+		E7CC03BDAC24C27418794081FE807FF7 /* Pods-TaskTimer-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TaskTimer-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E9BCFFC37E4636C822D86FB76C92E0C2 /* CellType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CellType.swift; path = Source/Core/CellType.swift; sourceTree = "<group>"; };
 		EA0496D7E5DD68FE4C3B9F2ECB05B12B /* RowProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RowProtocols.swift; path = Source/Core/RowProtocols.swift; sourceTree = "<group>"; };
 		EB0DDCAC684FFAE2315FA519946A90D0 /* Select.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Select.swift; path = "Sources/Fetching and Querying/Concrete Clauses/Select.swift"; sourceTree = "<group>"; };
 		EBBB36CE5AACDDE43BA81E8324BB604E /* NSManagedObject+Convenience.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSManagedObject+Convenience.swift"; path = "Sources/Convenience/NSManagedObject+Convenience.swift"; sourceTree = "<group>"; };
 		F14DD35DFB839A4DDE9D88985008AB7E /* SectionBy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SectionBy.swift; path = Sources/Observing/SectionBy.swift; sourceTree = "<group>"; };
 		F15D7753E9D3A4A04C10E6CE0ABF8A89 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = iOS/Crashlytics.framework; sourceTree = "<group>"; };
-		F1A339EE5D99D2F84AB47695FF006630 /* Pods-TaskTimer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TaskTimer-umbrella.h"; sourceTree = "<group>"; };
 		F2D4572433002CDDB849D30700F22080 /* CSMigrationType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSMigrationType.swift; path = Sources/ObjectiveC/CSMigrationType.swift; sourceTree = "<group>"; };
 		F37A4648D19EC0D50DE4E26DBA46C491 /* Functions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Functions.swift; path = Sources/Internal/Functions.swift; sourceTree = "<group>"; };
 		F43780A41E1B38238D06D52C547CC2D8 /* NSManagedObjectContext+Setup.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSManagedObjectContext+Setup.swift"; path = "Sources/Internal/NSManagedObjectContext+Setup.swift"; sourceTree = "<group>"; };
 		F66618D4EE5878A04F48EF8B8C301E4F /* BaseRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseRow.swift; path = Source/Core/BaseRow.swift; sourceTree = "<group>"; };
 		F7174EC0006BA247F30EBEAE206AA657 /* DataStack+Migration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DataStack+Migration.swift"; path = "Sources/Migrating/DataStack+Migration.swift"; sourceTree = "<group>"; };
+		F717B220C6E7F0DEF6C30FFC070F099B /* Pods-TaskTimerModelTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TaskTimerModelTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F790D250D581D1FCB6B81F7A925EE1BA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F922F42A83F78A0A283DF880D52996AE /* SelectorRow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SelectorRow.swift; path = Source/Rows/Common/SelectorRow.swift; sourceTree = "<group>"; };
 		F9E4ADBC121A829AD4E3F60CF6541BEF /* Cell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cell.swift; path = Source/Core/Cell.swift; sourceTree = "<group>"; };
+		FEBE51D90351436FC808BE7A7397897D /* Pods-TaskTimerModel-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TaskTimerModel-resources.sh"; sourceTree = "<group>"; };
 		FF287B865F732832864031858C8730EC /* CoreStore+Migration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CoreStore+Migration.swift"; path = "Sources/Migrating/CoreStore+Migration.swift"; sourceTree = "<group>"; };
 		FF5B4DCE55887DEA13AE2F8DB0BEB8BA /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -504,6 +545,14 @@
 			files = (
 				B5E394149F588C675F18711D76C007D1 /* CoreData.framework in Frameworks */,
 				222F0F12BC781889C0E8998B183D6986 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AE0A49CF1A14E3389E4652FB427AA4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98DDD72810DFC0A9FD7645FF7CB47C7A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,6 +581,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AC2583564C644269D79206F5E05F6AC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01D3E5FA6A81A91A9B360BF2EAE1E5A4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CF91C7A89369A7DC4F2B43816AEF8A70 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -551,13 +608,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		08E190D7E52A9E2BE1CEB0D0C5FBFADF /* Targets Support Files */ = {
+		10407A46C82A74397E5BBFEEF9AB9F43 /* Pods-TaskTimer */ = {
 			isa = PBXGroup;
 			children = (
-				F1A7EFDFF970D50158DD6BD2FF3FD903 /* Pods-TaskTimer */,
-				7A12939A818F2EB70A99D984725F36F5 /* Pods-TaskTimerTests */,
+				59BDD4F882B35976139FA0C953D42C1C /* Info.plist */,
+				54181EFCB2898BEFF2604B2FF2C61564 /* Pods-TaskTimer.modulemap */,
+				E7CC03BDAC24C27418794081FE807FF7 /* Pods-TaskTimer-acknowledgements.markdown */,
+				4E5EAEDE6D13ED81F3779780A67ECF98 /* Pods-TaskTimer-acknowledgements.plist */,
+				87ECA0A8037EE683C73D2ACA19F76954 /* Pods-TaskTimer-dummy.m */,
+				A140FC0055738BCEF0A33245CEB286E9 /* Pods-TaskTimer-frameworks.sh */,
+				88E267BA58DE005A1FF5929F85B73FB6 /* Pods-TaskTimer-resources.sh */,
+				24B7610BACB57162E2900AB14603ED22 /* Pods-TaskTimer-umbrella.h */,
+				597A56EF891B1591DCFD5ECDC8E7E5A2 /* Pods-TaskTimer.debug.xcconfig */,
+				20A70738BEB9A6B34A387A4303BE89FC /* Pods-TaskTimer.release.xcconfig */,
 			);
-			name = "Targets Support Files";
+			name = "Pods-TaskTimer";
+			path = "Target Support Files/Pods-TaskTimer";
 			sourceTree = "<group>";
 		};
 		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
@@ -566,18 +632,6 @@
 				41E0273AACF8FFF1D8DBC5364ADD7014 /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		37D13F75EC7B2972F214703466D82379 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				065D68B582D394AB5F1C23392C512C3E /* Alamofire.framework */,
-				8D5A0CAFDBCEB39508732CF556D6075C /* CoreStore.framework */,
-				80BB32BBFB334193058CBFB5D3646CB2 /* Eureka.framework */,
-				35C60D6479B20AA4961D8B80EC7CEF18 /* Pods_TaskTimer.framework */,
-				D693BD22CAE770F2C09D465553676156 /* Pods_TaskTimerTests.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		3C13C82EC1A66BDE19B2EA512E0F2B5F /* Pods */ = {
@@ -600,6 +654,20 @@
 				8BF0141499CCB03F5F45A735B5B443F8 /* UIKit.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		5ED23AD7343237F1D53A4BA819BB5025 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4BE1F7F4536CA56DB50E441DA79ABF03 /* Alamofire.framework */,
+				6FA3EE3044611B6627B20518706C8F24 /* CoreStore.framework */,
+				7C83780DB70F70E7961C4C88C9E9B4FF /* Eureka.framework */,
+				555FA763C0B3953F1F96999B491843BC /* Pods_TaskTimer.framework */,
+				D051F2B5B9AACCAAB6B0C3817DA5C97E /* Pods_TaskTimerModel.framework */,
+				C11CD14941A94FA72C92F5A553D1EF0E /* Pods_TaskTimerModelTests.framework */,
+				CA8B9D5A3F215485275FE3C69A9A7D19 /* Pods_TaskTimerTests.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		64EC9CFD92F133ED7BD8A4076DA08855 /* Resources */ = {
@@ -694,22 +762,15 @@
 			path = "../Target Support Files/CoreStore";
 			sourceTree = "<group>";
 		};
-		7A12939A818F2EB70A99D984725F36F5 /* Pods-TaskTimerTests */ = {
+		7B43D9BACD051DEAD0C43A4150D59CD9 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C725286713681074D30E060032ABF034 /* Info.plist */,
-				AD3F47EB1D87828290ED88CBEEAD276F /* Pods-TaskTimerTests.modulemap */,
-				1C960508D7562EB7560A29106FC8EF07 /* Pods-TaskTimerTests-acknowledgements.markdown */,
-				50A51C37288D139E3EF22CA8343EBFF8 /* Pods-TaskTimerTests-acknowledgements.plist */,
-				37AD1489A1A91FA2FA5AD117A9BE3EED /* Pods-TaskTimerTests-dummy.m */,
-				E00F01654877EBBEC99AF3168770CFD6 /* Pods-TaskTimerTests-frameworks.sh */,
-				02577063920272733AC127C31C3C46CE /* Pods-TaskTimerTests-resources.sh */,
-				B00B8905D76D41E8515FEF5D002B93B4 /* Pods-TaskTimerTests-umbrella.h */,
-				AE4365F3194A25A39498C11EE3B253F0 /* Pods-TaskTimerTests.debug.xcconfig */,
-				8596DA384BF8CC0803653BCD6BEFDDC4 /* Pods-TaskTimerTests.release.xcconfig */,
+				10407A46C82A74397E5BBFEEF9AB9F43 /* Pods-TaskTimer */,
+				F863164319EA0F997E062CAF8459D180 /* Pods-TaskTimerModel */,
+				F30A19C4D4B51561173C05945B5F6123 /* Pods-TaskTimerModelTests */,
+				C7F2CAECF6B5ACFB1D6AE1A60FEA8764 /* Pods-TaskTimerTests */,
 			);
-			name = "Pods-TaskTimerTests";
-			path = "Target Support Files/Pods-TaskTimerTests";
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -718,8 +779,8 @@
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
 				3C13C82EC1A66BDE19B2EA512E0F2B5F /* Pods */,
-				37D13F75EC7B2972F214703466D82379 /* Products */,
-				08E190D7E52A9E2BE1CEB0D0C5FBFADF /* Targets Support Files */,
+				5ED23AD7343237F1D53A4BA819BB5025 /* Products */,
+				7B43D9BACD051DEAD0C43A4150D59CD9 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -793,6 +854,24 @@
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
+		C7F2CAECF6B5ACFB1D6AE1A60FEA8764 /* Pods-TaskTimerTests */ = {
+			isa = PBXGroup;
+			children = (
+				5B06E31A4B8A6CC03B7BBF1C10473E04 /* Info.plist */,
+				530AED1238EFAAF09DE1BBA62D009F88 /* Pods-TaskTimerTests.modulemap */,
+				A198E3F690044BC7FB5814B762F1B96F /* Pods-TaskTimerTests-acknowledgements.markdown */,
+				339CD1E0C39AA2BEF3AF0BF2F6627835 /* Pods-TaskTimerTests-acknowledgements.plist */,
+				BE239865B210E33EF7C4B60D19DEA6C8 /* Pods-TaskTimerTests-dummy.m */,
+				6BAB362487E7EDE01E11D7864F46A87F /* Pods-TaskTimerTests-frameworks.sh */,
+				0C348626D171213DD3D5EAD1A0534F19 /* Pods-TaskTimerTests-resources.sh */,
+				1F359C973EB68479FD8F8D32A837C8F6 /* Pods-TaskTimerTests-umbrella.h */,
+				1BAE385AF280DA29D2835291C8E23BF4 /* Pods-TaskTimerTests.debug.xcconfig */,
+				661976D8397FA49EAB551266E0714B59 /* Pods-TaskTimerTests.release.xcconfig */,
+			);
+			name = "Pods-TaskTimerTests";
+			path = "Target Support Files/Pods-TaskTimerTests";
+			sourceTree = "<group>";
+		};
 		EBC736FE5AD9FB91CCA23B577E7F2893 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -801,22 +880,39 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F1A7EFDFF970D50158DD6BD2FF3FD903 /* Pods-TaskTimer */ = {
+		F30A19C4D4B51561173C05945B5F6123 /* Pods-TaskTimerModelTests */ = {
 			isa = PBXGroup;
 			children = (
-				AFEF2D3D95C627F368FEDBDC1217C7DF /* Info.plist */,
-				8E1C12393C1640EAFFE1D23147EA8EE6 /* Pods-TaskTimer.modulemap */,
-				4272D9EA3DA5AAFA04B5E793B164FD57 /* Pods-TaskTimer-acknowledgements.markdown */,
-				39BF4DAE08F0B104C70A4DAA238DFC84 /* Pods-TaskTimer-acknowledgements.plist */,
-				8AEACB7286E336AC02CC89829D0F747D /* Pods-TaskTimer-dummy.m */,
-				BF3A5F66DFEE3004B0EAB1816C870177 /* Pods-TaskTimer-frameworks.sh */,
-				A29CDEE8CD488325A5567063B5AAD2B6 /* Pods-TaskTimer-resources.sh */,
-				F1A339EE5D99D2F84AB47695FF006630 /* Pods-TaskTimer-umbrella.h */,
-				6F46FD18F0A642BC6C9A170C02FE82F5 /* Pods-TaskTimer.debug.xcconfig */,
-				6824DAD1DFB34D3355A598F92BCE718A /* Pods-TaskTimer.release.xcconfig */,
+				F790D250D581D1FCB6B81F7A925EE1BA /* Info.plist */,
+				28E6A3A6D65B862D162DF8C4130D0CC6 /* Pods-TaskTimerModelTests.modulemap */,
+				897D7AFE16DA4F6E11CA9643D7EFCB47 /* Pods-TaskTimerModelTests-acknowledgements.markdown */,
+				76AB85DF6D84FAC9F7B65A211B5871F9 /* Pods-TaskTimerModelTests-acknowledgements.plist */,
+				4876526071BBAF9D57E5829B2915A36F /* Pods-TaskTimerModelTests-dummy.m */,
+				18244AFE503BCF770AEDD0C9E44BC534 /* Pods-TaskTimerModelTests-frameworks.sh */,
+				72612B83984CC66E7A3C086ED10A9114 /* Pods-TaskTimerModelTests-resources.sh */,
+				01C246F5E3A5A2A8E276E9A2DBF21ED8 /* Pods-TaskTimerModelTests-umbrella.h */,
+				F717B220C6E7F0DEF6C30FFC070F099B /* Pods-TaskTimerModelTests.debug.xcconfig */,
+				AE701DC644664223F55E93E1D326FC49 /* Pods-TaskTimerModelTests.release.xcconfig */,
 			);
-			name = "Pods-TaskTimer";
-			path = "Target Support Files/Pods-TaskTimer";
+			name = "Pods-TaskTimerModelTests";
+			path = "Target Support Files/Pods-TaskTimerModelTests";
+			sourceTree = "<group>";
+		};
+		F863164319EA0F997E062CAF8459D180 /* Pods-TaskTimerModel */ = {
+			isa = PBXGroup;
+			children = (
+				4E26AA0AC359BBB1DA907A6FFB751B46 /* Info.plist */,
+				241B7965369CA85C7319F4568EA27E26 /* Pods-TaskTimerModel.modulemap */,
+				714E522F87941A4EBAB8DED7C89D01E3 /* Pods-TaskTimerModel-acknowledgements.markdown */,
+				AB845FC0055317799BDB17CEC301228F /* Pods-TaskTimerModel-acknowledgements.plist */,
+				97B6E9FF2EE977492263C6F4BA298D61 /* Pods-TaskTimerModel-dummy.m */,
+				FEBE51D90351436FC808BE7A7397897D /* Pods-TaskTimerModel-resources.sh */,
+				163202456600ADE3CBBD1C2D1611A7D9 /* Pods-TaskTimerModel-umbrella.h */,
+				DD94B074F9CBE1A917CC9516D2D06641 /* Pods-TaskTimerModel.debug.xcconfig */,
+				C94D4F3C0A95FC9C2C8866EE49B2845C /* Pods-TaskTimerModel.release.xcconfig */,
+			);
+			name = "Pods-TaskTimerModel";
+			path = "Target Support Files/Pods-TaskTimerModel";
 			sourceTree = "<group>";
 		};
 		FAED53B584C2FB94B4FED321A5D0EA81 /* Fabric */ = {
@@ -965,6 +1061,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1A5D94B60712C51458D5CFC0B6500375 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC4A5E4BB16D3C2D8C85A568E51C87F4 /* Pods-TaskTimerModelTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1AE5F668C0B0272F868FB74A6F2B7E4D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -978,6 +1082,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F0D960DBEF20736A7A505A9250942F1 /* Eureka-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		879B8AD262FA0359C400B687B541B29C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9657B56F7A35259CD71AC4B3AA3E0408 /* Pods-TaskTimerModel-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1019,7 +1131,7 @@
 			);
 			name = "Pods-TaskTimer";
 			productName = "Pods-TaskTimer";
-			productReference = 35C60D6479B20AA4961D8B80EC7CEF18 /* Pods_TaskTimer.framework */;
+			productReference = 555FA763C0B3953F1F96999B491843BC /* Pods_TaskTimer.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		675A114988AE198732ED4AD726408964 /* Eureka */ = {
@@ -1037,7 +1149,7 @@
 			);
 			name = Eureka;
 			productName = Eureka;
-			productReference = 80BB32BBFB334193058CBFB5D3646CB2 /* Eureka.framework */;
+			productReference = 7C83780DB70F70E7961C4C88C9E9B4FF /* Eureka.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */ = {
@@ -1054,7 +1166,7 @@
 			);
 			name = Alamofire;
 			productName = Alamofire;
-			productReference = 065D68B582D394AB5F1C23392C512C3E /* Alamofire.framework */;
+			productReference = 4BE1F7F4536CA56DB50E441DA79ABF03 /* Alamofire.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		8B058FBC9FE4ED14733A83E415A7BDAB /* Pods-TaskTimerTests */ = {
@@ -1071,7 +1183,7 @@
 			);
 			name = "Pods-TaskTimerTests";
 			productName = "Pods-TaskTimerTests";
-			productReference = D693BD22CAE770F2C09D465553676156 /* Pods_TaskTimerTests.framework */;
+			productReference = CA8B9D5A3F215485275FE3C69A9A7D19 /* Pods_TaskTimerTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		AD01BAC8F5256CBDC99D6D4A275D47DA /* CoreStore */ = {
@@ -1088,7 +1200,43 @@
 			);
 			name = CoreStore;
 			productName = CoreStore;
-			productReference = 8D5A0CAFDBCEB39508732CF556D6075C /* CoreStore.framework */;
+			productReference = 6FA3EE3044611B6627B20518706C8F24 /* CoreStore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AF7572DA194165BA841E99E59DD74BCC /* Pods-TaskTimerModelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E02909B08D6A71DCE6EEC6468972FC7B /* Build configuration list for PBXNativeTarget "Pods-TaskTimerModelTests" */;
+			buildPhases = (
+				B0665F41EA781EED41141234BBBC4FD5 /* Sources */,
+				AC2583564C644269D79206F5E05F6AC1 /* Frameworks */,
+				1A5D94B60712C51458D5CFC0B6500375 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ABAB4051F5ED60ACE8CE922B3DDC9833 /* PBXTargetDependency */,
+			);
+			name = "Pods-TaskTimerModelTests";
+			productName = "Pods-TaskTimerModelTests";
+			productReference = C11CD14941A94FA72C92F5A553D1EF0E /* Pods_TaskTimerModelTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BE7DE916117C69F5DCBA167F53C6D589 /* Pods-TaskTimerModel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FE74993F2270586246DE6C52164D0A2 /* Build configuration list for PBXNativeTarget "Pods-TaskTimerModel" */;
+			buildPhases = (
+				C28E16BC0B358D5C6E84E16657089644 /* Sources */,
+				2AE0A49CF1A14E3389E4652FB427AA4D /* Frameworks */,
+				879B8AD262FA0359C400B687B541B29C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				047CE45A5E444480E6C39760E9C6AA66 /* PBXTargetDependency */,
+			);
+			name = "Pods-TaskTimerModel";
+			productName = "Pods-TaskTimerModel";
+			productReference = D051F2B5B9AACCAAB6B0C3817DA5C97E /* Pods_TaskTimerModel.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -1108,7 +1256,7 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 37D13F75EC7B2972F214703466D82379 /* Products */;
+			productRefGroup = 5ED23AD7343237F1D53A4BA819BB5025 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -1116,6 +1264,8 @@
 				AD01BAC8F5256CBDC99D6D4A275D47DA /* CoreStore */,
 				675A114988AE198732ED4AD726408964 /* Eureka */,
 				5D5551809CC046DDD9AFE3B80DF4BEF5 /* Pods-TaskTimer */,
+				BE7DE916117C69F5DCBA167F53C6D589 /* Pods-TaskTimerModel */,
+				AF7572DA194165BA841E99E59DD74BCC /* Pods-TaskTimerModelTests */,
 				8B058FBC9FE4ED14733A83E415A7BDAB /* Pods-TaskTimerTests */,
 			);
 		};
@@ -1239,6 +1389,22 @@
 				3E89604392C5EBDC5E27937AA57C5AC0 /* SwitchRow.swift in Sources */,
 				B5BA32808AFF5DC9C2723CD85931B9DB /* TextAreaRow.swift in Sources */,
 				A5B27A12053041F38D47538E48678881 /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0665F41EA781EED41141234BBBC4FD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DE2F6900F07487AFC6BBE7708787A03 /* Pods-TaskTimerModelTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C28E16BC0B358D5C6E84E16657089644 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAFCD325E89C8228DDEB75888DC22FCE /* Pods-TaskTimerModel-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1366,6 +1532,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		047CE45A5E444480E6C39760E9C6AA66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CoreStore;
+			target = AD01BAC8F5256CBDC99D6D4A275D47DA /* CoreStore */;
+			targetProxy = BAC25E5E5D1008FECDB5365490398EB2 /* PBXContainerItemProxy */;
+		};
 		7252F0BFA013504CD552879D03E0DD61 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Alamofire;
@@ -1377,6 +1549,12 @@
 			name = Eureka;
 			target = 675A114988AE198732ED4AD726408964 /* Eureka */;
 			targetProxy = FA6447DE9108AA51E3593EF16CD1782A /* PBXContainerItemProxy */;
+		};
+		ABAB4051F5ED60ACE8CE922B3DDC9833 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CoreStore;
+			target = AD01BAC8F5256CBDC99D6D4A275D47DA /* CoreStore */;
+			targetProxy = 050A17240136F1EF270D9614F12D7F32 /* PBXContainerItemProxy */;
 		};
 		B1FA0BB634886F8A7DF8F04CEA918E16 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1421,7 +1599,7 @@
 		};
 		37E68756832965B4BDA3FA0C74F6FDEE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6824DAD1DFB34D3355A598F92BCE718A /* Pods-TaskTimer.release.xcconfig */;
+			baseConfigurationReference = 20A70738BEB9A6B34A387A4303BE89FC /* Pods-TaskTimer.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1530,6 +1708,42 @@
 			};
 			name = Release;
 		};
+		5D95406B9E6034E091FE032750631F58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F717B220C6E7F0DEF6C30FFC070F099B /* Pods-TaskTimerModelTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TaskTimerModelTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TaskTimerModelTests/Pods-TaskTimerModelTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TaskTimerModelTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		A1AEA1EF1AA08357C8E868B1F2416FEE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 39F4983D96EFD7078C443F4F7AE04FF4 /* CoreStore.xcconfig */;
@@ -1562,6 +1776,41 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		A612A8F7180826F943337427DE7E3EE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE701DC644664223F55E93E1D326FC49 /* Pods-TaskTimerModelTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TaskTimerModelTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TaskTimerModelTests/Pods-TaskTimerModelTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TaskTimerModelTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		B4EFF44FB30498779D7B363BDACF73AC /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1638,7 +1887,7 @@
 		};
 		B9789E1CF7D709F7FDEB9B5C41ECE022 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8596DA384BF8CC0803653BCD6BEFDDC4 /* Pods-TaskTimerTests.release.xcconfig */;
+			baseConfigurationReference = 661976D8397FA49EAB551266E0714B59 /* Pods-TaskTimerTests.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1673,7 +1922,7 @@
 		};
 		D24A3FCBC22608A7DF166AF2D8F53E10 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6F46FD18F0A642BC6C9A170C02FE82F5 /* Pods-TaskTimer.debug.xcconfig */;
+			baseConfigurationReference = 597A56EF891B1591DCFD5ECDC8E7E5A2 /* Pods-TaskTimer.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1741,7 +1990,7 @@
 		};
 		EF25E9D397DB9C3DABAC2ECDF4266D0B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AE4365F3194A25A39498C11EE3B253F0 /* Pods-TaskTimerTests.debug.xcconfig */;
+			baseConfigurationReference = 1BAE385AF280DA29D2835291C8E23BF4 /* Pods-TaskTimerTests.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1768,6 +2017,42 @@
 				PRODUCT_NAME = Pods_TaskTimerTests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F2BB115FAFB0C271C95F4CF398E7C345 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD94B074F9CBE1A917CC9516D2D06641 /* Pods-TaskTimerModel.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TaskTimerModel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TaskTimerModel/Pods-TaskTimerModel.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TaskTimerModel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1807,6 +2092,41 @@
 			};
 			name = Debug;
 		};
+		FB40CF3CC9A56B293897010BFB6D1FB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C94D4F3C0A95FC9C2C8866EE49B2845C /* Pods-TaskTimerModel.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TaskTimerModel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TaskTimerModel/Pods-TaskTimerModel.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TaskTimerModel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1815,6 +2135,15 @@
 			buildConfigurations = (
 				A1AEA1EF1AA08357C8E868B1F2416FEE /* Debug */,
 				DC4194AC01AB90B13833C21D173CC532 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FE74993F2270586246DE6C52164D0A2 /* Build configuration list for PBXNativeTarget "Pods-TaskTimerModel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2BB115FAFB0C271C95F4CF398E7C345 /* Debug */,
+				FB40CF3CC9A56B293897010BFB6D1FB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1860,6 +2189,15 @@
 			buildConfigurations = (
 				EF25E9D397DB9C3DABAC2ECDF4266D0B /* Debug */,
 				B9789E1CF7D709F7FDEB9B5C41ECE022 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E02909B08D6A71DCE6EEC6468972FC7B /* Build configuration list for PBXNativeTarget "Pods-TaskTimerModelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D95406B9E6034E091FE032750631F58 /* Debug */,
+				A612A8F7180826F943337427DE7E3EE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

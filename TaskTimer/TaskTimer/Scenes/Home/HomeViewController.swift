@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 
+import TaskTimerModel
+
 final class HomeViewController: UIViewController {
 
     @IBOutlet fileprivate var tableView: UITableView?

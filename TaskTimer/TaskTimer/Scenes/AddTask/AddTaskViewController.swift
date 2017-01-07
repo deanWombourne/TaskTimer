@@ -10,6 +10,8 @@ import Foundation
 import UIKit
 import Eureka
 
+import TaskTimerModel
+
 final class AddTaskViewController: FormViewController {
 
     private var client: AddTaskEntry<Client>? {
@@ -55,7 +57,7 @@ final class AddTaskViewController: FormViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let clients = Client.all().map { AddTaskEntry.existing($0) }
+        let clients = Client.allClients.map { AddTaskEntry.existing($0) }
 
         form = Section("Client")
             <<< SwitchRow("newClientSwitch") {

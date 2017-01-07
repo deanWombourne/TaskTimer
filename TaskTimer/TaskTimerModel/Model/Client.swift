@@ -10,11 +10,13 @@ import Foundation
 
 import CoreStore
 
-struct Client {
-    let id: String
-    let name: String
+public struct Client {
+    public let id: String
+    public let name: String
 
-    var projects: [Project] {
+    public static var allClients: [Client] { return self.all() }
+
+    public var projects: [Project] {
         guard let projects = self.entity()?.projects?.allObjects as? [Project.EntityType] else {
             return []
         }
@@ -22,7 +24,7 @@ struct Client {
         return projects.map { Project.from(entity: $0) }
     }
 
-    static func createClient(withName name: String) -> Command<Client> {
+    public static func createClient(withName name: String) -> Command<Client> {
         return Command { completion in
 
             CoreStore.beginAsynchronous { transaction in
@@ -36,7 +38,7 @@ struct Client {
         }
     }
 
-    func createProject(withName name: String) -> Command<Project> {
+    public func createProject(withName name: String) -> Command<Project> {
         return Command { completion in
 
             CoreStore.beginAsynchronous { transaction in

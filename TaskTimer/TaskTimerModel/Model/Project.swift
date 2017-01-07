@@ -10,11 +10,11 @@ import Foundation
 
 import CoreStore
 
-struct Project {
-    let id: String
-    let name: String
+public struct Project {
+    public let id: String
+    public let name: String
 
-    var tasks: [Task] {
+    public var tasks: [Task] {
         guard let tasks = self.entity()?.tasks?.allObjects as? [TaskEntity] else {
             return []
         }
@@ -22,7 +22,7 @@ struct Project {
         return tasks.map { Task.from(entity: $0) }
     }
 
-    func createTask(withName name: String) -> Command<Task> {
+    public func createTask(withName name: String) -> Command<Task> {
         return Command { completion in
             CoreStore.beginAsynchronous { transaction in
 
