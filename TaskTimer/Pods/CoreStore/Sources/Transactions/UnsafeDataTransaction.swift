@@ -55,7 +55,7 @@ public final class UnsafeDataTransaction: BaseDataTransaction {
      */
     public func commitAndWait() -> SaveResult {
         
-        let result = self.context.saveSynchronously()
+        let result = self.context.saveSynchronously(waitForMerge: true)
         self.result = result
         return result
     }

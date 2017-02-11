@@ -140,8 +140,8 @@ internal extension NSManagedObjectContext {
     }
     
     @nonobjc
-    internal func saveSynchronously() -> SaveResult {
-        
+    internal func saveSynchronously(waitForMerge: Bool) -> SaveResult {
+      
         var result = SaveResult(hasChanges: false)
         
         self.performAndWait {
@@ -153,7 +153,7 @@ internal extension NSManagedObjectContext {
             
             do {
                 
-                self.isSavingSynchronously = true
+                self.isSavingSynchronously = waitForMerge
                 try self.save()
                 self.isSavingSynchronously = nil
             }
@@ -170,7 +170,7 @@ internal extension NSManagedObjectContext {
             
             if let parentContext = self.parent, self.shouldCascadeSavesToParent {
                 
-                switch parentContext.saveSynchronously() {
+                switch parentContext.saveSynchronously(waitForMerge: waitForMerge) {
                     
                 case .success:
                     result = SaveResult(hasChanges: true)

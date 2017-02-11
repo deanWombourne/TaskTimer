@@ -58,6 +58,9 @@ public final class DataStack: Equatable {
      - parameter migrationChain: the `MigrationChain` that indicates the sequence of model versions to be used as the order for progressive migrations. If not specified, will default to a non-migrating data stack.
      */
     public required init(model: NSManagedObjectModel, migrationChain: MigrationChain = nil) {
+
+        // TODO: test before release (rolled back)
+//        _ = DataStack.isGloballyInitialized
         
         CoreStore.assert(
             migrationChain.valid,
@@ -498,6 +501,13 @@ public final class DataStack: Equatable {
     
     
     // MARK: Private
+    
+    // TODO: test before release (rolled back)
+//    private static let isGloballyInitialized: Bool = {
+//        
+//        NSManagedObject.cs_swizzleMethodsForLogging()
+//        return true
+//    }()
     
     private var configurationStoreMapping = [String: NSPersistentStore]()
     private var entityConfigurationsMapping = [String: Set<String>]()

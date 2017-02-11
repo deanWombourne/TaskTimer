@@ -35,7 +35,8 @@ import CoreData
 public final class SynchronousDataTransaction: BaseDataTransaction {
     
     /**
-     Saves the transaction changes and waits for completion synchronously. This method should not be used after the `commit()` method was already called once.
+     Saves the transaction changes and waits for completion synchronously. This method should not be used after the `commit()` or `commitAndWait()` method was already called once.
+     - Important: Unlike `SynchronousDataTransaction.commit()`, this method waits for all observers to be notified of the changes before returning. This results in more predictable data update order, but may risk triggering deadlocks.
      
      - returns: a `SaveResult` containing the success or failure information
      */
@@ -52,11 +53,35 @@ public final class SynchronousDataTransaction: BaseDataTransaction {
         
         self.isCommitted = true
         
-        let result = self.context.saveSynchronously()
+        let result = self.context.saveSynchronously(waitForMerge: true)
         self.result = result
         return result
     }
     
+    /**
+     Saves the transaction changes and waits for completion synchronously. This method should not be used after the `commit()` or `commitAndWait()` method was already called once.
+     - Important: Unlike `SynchronousDataTransaction.commitAndWait()`, this method does not wait for observers to be notified of the changes before returning. This results in lower risk for deadlocks, but the updated data may not have been propagated to the `DataStack` after returning.
+     
+     - returns: a `SaveResult` containing the success or failure information
+     */
+    public func commit() -> SaveResult {
+        
+        CoreStore.assert(
+            self.transactionQueue.cs_isCurrentExecutionContext(),
+            "Attempted to commit a \(cs_typeName(self)) outside its designated queue."
+        )
+        CoreStore.assert(
+            !self.isCommitted,
+            "Attempted to commit a \(cs_typeName(self)) more than once."
+        )
+        
+        self.isCommitted = true
+        
+        let result = self.context.saveSynchronously(waitForMerge: false)
+        self.result = result
+        return result
+    }
+  
     /**
      Begins a child transaction synchronously where `NSManagedObject` creates, updates, and deletes can be made. This method should not be used after the `commit()` method was already called once.
      

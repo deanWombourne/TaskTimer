@@ -425,7 +425,7 @@ open class FormViewController : UIViewController, FormViewControllerProtocol {
             tableView?.endEditing(false)
             _form = newValue
             _form.delegate = self
-            if isViewLoaded && tableView?.window != nil {
+            if isViewLoaded {
                 tableView?.reloadData()
             }
         }
@@ -460,7 +460,6 @@ open class FormViewController : UIViewController, FormViewControllerProtocol {
     open override func viewDidLoad() {
         super.viewDidLoad()
         navigationAccessoryView = NavigationAccessoryView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 44.0))
-        navigationAccessoryView.tintColor = view.tintColor
         navigationAccessoryView.autoresizingMask = .flexibleWidth
         
         if tableView == nil {
@@ -576,7 +575,7 @@ open class FormViewController : UIViewController, FormViewControllerProtocol {
         cell.row.wasBlurred = true
         RowDefaults.onCellHighlightChanged["\(type(of: self))"]?(cell, cell.row)
         cell.row.callbackOnCellHighlightChanged?()
-        if cell.row.validationOptions.contains(.validatesOnBlur) ||  cell.row.validationOptions.contains(.validatesOnChangeAfterBlurred) {
+        if cell.row.validationOptions.contains(.validatesOnBlur) || (cell.row.wasChanged && cell.row.validationOptions.contains(.validatesOnChangeAfterBlurred)) {
             cell.row.validate()
         }
         cell.row.updateCell()
