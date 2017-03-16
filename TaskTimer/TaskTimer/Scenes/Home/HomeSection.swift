@@ -27,6 +27,7 @@ enum HomeSection {
         case .active(let tasks) where tasks.isEmpty:
             let cell = tableView.dequeueReusableCell(withIdentifier: "MessageCell", for: indexPath)
             cell.textLabel?.text = "You're not doing anything at the moment"
+            cell.textLabel?.numberOfLines = 0
             return cell
 
         case .active(let tasks) where indexPath.row < tasks.count:

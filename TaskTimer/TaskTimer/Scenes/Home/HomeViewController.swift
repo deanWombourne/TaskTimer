@@ -25,6 +25,9 @@ final class HomeViewController: UIViewController {
         super.viewDidLoad()
 
         self.refreshSections()
+
+        self.tableView?.estimatedRowHeight = 44
+        self.tableView?.rowHeight = UITableViewAutomaticDimension
     }
 
     private func refreshSections() {
