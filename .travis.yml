@@ -15,4 +15,5 @@ env:
 script:
   - cd TaskTimer
   - bundle exec fastlane ios test
+  - bundle exec fastlane ios lint
   - cd -
