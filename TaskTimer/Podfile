@@ -14,7 +14,7 @@ end
 target 'TaskTimer' do
 
   pod 'Alamofire', '~> 4.2'
-  pod 'Eureka', :git => 'https://github.com/xmartlabs/Eureka.git', :branch => 'master'
+  pod 'Eureka', '~> 2.0'
 
   pod 'Fabric'
   pod 'Crashlytics'
