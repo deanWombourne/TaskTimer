@@ -11,7 +11,6 @@ import UIKit
 
 import TaskTimerModel
 
-
 final class ClientsListViewController: UIViewController {
 
     @IBOutlet private var tableView: UITableView?

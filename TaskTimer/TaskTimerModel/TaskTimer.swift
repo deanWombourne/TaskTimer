@@ -62,7 +62,7 @@ struct TaskTimer {
             bundle: modelBundle
         )
 
-        try! CoreStore.defaultStack.addStorageAndWait(self.storage)
+        _ = try? CoreStore.defaultStack.addStorageAndWait(self.storage)
     }
 
     static func reset() {
@@ -71,6 +71,11 @@ struct TaskTimer {
         self.resetConstantID()
         self.initialize()
 
-        try! FileManager.default.removeItem(at: file)
+        do {
+            try FileManager.default.removeItem(at: file)
+        } catch let e {
+            print("WARNING: Failed to remove old store from: \(file)")
+            print("WARNING: \(e)")
+        }
     }
 }

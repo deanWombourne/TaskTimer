@@ -124,6 +124,7 @@
 		A0AE565B1E0C278A005220AE /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A0AE565D1E0C2794005220AE /* HomeSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeSection.swift; sourceTree = "<group>"; };
 		A0AE56621E0C6F46005220AE /* TaskTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskTests.swift; sourceTree = "<group>"; };
+		A0B9AB031E7AD14700DC4557 /* swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = swiftlint.yml; sourceTree = "<group>"; };
 		A0EAC0041E0D3EA60010B460 /* AddTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
 		A0EAC0071E11C9B00010B460 /* AddTaskViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTaskViewModel.swift; sourceTree = "<group>"; };
 		A0EAC00B1E11D3AE0010B460 /* DelegatingButtonRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelegatingButtonRow.swift; sourceTree = "<group>"; };
@@ -313,6 +314,7 @@
 		A0EAC00F1E14F8660010B460 /* Project metadata */ = {
 			isa = PBXGroup;
 			children = (
+				A0B9AB031E7AD14700DC4557 /* swiftlint.yml */,
 				A0EAC0121E14F88E0010B460 /* Fastfile */,
 				A0EAC0101E14F87D0010B460 /* Gemfile */,
 				A0EAC0111E14F87D0010B460 /* README.md */,
@@ -450,6 +452,7 @@
 				E84B54739BDDA0BECC3E7BBA /* [CP] Copy Pods Resources */,
 				A0EAC0141E158C150010B460 /* Fabric */,
 				A0EAC03E1E20DE840010B460 /* Embed Frameworks */,
+				A0B9AB021E7ACD3700DC4557 /* Lint */,
 			);
 			buildRules = (
 			);
@@ -705,6 +708,20 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
+		};
+		A0B9AB021E7ACD3700DC4557 /* Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Lint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint lint --reporter xcode --config swiftlint.yml --strict\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 		A0EAC0141E158C150010B460 /* Fabric */ = {
 			isa = PBXShellScriptBuildPhase;

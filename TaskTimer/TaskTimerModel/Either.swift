@@ -30,10 +30,10 @@ public enum Either<LeftType, RightType> {
         }
     }
 
-    func fold<U>(fl: (LeftType) throws -> U, fr: (RightType) throws -> U) rethrows -> U {
+    func fold<U>(foldLeft: (LeftType) throws -> U, foldRight: (RightType) throws -> U) rethrows -> U {
         switch self {
-        case .failure(let value): return try fl(value)
-        case .success(let value): return try fr(value)
+        case .failure(let value): return try foldLeft(value)
+        case .success(let value): return try foldRight(value)
         }
     }
 

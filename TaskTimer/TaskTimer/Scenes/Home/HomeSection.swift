@@ -24,7 +24,7 @@ enum HomeSection {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch self {
-        case .active(let tasks) where tasks.count == 0:
+        case .active(let tasks) where tasks.isEmpty:
             let cell = tableView.dequeueReusableCell(withIdentifier: "MessageCell", for: indexPath)
             cell.textLabel?.text = "You're not doing anything at the moment"
             return cell
@@ -36,7 +36,7 @@ enum HomeSection {
 
             return cell
 
-        case .recent(let tasks) where tasks.count == 0:
+        case .recent(let tasks) where tasks.isEmpty:
             let cell = tableView.dequeueReusableCell(withIdentifier: "MessageCell", for: indexPath)
             cell.textLabel?.text = "No recent tasks found"
             return cell

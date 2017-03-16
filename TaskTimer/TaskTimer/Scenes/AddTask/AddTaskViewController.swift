@@ -54,15 +54,11 @@ final class AddTaskViewController: FormViewController {
         return client.projects.map { AddTaskEntry.existing($0) }
     }
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        let clients = Client.allClients.map { AddTaskEntry.existing($0) }
-
-        form = Section("Client")
+    private func clientSection(for clients: [AddTaskEntry<Client>]) -> Section {
+        return Section("Client")
             <<< SwitchRow("newClientSwitch") {
                 $0.title = "Add new client?"
-                $0.value = clients.count == 0
+                $0.value = clients.isEmpty
                 $0.onChange { _ in
                     self.updateProjectRow()
                 }
@@ -82,8 +78,11 @@ final class AddTaskViewController: FormViewController {
                 $0.onChange { _ in
                     self.updateProjectRow()
                 }
-            }
-            +++ Section("Project")
+        }
+    }
+
+    private func projectSection() -> Section {
+        return Section("Project")
             <<< SwitchRow("newProjectSwitch") {
                 $0.title = "Create new project?"
                 $0.value = false
@@ -98,8 +97,11 @@ final class AddTaskViewController: FormViewController {
             <<< TextRow("newProject") {
                 $0.placeholder = "New project name"
                 $0.hidden = .predicate(NSPredicate(format: "$newProjectSwitch == false"))
-            }
-            +++ Section("Task")
+        }
+    }
+
+    private func taskSection() -> Section {
+        return Section("Task")
             <<< TextRow("taskDescription") {
                 $0.placeholder = "Task description"
             }
@@ -110,9 +112,19 @@ final class AddTaskViewController: FormViewController {
             <<< SwitchRow {
                 $0.title = "Aready finished?"
                 $0.value = false
-            }
+        }
+    }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        let clients = Client.allClients.map { AddTaskEntry.existing($0) }
+
+        form = self.clientSection(for: clients)
+            +++ self.projectSection()
+            +++ self.taskSection()
             +++ Section()
-            <<< DelegatingButtonRow() {
+            <<< DelegatingButtonRow {
                 $0.title = "Create"
                 $0.disabled = .function(["client", "newClient", "project", "newProject", "taskDescription"], { !self.validate(form: $0) })
                 $0.onSelection { _ in self.createTask() }
